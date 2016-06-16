@@ -1,0 +1,150 @@
+<html lang="pl">
+  <head>
+    <title>Gabinet Psychoterapii</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Gabinet Psychoterapii">
+    <meta name="keywords" content="Gabinet, Psychoterapia, Leczenie, Choroba">
+    <meta name="author" content="Enixx">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/half-slider.css">
+    <link rel="stylesheet" href="./css/scrolling-nav.css">
+    <link rel="stylesheet" href="./css/lightbox.css">
+    <link rel="stylesheet" href="./css/styl.css">
+    <link rel="stylesheet" href="./css/m-styl.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="./js/google-map.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <!-- Tylko w tym pliku plik style do MOCKUP-A ! -->
+    <style>
+      .lb-outerContainer {
+        width:800px !important;
+        height:auto !important;
+      }
+      .lb-image {
+        width:100% !important;
+        height:auto !important;
+      }
+      #lightbox {
+        top:50px !important;
+      }
+      @media (max-width: 820px) {
+        .lb-outerContainer {
+          width:90% !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="row">
+          <div class = "col-md-2">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Rozwiń nawigację</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img class="img-responsive" src="./img/logo.png" alt="logo">
+              </a>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+						<a href="index.html" class="btn navbar-btn n_menu_item ">strona główna</a>
+						<a href="leczymy.html" class="btn navbar-btn n_menu_item">leczymy</a>
+						<a href="oferta.html" class="btn navbar-btn n_menu_item">oferta</a>
+						<a href="onas.html" class="btn navbar-btn n_menu_item menu_active">o nas</a>
+						<a href="cennik.html" class="btn navbar-btn n_menu_item">cennik</a>
+						<a href="kontakt.html" class="btn navbar-btn n_menu_item">kontakt</a>
+            <a class="hidden-sm hidden-xs" href="#"><img src="./img/envelope.png" alt="poczta"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="header_small">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p id="cennik_title">o nas<span>:</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="s_aboutUs">
+      <div class="container">
+        <div class="row">
+          <div class = "col-md-5 s_aU_mockup">
+            <div class = "row">
+              <img src="./img/MOCKUP.jpg" alt="mockup">
+              <a href="./img/MOCKUP.jpg" data-lightbox="MOCKUP">
+                <button>zobacz certyfikaty</button>
+              </a>
+            </div>
+          </div>
+          <div class = "col-md-6">
+            <div class = "row-fluid s_aU_element">
+              <p>kamila makara-czułno</p>
+              <p>
+                Magister psychologii, absolwentka Uniwersytetu Jagiellońskiego. Certyfikowana psychoterapeutka Polskiego Towarzystwa Psychologicznego (certyfikat nr 235). Ukończyła 4-letnie studia podyplomowe z psychoterapii w Medycznym Centrum Kształcenia Podyplomowego Uniwersytetu Jagiellońskiego. Ponadto uczestniczyła w 2-letnim kursie "Podstawy terapii rodzin". Pozostaje pod stałą superwizją indywidualną i grupową u certyfikowanych superwizorów PTP.    Jest członkiem Polskiego Towarzystwa Psychiatrycznego i Polskiego Towarzystwa Psychologicznego. Doświadczenie zawodowe zdobywała, pracując w poradni zdrowia psychicznego oraz oddziale dziennym psychiatrycznym i poradni seksuologicznej. Pracuje zgodnie z zasadami Kodeksu Etycznego  Psychoterapeuty.
+              </p>
+              <span class = "col-md-6">
+                <div class = "row">
+                  <img src="./img/telefon.png" alt="ico">
+                  +48 697 363 288
+                </div>
+              </span>
+              <span class = "col-md-6">
+                <div class = "row">
+                  <img src="./img/email.png" alt="ico">
+                  kamaczulno@gmail.com
+                </div>
+              </span>
+            </div>
+            <div class = "row-fluid s_aU_element">
+              <p>joanna rodzeń-krawiec</p>
+              <p>
+                Magister psychologii, absolwentka Katolickiego Uniwersytetu Lubelskiego, certyfikowany psychoterapeuta Polskiego Towarzystwa Psychoterapii Psychodynamicznej (certyfikat nr 63). Ukończyła 4-letnią Szkołę Psychoterapii Psychodynamicznej w Krakowskim Centrum Psychodynamicznym. Obecnie w trakcie studiów doktoranckich z psychologii. Posiada wieloletnie doświadczenie w prowadzeniu terapii indywidualnej i grupowej, które zdobyła pracując w poradniach zdrowia psychicznego i oddziale dziennym psychiatrycznym. Swoją pracę poddaje systematycznej superwizji u certyfikowanego psychoterapeuty PTP. Jest członkiem Polskiego Towarzystwa Psychiatrycznego oraz Polskiego Towarzystwa Psychoterapii Psychodynamicznej. W pracy stosuje się do zasad Kodeksu Etycznego Psychoterapeuty.
+              </p>
+              <span class = "col-md-6">
+                <div class = "row">
+                  <img src="./img/telefon.png" alt="ico">
+                  +48 695 413 577
+                </div>
+              </span>
+              <span class = "col-md-6">
+                <div class = "row">
+                  <img src="./img/email.png" alt="ico">
+                  rodzen.joanna@gmail.com
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class = "container">
+        <div class = "row f_container">
+          <span class = "f_text">
+            &copy 2015 Gabinet Psychologiczny - Zakaz kopiowania treści materiałów graficznych
+          </span>
+          <span class="f_text pull-right">
+            Projekt i wykonanie: Enixx.pl
+          </span>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/scrolling-nav.js"></script>
+    <script src="./js/lightbox.js"></script>
+  </body>
+</html>

@@ -1,0 +1,378 @@
+<html lang="pl">
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="opis">
+    <meta name="keywords" content="słowa,kluczowe">
+    <meta name="author" content="Enixx">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/scrolling-nav.css">
+    <link rel="stylesheet" href="./css/styl.css">
+    <link rel="stylesheet" href="./css/m-styl.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <!--<script src="./js/google-map.js"></script>-->
+    <script src="./js/script.js"></script>
+    <script src="./js/google-map.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Grupowanie "marki" i przycisku rozwijania mobilnego menu -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+            <span class="sr-only">Rozwiń nawigację</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="bs-navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="active"><a href="#">PMA Electronica Handel</a></li>
+            <li><a href="#s_check" class="page-scroll">Sprawdź stan naprawy</a></li>
+            <li><a href="#s_whatWeAre" class="page-scroll">O firmie</a></li>
+            <li><a href="#s_contact" class="page-scroll">Kontakt</a></li>
+            <li><a href="#">Oferta dla firm</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav_pasek">
+        <div class="container">
+          <p class="pull-right">
+            Podoba Ci się ta strona? Też możesz taką mieć. Wejdź na <a gref="http://enixx.eu">Enixx.eu</a>
+          </p>
+        </div>
+      </div>
+    </nav>
+    <section id="s_slider">
+      <div class="container-fluid">
+        <div class = "row">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active s_s_image" style="background-image:url('./img/slider.png');">
+                <div class = "container">
+                  <div class = "row">
+                    <div class = "col-md-4">
+                      <p class="s_s_title">
+                        PMA <span class="text_bold">Electronica Handel</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class = "row">
+                    <div class = "col-md-8">
+                      <p class="s_s_content">
+                        On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains
+                      </p>
+                    </div>
+                  </div>
+                  <div class = "row">
+                    <div class = "col-md-4">
+                      <p class="s_s_more">
+                      Dowiedz się <a href="http://enixx.eu"><span class="text_bold">więcek&nbsp»</span></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item s_s_image" style="background-image:url('./img/slider.png');">
+                <div class = "container">
+                  <div class = "row">
+                    <div class = "col-md-4">
+                      <p class="s_s_title">
+                        PMA <span class="text_bold">Electronica Handel</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class = "row">
+                    <div class = "col-md-8">
+                      <p class="s_s_content">
+                        On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains
+                      </p>
+                    </div>
+                  </div>
+                  <div class = "row">
+                    <div class = "col-md-4">
+                      <p class="s_s_more">
+                      Dowiedz się <a href="http://enixx.eu"><span class="text_bold">więcej»</span></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="#s_check" class="page-scroll">
+                <i class="fa fa_section_down fa-angle-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="s_check">
+      <div class="container-fluid">
+        <div class = "row">
+           <div class = "container">
+              <div class = "row">
+                <div class = "col-md-5">
+                  <p class="s_s_title">
+                    Sprawdź stan <span class="text_bold">swojego komputera</span>
+                  </p>
+                </div>
+              </div>
+              <div class = "row">
+                <div class = "col-md-8">
+                  <p class="s_s_content">
+                    <span class="text_bold">Tu wpisz numer, który podał Ci pracownik PMA Electronica Handel.</span><br>
+                    On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains
+                  </p>
+                </div>
+              </div>
+              <div class = "row s_c_first_box" >
+                <div id="s_c_element">
+                  <div class="col-md-1 text-center"><img alt="image" class="hidden-sm hidden-xs" src="./img/kurier.png"></div>
+                  <div class="col-md-2">
+                    <button class = "s_c_modButton" data-toggle="modal" data-target="#s_c_modal_2">
+                      Zamów kuriera
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class = "row">
+                <div id="s_c_element">
+                  <div class="col-md-1 text-center"><img alt="image" class="hidden-sm hidden-xs" src="./img/repair.png"></div>
+                  <div role="form">
+                    <div class="form-group">
+                      <div class = "col-md-4">
+                        <input type="text" class="s_c_input">
+                      </div>
+                    </div>
+                    <div class="col-md-1">
+                      <button class = "s_c_button" data-toggle="modal" data-target="#s_c_modal_1"><img alt="image" src="./img/arrow.png"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class = "row">
+                <div class = "col-md-8">
+                  <p class="s_s_more">
+                  Nie masz numeru zamówienia? <a href="contact.html"><span class="text_bold">Skontaktuj się »</span></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#s_whatWeAre" class="page-scroll">
+          <i class="fa down_arrow fa-angle-down"></i>
+        </a>
+        <div id="s_c_modal_1" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+              <div class="modal-header">
+                <img alt="image" src="./img/Timer.png">
+                <h4 class="modal-title">Pozostały czas naprawy: 3 dni.</h5>
+              </div>
+              <div class="modal-body">
+                <p class="modal_login_list modal_list_active"><img alt="image" src="./img/time.png"><span>1. Odebrany przez serwis.<span></p>
+                <p class="modal_login_list"><img alt="image" src="./img/x.png"><span>2. Określenie problemu.</span></p>
+                <p class="modal_login_list"><img alt="image" src="./img/x.png"><span>3. Gotowy do zwrotu</span></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Zamknij</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="s_c_modal_2" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+              <div class="modal-header">
+                <img alt="image" src="./img/kurier.png">
+                <h4 class="modal-title">Podaj dane, by zamówić kuriera</h5>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                  <div class="form-group modal_form_2">
+                    <div class="col-sm-10 col-sm-offset-1">
+                      <input type="text" class="form-control" id="email" placeholder="Imię i nazwisko">
+                    </div>
+                  </div>
+                  <div class="form-group modal_form_2">
+                    <div class="col-sm-10 col-sm-offset-1">
+                      <input type="text" class="form-control" id="pwd" placeholder="Adres (numer domu i budynku, nazwa ulicy, miasto, etc.)">
+                    </div>
+                  </div>
+                  <div class="form-group modal_form_2">
+                    <div class="col-sm-10 col-sm-offset-1">
+                      <input type="text" class="form-control" id="pwd" placeholder="Numer telefonu kontaktowego">
+                    </div>
+                  </div>
+                  <div class="form-group modal_form_2">
+                    <div class="col-sm-10 col-sm-offset-1">
+                      <input type="date" class="form-control" id="pwd" placeholder="Data odbioru">
+                    </div>
+                  </div>
+                  <div class="form-group modal_form_2">
+                    <div class="col-sm-10 col-sm-offset-1">
+                      <input type="time" class="form-control" id="pwd" placeholder="Godzina odbioru">
+                    </div>
+                  </div>
+                  <div class="form-group modal_form_2">
+                    <div class="col-sm-offset-4 col-sm-4">
+                      <button type="submit" class="btn btn-default">Wyślij</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="s_whatWeAre">
+      <div class="container-fluid">
+        <div class = "row">
+           <div class = "container">
+              <div class = "row">
+                <div class = "col-md-5">
+                  <p class="s_s_title">
+                    Co robimy ?<span class="text_bold">sprawdź naszą ofertę</span>
+                  </p>
+                </div>
+              </div>
+              <div class = "row">
+                <div class = "col-md-8">
+                  <p class="s_s_content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
+              <div class = "row">
+                <div id="s_c_element">
+                  <div class = "col-md-3 s_wWA_element">
+                    <img alt="image" src="./img/noturnon.png">
+                    <p class="text_bold">Nie włączający się komputer</p>
+                  </div>
+                  <div class = "col-md-3 s_wWA_element">
+                    <img alt="image" src="./img/noturnon.png">
+                    <p class="text_bold">Nie włączający się komputer</p>
+                  </div>
+                  <div class = "col-md-3 s_wWA_element">
+                    <img alt="image" src="./img/noturnon.png">
+                    <p class="text_bold">Nie włączający się komputer</p>
+                  </div>
+                  <div class = "col-md-3 s_wWA_element">
+                    <img alt="image" src="./img/noturnon.png">
+                    <p class="text_bold">Nie włączający się komputer</p>
+                  </div>
+                </div>
+              </div>
+              <div class = "row">
+                <div class = "col-md-8">
+                  <p class="s_s_more">
+                  Potrzebujesz pomocy ? <a href="http://enixx.eu"><span class="text_bold">Skontaktuj się »</span></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#s_contact" class="page-scroll">
+          <i class="fa down_arrow fa-angle-down"></i>
+        </a>
+      </div>
+    </section>
+    <section id="s_contact">
+      <div class="container-fluid">
+        <div class = "row">
+           <div class = "container">
+              <div class = "row">
+                <div class = "col-md-5">
+                  <p class="s_s_title">
+                    Skontaktuj się <span class="text_bold">z naszą firmą</span>
+                  </p>
+                </div>
+              </div>
+              <div class = "row">
+                <div class = "col-md-8">
+                  <p class="s_s_content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
+              <div class = "row">
+                <div id="s_c_element">
+                  <div class="col-md-6">
+                    <form id ="s_con_form" role="form">
+                      <div class="form-group">
+                        <input type="text" placeholder="Imię i nazwisko">
+                      </div>
+                      <div class="form-group">
+                        <input type="email" placeholder="Adres e-mail">
+                      </div>
+                      <div class="form-group">
+                        <textarea rows="6" placeholder="Tutaj wpisz wiadomość 140(zn)"></textarea>
+                      </div>
+                      <button type="submit">Wyślij wiadomość</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#footer" class="page-scroll">
+          <i class="fa down_arrow fa-angle-down"></i>
+        </a>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class = "container">
+        <div class = "row-fluid nav_bottom">
+          <img alt="image" src="./img/logo.png">
+          <a class="hidden-sm hidden-xs" href="#">PMA Electronica Handel</a>
+          <a class="hidden-sm hidden-xs" href="#">Sprawdź stan naprawy</a>
+          <a class="hidden-sm hidden-xs" href="#">O firmie</a>
+          <a class="hidden-sm hidden-xs" href="#">Kontakt</a>
+          <a class="hidden-sm hidden-xs" href="#s_slider" class="page-scroll">Top</a>
+        </div>
+        <div class = "row nav_bottom_map">
+          <div class = "col-md-5">
+            <div id="map"></div>
+          </div>
+          <div class = "col-md-4">
+            <p>Jan Kowalski & Company</p>
+            <p>Amsterdam City</p>
+            <p>Company XYZ</p>
+            <p>Zielona Łąka</p>
+            <p>ul.Górecka115,Poznań</p>
+          </div>
+        </div>
+        <div class = "row-fluid nav_bottom_description">
+          <p class="pull-left">Design 2015</p>
+          <p class="pull-right">Projekt:<a href="http://enixx.pl">Enixx.pl</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/scrolling-nav.js"></script>
+  </body>
+</html>
+
+

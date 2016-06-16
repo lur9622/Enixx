@@ -1,0 +1,87 @@
+@font-face {font-family: MyriadPro;src: url(../fonts/MyriadWebPro.ttf);}
+@font-face {font-family: MyriadPro;font-weight:300;src: url(../fonts/MyriadPro-Light.otf) format(opentype);}
+input::-webkit-input-placeholder {color: #fff !important;}
+input:-moz-placeholder {color: #fff !important;}
+input::-moz-placeholder {color: #fff !important;}
+input:-ms-input-placeholder {color: #fff !important;}
+body {color:#333;font-family:MyriadPro;}
+.navbar {background:rgba(0,0,0,0);border:0px;box-shadow:inherit;margin:0px; position:absolute;width:100%;z-index:20;}
+.navbar-brand {height:auto;}
+.navbar-nav {margin-top:20px;-webkit-padding-start:0px;}
+.navbar-nav>li{margin-left:1vw;color:#fff;font-size:18px;display:inline-block;float:none;vertical-align:middle;padding:15px;font-weight:300;}
+.active {border:1px solid #fff;}
+.nav-img>li{border:none;padding:0px;width:50px;}
+.navbar-toggle{background:#000;margin-top:20px;}
+.navbar-toggle .icon-bar{background:#fff}
+.nav-img>li>a>span{display:none;}
+a:focus,a:hover,a{color:inherit; text-decoration:none;}
+#s_slider {
+  height:100%;
+  width:100%;
+  position:relative;
+  background-size:cover !important;
+  background-image:url('../img/slider1.png');
+  background-position:center;
+}
+.carousel-controls {
+  position:absolute;
+  height:70px;
+  top:50%;
+  margin-top:-35px;
+  width:100%;
+  display:inline-block;
+}
+.carousel-controls > * {
+  vertical-align:middle;
+  float:none;
+  display:inline-block;
+}
+.carousel-inner {
+height:100%;
+}
+.item {
+  position:absolute;
+  height:20vh;
+  margin-top:39.5vh;
+  width: 60vw;
+  margin-left:20vw;
+  background:#000;
+  display:block;
+  border:0px;
+  background-color:rgba(0,0,0,0);
+}
+.item >.item-tittle {
+  font-weight:bold;
+  font-size:60px;
+}
+.item-tittle>span {
+  color:#00eaff;
+}
+.item >p {
+  color:#fff;
+  font-weight:300;
+  text-align:right;
+  text-transform:uppercase;
+  font-size:30px;
+  margin-bottom:0px;
+  line-height:50px;
+}
+.carousel-control.left,.carousel-control.right {
+  background-image:none;
+}
+.carousel-control.left>img,.carousel-control.right>img {
+  width:70px;
+  display:inline-block;
+}
+.carousel {
+  position:static;
+}
+.right {
+  float:right;
+}
+.left {
+  float:left;
+}
+.carousel-control {
+  position:relative;
+}

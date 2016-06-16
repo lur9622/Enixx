@@ -1,0 +1,122 @@
+@media(max-width:767px){
+  .navbar {background: rgb(255, 255, 255);}
+  .navbar-nav>li:last-child{ margin-bottom:0px;}
+  .item >.item-tittle {font-size:18px !important;}
+  .item >p {font-size:18px !important;}
+
+	.slider2_quote {
+		font-size: 19px !important;
+	}
+	.quote_author {
+		font-size: 16px !important;
+	}
+	.item_dawid, .item_dawid_active {
+		height: 200px !important;
+	}
+	.vcenter {
+		text-align: center !important;
+	}
+	.carousel-control-dawid.left {
+		left: 0;
+	}
+	.carousel-control-dawid.right {
+		right: 0;
+	}
+	#slider2 > div {
+		text-align: center;
+	}
+	#slider2 > div>div:first-child {
+		text-align: left;
+	}
+	.s_a_tittle {
+		font-size:40px;
+	}
+	.carousel-control-dawid {
+		top:65%;
+		margin-top:-45px;
+		margin-bottom: 20px;
+      	position: relative !important;
+	}
+}
+@media(max-width:992px){
+  .caret_left,.caret_right {
+    display:none;
+  }
+.s_c_input {
+  margin-top:15px;
+}
+  .w_b_c_box>p:last-child {
+    text-align:center;
+  }
+  .sm_push,.sm_pull {
+    float:none;
+  }
+  .w_b_c_box {
+    padding:40px;
+  }
+  .s_i_row {
+  height:100%;
+  }
+  .s_i_boxImage,.s_i_boxText {
+    height:50%;
+  }
+  .w_b_content>div >* {
+        display: block;
+  }
+  .w_b_content>div>.col-md-5 {
+    width:inherit;
+  }
+  .container {
+    width:100%;
+  }
+  .navbar-brand {
+    width:150px;
+  }
+	.contact_object>div {
+		display:block;
+	}
+	.bottom_nav,.contact_object {
+		display:block;
+		width:100%;
+		margin-bottom:20px;
+	}
+	.contact_bar {
+		position: relative;
+	}
+	.nav-img>li{padding:15px}
+	.nav-img>li>a>span{display:block;}
+  .nav-img>li>a>img{display:none;}
+	.navbar-nav>li {width:100%;display:block;text-align:center;}
+	.navbar-nav {width:100%;margin:0px;}
+	.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-		collapse {
+		max-height: 360px;
+	}
+	#s_p_carousel {
+	height:inherit;
+	}
+	.slider_img {
+		height:50%;
+	}
+	.contact_object,footer {
+		text-align:center;
+	}
+	.carousel-indicators {
+	left:50%;
+	width:60%;
+	margin-left:-30%;
+	}.s_s_object{display:block}
+	.text-right{
+		text-align:center;
+	}
+	#s_h_main {
+    font-size: 45px;
+	}
+}
+@media(max-width:1300px){
+  .item >.item-tittle {
+    font-size:40px;
+  }
+}
+@media(max-width:1545px){
+}
+

@@ -1,0 +1,83 @@
+@media(max-width:767px){
+}
+@media(max-width:992px){
+  #n_login_btn {
+    margin-top:2vw;
+    background:#cd4047;
+  }
+  .s_g_d_content>p{
+    font-size:3.5vw;
+    text-align:center;
+  }
+  .s_g_d_tittle {
+    font-size:5.1vw;
+    text-align:center;
+  }
+  .s_g_description {
+    margin-top:3vw;
+  }
+  .s_bG_separator {
+    clear:both;
+    position:relative;
+    height:3vw;
+  }
+  #n_register_btn {
+    background:#eba21e;
+  }
+  #n_contact_btn {
+    background:#06b2c7;
+  }
+  #n_facebook {
+    display:none;
+  }
+  footer {
+    text-align:center;
+    margin:0px;
+  }
+  .f_text {
+    text-align:center;
+    width:100%;
+  }
+  .s_r_box {
+    border:0px;
+    padding-left:5vw;
+    padding-right:5vw;
+  }
+  .s_r_btn {
+    font-size:4vw;
+  }
+  .s_bB_box {
+    margin-top:5vw;
+  }
+  .s_lA_e_title>p {
+    line-height:4.5vw;
+  }
+  .s_lA_element>div:last-child {
+    text-align: center;
+  }
+  .s_o_header {
+    text-align:center;
+  }
+  .s_pA_element >p:first-child {
+    text-align:center;
+  }
+  .s_o_c_header {
+    text-align:center;
+  }
+  .s_o_c_description {
+    text-align:justify;
+  }
+}
+@media(max-width:1180px){
+  .s_o_container>form>div>div:first-child{
+    width:100%;
+    text-align:center;
+  }
+  .s_o_container>form>div>div:last-child{
+    width:100%;
+    text-align:center;
+  }
+}
+@media(max-width:1400px){
+}
+

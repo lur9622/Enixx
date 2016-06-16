@@ -1,0 +1,290 @@
+<html lang="pl">
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="opis">
+    <meta name="keywords" content="słowa,kluczowe">
+    <meta name="author" content="Enixx">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/scrolling-nav.css">
+    <link rel="stylesheet" href="./css/styl.css">
+    <link rel="stylesheet" href="./css/m-styl.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="./js/google-map.js"></script>
+  </head>
+  <body>
+    <nav class="navbar" role="navigation">
+      <div class="container">
+        <!-- Grupowanie "marki" i przycisku rozwijania mobilnego menu -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+            <span class="sr-only">Rozwiń nawigację</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img class ="img-responsive" src="./img/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+          <ul class="navbar-nav navbar-right nav-img">
+            <li>
+              <a href="#">
+                <img class="img-responsive" src="./img/people.png">
+                <span>Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img class="img-responsive" src="./img/padlock.png">
+                <span>Facebook</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav navbar-right">
+            <li class="active"><a href="#">strona główna</a></li>
+            <li><a href="#">dlaczego my?</a></li>
+            <li><a href="#">oferta</a></li>
+            <li><a href="#">referencje</a></li>
+            <li><a href="#">kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="s_slider">
+      <div class="container-fluid">
+        <div class = "row">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner carousel-inner-mateusz" role="listbox">
+              <div class="item active">
+                <p class ="item-tittle">
+                  Twoja <span>agencja</span> reklamowa
+                </p>
+                <p>
+                  SPROSTAMY TWOIM OCZEKIWANIOM
+                </p>
+              </div>
+              <div class="item">
+                <p class ="item-tittle">
+                  Twoja <span>agencja</span> reklamowa
+                </p>
+                <p>
+                  SPROSTAMY TWOIM OCZEKIWANIOM
+                </p>
+              </div>
+            </div>
+            <div class = "carousel-controls carousel-controls-mateusz">
+              <a class="left carousel-control carousel-control-mateusz" href="#myCarousel" role="button" data-slide="prev">
+                <img src="./img/previous.png" class="img-responsive">
+              </a>
+              <a class="right carousel-control carousel-control-mateusz" href="#myCarousel" role="button" data-slide="next">
+                <img src="./img/next.png" class="img-responsive">
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <a href="#s_about" class="page-scroll" id="unwrap">
+            <img src = "./img/unwrap.png">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="s_about">
+      <div class="container">
+        <div class = "row">
+          <div class="col-md-12 s_a_section">
+            <p class = "s_a_tittle">
+              kim<br>
+              <span class ="text_bold">jesteśmy</span><br>
+              i jak <span class ="text_bold">działamy?</span>
+            </p>
+            <div class ="separator"></div>
+            <div class = "row s_a_boxes">
+              <div class = "col-md-6">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+              </div>
+              <div class = "col-md-6">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+              </div>
+              <div class ="col-md-12" style="margin-top: 25px;">
+                <a class="see_more">zobacz więcej</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "shape_top"></div>
+    </section>
+    <section id="s_about2">
+      <div class="container">
+        <div class = "row">
+          <div class="col-md-12 s_a_section">
+            <p class = "s_a_tittle s_a2">
+              czym<br>
+              <span class ="text_bold">zajmuje się</span><br>
+              nasza <span class ="text_bold">agencja?</span>
+            </p>
+            <div class ="separator"></div>
+            <div class = "row s_a2_boxes">
+              <div class = "col-md-3">
+                <p class = "s_a2">
+                  koloportaż<br><span class="text_bold">ulotek</span>
+                </p>
+                <div class="separator2"></div>
+                <p class = "s_a2">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                </p>
+              </div>
+							<div class = "col-md-3 col-md-offset-1">
+                <p class = "s_a2">
+                  wynajem<br><span class="text_bold">hostess i promotorów</span>
+                </p>
+                <div class="separator2"></div>
+                <p class = "s_a2">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                </p>
+              </div>
+							<div class = "col-md-3 col-md-offset-1">
+                <p class = "s_a2">
+                  badania<br><span class="text_bold">mystery shopper, capi, mobi</span>
+                </p>
+                <div class="separator2"></div>
+                <p class = "s_a2">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                </p>
+              </div>
+							 <div class ="col-md-12" style="margin-top: 25px;">
+                <a class="see_more">zapytaj o wycenę</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+		<section id="slider2">
+ 			<div class="container">
+        <div class = "row">
+          <div class="col-md-12 s_a_section">
+            <p class = "s_a_tittle s_a3">
+              co<br>
+              <span class="text_bold">mówią</span><br>
+              o nas <span class="text_bold">inni?</span>
+            </p>
+            <div class="separator3"></div>
+					</div>
+				</div>
+			</div>
+			<div id="myCarousel2" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="item item-dawid active">
+          <div class="container">
+            <div class="carousel-caption">
+							 <p class ="slider2_quote">
+									<em>„Lorem ipsum dolor sit amet, consectetur adipi-</br>scing elitmodo consequat.”</em>
+                </p>
+								<div class="slider2_separator"></div>
+								<p class="quote_author">
+									<em>Jan Nowakowski VW Polska Sp. Z.o.o.</em>
+								</p>
+            </div>
+          </div>
+        </div>
+				<div class="item item-dawid">
+          <div class="container">
+            <div class="carousel-caption">
+							 <p class ="slider2_quote">
+									<em>„Lorem ipsum dolor sit amet, consectetur adipi-</br>scing elitmodo consequat.”</em>
+                </p>
+								<div class="slider2_separator"></div>
+								<p class="quote_author">
+									<em>Jan Nowakowski VW Polska Sp. Z.o.o.</em>
+								</p>
+            </div>
+          </div>
+        </div>
+				<div class="item item-dawid">
+						<div class="container">
+							<div class="carousel-caption">
+								 <p class ="slider2_quote">
+										<em>„Lorem ipsum dolor sit amet, consectetur adipi-</br>scing elitmodo consequat.”</em>
+									</p>
+									<div class="slider2_separator"></div>
+									<p class="quote_author">
+										<em>Jan Nowakowski VW Polska Sp. Z.o.o.</em>
+									</p>
+							</div>
+						</div>
+					</div>
+      </div>
+      <a class="left carousel-control-dawid" href="#myCarousel2" role="button" data-slide="prev">
+				<img src="./img/previous2.png" class="img-responsive">
+      </a>
+      <a class="right carousel-control-dawid" href="#myCarousel2" role="button" data-slide="next">
+        <img src="./img/next2.png" class="img-responsive">
+      </a>
+    </div><!-- /.carousel -->
+		</section>
+		<section id="section_map">
+      <div class="container-fluid">
+        <div class = "row">
+          <div id="map"></div>
+					<div class="contact_bar">
+						<div class="container">
+							<div class="col-md-3">
+								<img src="./img/map.png"/>
+								<hr/>
+								<p>ul. Księdza Jakuba Wujka</p>
+								<p>62-581 Poznań</p>
+							</div>
+							<div class="col-md-3">
+								<img src="./img/email.png"/>
+								<hr/>
+								<p>info@ertis.pl</p>
+								<p>hostessing@ertis.pl</p>
+							</div>
+							<div class="col-md-3">
+								<img src="./img/phone.png"/>
+								<hr/>
+								<p>61 000 0 000</p>
+								<p>+48 777 777 777</p>
+							</div>
+							<div class="col-md-3">
+								<img src="./img/facebook.png"/>
+								<hr/>
+								<p>facebook.com/ertisPL</p>
+							</div>
+						</div>
+					</div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class = "container">
+        <div class = "row-fluid">
+          <span class="f_text pull-left">
+            &copy 2015 Firma - Zakaz kopiowania treści i materiałów zawartych na stronie internetowej.
+          </span>
+          <span class="f_text pull-right">
+            Projekt i wykonanie: <a href="http://enixx.pl">Enixx.pl</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/scrolling-nav.js"></script>
+  </body>
+</html>
+
+

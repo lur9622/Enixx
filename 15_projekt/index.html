@@ -1,0 +1,163 @@
+<html lang="pl">
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="opis">
+    <meta name="keywords" content="słowa,kluczowe">
+    <meta name="author" content="Enixx">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/scrolling-nav.css">
+    <link rel="stylesheet" href="./css/styl.css">
+    <link rel="stylesheet" href="./css/m-styl.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <!--<script src="./js/google-map.js"></script>-->
+    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  </head>
+  <body>
+    <nav class="navbar" role="navigation">
+      <div class="container">
+        <!-- Grupowanie "marki" i przycisku rozwijania mobilnego menu -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+            <span class="sr-only">Rozwiń nawigację</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo.png" alt="logo">
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right" id="bs-navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="active imgIco"><a href="#"><i class="fa fa-facebook hidden-sm hidden-xs"></i><span class="hidden-lg hidden-md">facebook</span></a></li>
+            <li class="imgIco"><a href="#"><i class="fa fa-twitter hidden-sm hidden-xs"></i><span class="hidden-lg hidden-md">twitter</span></a></li>
+            <li class="navElementIco"><a href="#"><i class="fa fa-envelope-o vcenter hidden-sm hidden-xs"></i> <span class="vcenter">Kontakt z nami</span></a></li>
+            <li class="navElement"><a href="#">wyloguj: <span class="text_bold">nazwausera</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="s_header" class="sectionImage">
+      <div class="container">
+        <div class = "row">
+          <div class = "col-md-12 shTitle">
+            <h2 class="text_bold">Witamy !</h2>
+            <h1 class="text_bold">wykreuj swój startup !</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="s_addSection" class="sectionDefault">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="text_bold">DODAJ SEKCJE</h2>
+          </div>
+        </div>
+        <div class = "row">
+          <div class = "col-md-4">
+            <ul class="nav nav-tabs navHorizontalStartup">
+              <li class="active">
+                <a data-toggle="tab" href="#home" class="sIcoAboutUs">
+                  <img src="./img/tab_ico1.png">
+                  SEKCJA O NAS
+                </a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#menu1">
+                  <img src="./img/tab_ico2.png">
+                  SEKCJA TIMELINE
+                </a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#menu1">
+                  <img src="./img/tab_ico3.png">
+                  analiza swot
+                </a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#menu1">
+                  <img src="./img/tab_ico4.png">
+                  model biznesowy
+                </a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#menu1">
+                  <img src="./img/tab_ico5.png">
+                  zdjęcia
+                </a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#menu1">
+                  <img src="./img/tab_ico6.png">
+                  materiały marketingowe
+                </a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#menu1">
+                  <img src="./img/tab_ico7.png">
+                  inne
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class = "col-md-7 col-md-offset-1">
+            <div class="tab-content">
+              <div id="home" class="tab-pane fade in active">
+                <form class="form-horizontal formAddSection" role="form">
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <textarea rows="16" type="email" class="form-control" id="email" placeholder="wpisz coś o sobie"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-md-4 col-md-offset-8">
+                      <button type="submit" class="btn pull-right">zapisz zakładkę</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div id="menu1" class="tab-pane fade">
+                <h3>Menu 1</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <div id="menu2" class="tab-pane fade">
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              </div>
+              <div id="menu3" class="tab-pane fade">
+                <h3>Menu 3</h3>
+                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class = "container">
+        <div class = "row-fluid">
+          <span class = "f_text">
+            &copy 2015 gr8start.pl - Zakaz kopiowania treści oraz materiałów zawartych na stronie
+          </span>
+          <span class="f_text pull-right">
+            Projekt i wykonanie: <a href="http://enixx.eu">ENIXX.EU</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/scrolling-nav.js"></script>
+  </body>
+</html>
+
+

@@ -1,0 +1,439 @@
+<html lang="pl">
+  <head>
+    <title>Baza CEIDG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Ogranizacja Ślubu">
+    <meta name="keywords" content="Ślub,Organizacja,Justyna Kaczorowska, Wypożyczalnia, Auto">
+    <meta name="author" content="Enixx">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/half-slider.css">
+    <link rel="stylesheet" href="./css/scrolling-nav.css">
+    <link rel="stylesheet" href="./css/styl.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/m-styl.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="./js/google-map.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  </head>
+  <body>
+<div class="container-fluid container_blur"> <!--POCZĄTEK KONTENERA ROZMYCIA-->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="col-md-8 col-md-offset-2">
+          <div class ="container-fluid padding_nav">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                <span class="sr-only">Rozwiń nawigację</span>
+                 <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img class="img-responsive n_logo" src="./img/logo.png" alt="logo">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+              <p class="navbar-text">
+                Liczba firm w bazie: <span id="n_numCompany" class = "text_bold">3 421 810</span><br>
+                Ostatnia aktualizacja: <span id="n_lastUpdate" class = "text_bold">2015-10-22 18:58</span>
+              </p>
+              <button type="button" class="navbar-btn navbar-right navbar_green_btn" data-toggle="modal" data-target="#login">
+                <img id="n_ico" src="./img/login.png" alt="login_ico">zaloguj się
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="s_images" class="s_header_image">
+      <div class="container-fluid">
+        <div class="row">
+          <div id="carousel-example-generic2" class="carousel slide">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class ="container-fluid">
+                <div class="col-md-8 col-md-offset-2">
+                  <div class="col-md-6 s_i_content">
+                    <div class="row s_i_title">
+                      <span>baza firm </span><span class="text_bold s_i_t_orange">ceidg</span>
+                    </div>
+                    <p class="row text_slider">
+                      But I must explain to you ho of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences.
+                    </p>
+                    <div class="row">
+                      <div class="col-md-5">
+                        <div class="row">
+                          <button type="button" class="s_btn_orange">
+                            zamów bazę danych
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4  p_rel">
+                    <img class= "img-responsive img_slider" src="./img/man.png" alt="man">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+            </div>
+          </div>
+          <div class="row-fluid">
+            <div class ="container-fluid">
+              <div class="col-md-3 col-md-offset-2 row_slider_btn">
+                <a href="#carousel-example-generic2" data-slide="prev">
+                  <img src="./img/previous.png" alt="previous">
+                </a>
+                <a href="#carousel-example-generic2" data-slide="next">
+                  <img src="./img/next.png" alt="next">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="s_list">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 text-center s_l_rows">
+            <div class="row-fluid">
+              <div class="col-md-4">
+                <div class="row-fluid">
+                  <img src="./img/compass.png" alt="compass">
+                </div>
+                <div class="row-fluid s_l_title">
+                  <span class="text_bold">dane </span><span>adresowe</span>
+                </div>
+                <div class="row-fluid s_l_content">
+                  W naszym serwisie zamówisz pliki CSV, XLSX lub XML z aktualnymi danymi adresowymi (adresy siedzib, adresy e-mail) polskich firm zarejestrowanych w CEIDG.
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="row-fluid">
+                  <img src="./img/money.png" alt="money">
+                </div>
+                <div class="row-fluid s_l_title">
+                  <span class="text_bold">atrakcyjne </span><span>ceny</span>
+                </div>
+                <div class="row-fluid s_l_content">
+                  Za rekord zawierający adres e-mail zapłacisz maksymalnie 0,03 zł netto, a za rekord bez e-maila 0,01 zł lub jeszcze mniej.
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="row-fluid">
+                  <img src="./img/database.png" alt="database">
+                </div>
+                <div class="row-fluid s_l_title">
+                  <span class="text_bold">baza </span><span>nowych firm</span>
+                </div>
+                <div class="row-fluid s_l_content">
+                  Codziennie możesz otrzymywać pliki z danymi przedsiębiorstw, które rozpoczęły działalność w poprzednim dniu. Co miesiąc w CEIDG przybywa 20-25 tys. nowych firm.
+                </div>
+              </div>
+            </div>
+            <!-- Koniec Row-a -->
+            <div class= "row-fluid">
+              <div class="s_l_separator"></div>
+            </div>
+            <div class="row-fluid">
+              <div class="col-md-4">
+                <div class="row-fluid">
+                  <img src="./img/group.png" alt="group">
+                </div>
+                <div class="row-fluid s_l_title">
+                  <span class="text_bold">grupa </span><span>docelowa</span>
+                </div>
+                <div class="row-fluid s_l_content">
+                  Codziennie możesz otrzymywać pliki z danymi przedsiębiorstw, które rozpoczęły działalność w poprzednim dniu. Co miesiąc w CEIDG przybywa 20-25 tys. nowych firm.
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="row-fluid">
+                  <img src="./img/adress.png" alt="adress">
+                </div>
+                <div class="row-fluid s_l_title">
+                  <span class="text_bold">sprawdzone </span><span>adresy</span>
+                </div>
+                <div class="row-fluid s_l_content">
+                  Codziennie możesz otrzymywać pliki z danymi przedsiębiorstw, które rozpoczęły działalność w poprzednim dniu. Co miesiąc w CEIDG przybywa 20-25 tys. nowych firm.
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="row-fluid">
+                  <img src="./img/fast.png" alt="fast">
+                </div>
+                <div class="row-fluid s_l_title">
+                  <span class="text_bold">szybka </span><span>obsługa</span>
+                </div>
+                <div class="row-fluid s_l_content">
+                  Codziennie możesz otrzymywać pliki z danymi przedsiębiorstw, które rozpoczęły działalność w poprzednim dniu. Co miesiąc w CEIDG przybywa 20-25 tys. nowych firm.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="s_chart">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 col-md-offset-2 s_p_center_mobile">
+            <div id="piechart"></div>
+          </div>
+          <div class="col-md-5 pie_chart_content">
+            <div class="row text_upper s_c_t_line">
+              <p class="text_bold s_c_title">codzienne sprawdzają naszą</p>
+              <p class="text_bold s_c_title_c">skuteczność</p>
+            </div>
+            <div class="row">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="row">
+              <div class ="s_c_item text_upper">
+                <img src="./img/chartsm1.png" alt="orange">
+                <span style="margin-left:40px;">Handel hurtowy i detaliczny (PKD G)</span>
+              </div>
+              <div class ="s_c_item text_upper">
+                <img src="./img/chartsm2.png" alt="orange">
+                <span style="margin-left:40px;">Handel hurtowy i detaliczny (PKD G)</span>
+              </div>
+              <div class ="s_c_item text_upper">
+                <img src="./img/chartsm3.png" alt="orange">
+                <span style="margin-left:40px;">Handel hurtowy i detaliczny (PKD G)</span>
+              </div>
+              <div class ="s_c_item text_upper">
+                <img src="./img/chartsm4.png" alt="orange">
+                <span style="margin-left:40px;">Handel hurtowy i detaliczny (PKD G)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="s_raports">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-5 col-md-offset-2">
+            <div class="row-fluid text_upper" style="margin-bottom: 20px;">
+              <span class="s_r_title">pozostałe</span><br>
+              <span class="text_bold s_r_title_bold" style="color:#afcb24">raporty:</span>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="row-fluid">
+                  <div style="background-image:url('./img/raport1.png');" class = "s_r_img"></div>
+                </div>
+                <div class="row-fluid s_r_sumup">
+                  <span>Podsumowanie dnia</span><br>
+                  <span class="text_bold s_r_s_bigger">22 października 2015</span>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="row-fluid">
+                  <div style="background-image:url('./img/raport2.png');" class = "s_r_img"></div>
+                </div>
+                <div class="row-fluid s_r_sumup">
+                  <span>Podsumowanie dnia</span><br>
+                  <span class="text_bold s_r_s_bigger">22 października 2015</span>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="row-fluid">
+                  <div style="background-image:url('./img/raport3.png');" class = "s_r_img"></div>
+                </div>
+                <div class="row-fluid s_r_sumup">
+                  <span>Podsumowanie dnia</span><br>
+                  <span class="text_bold s_r_s_bigger">22 października 2015</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="mobile_separator"></div>
+            <div class="row-fluid text_upper" style="margin-bottom: 20px;">
+              <span class="s_r_title">sprytne</span><br>
+              <span class="text_bold s_r_title_bold">3 kroki do sukcesu</span>
+            </div>
+            <div class="steps_image">
+              <img src="./img/steps.png" class="img-responsive" alt="kroki do sukcesu" style="margin: 0 auto;"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2 col-md-offset-2">
+            <div class ="row">
+              <img width="66%" src="./img/enixxlogo.png" alt="Enixx logo">
+            </div>
+            <div class ="row s_i_c_text margin_top_little text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </div>
+          </div>
+          <div class="col-md-2 col-md-offset-1">
+            <div class ="row">
+              <img class="f_ico" src = "./img/contact.png" alt="contact"><span class="text_upper f_c_title">kontakt <span class = "text_bold">z nami</span></span>
+            </div>
+            <div class ="row f_span">
+              <span>ENIXX.PL</span><br>
+              <span>61-475 Poznań, ul Górecka 115</span><br>
+              <span>tel.61 307 08 08, poczta@enixx.pl</span><br><br>
+              <span>biuro czynne w godzinach:  9 - 17</span>
+            </div>
+          </div>
+          <div class="col-md-2 col-md-offset-1">
+            <div class ="row">
+              <img class="f_ico" src = "./img/search.png" alt="search"><span class="text_upper f_c_title">znajdź na <span class = "text_bold">stronie</span></span>
+            </div>
+            <div class="row">
+              <form class="form-inline f_margin" role="form">
+                <div class="form-group">
+                  <label class="sr-only" for="exampleInputEmail2">Email</label>
+                  <input type="email" class="form-control f_input" id="exampleInputEmail2" placeholder="wpisz szukaną frazę">
+                </div>
+                <button type="submit" class="btn-default f_input_btn">szukaj</button>
+              </form>
+            </div>
+            <div class="row">
+              <img src="./img/facebook.png" alt="facebook">
+              <img src="./img/googleplus.png" alt="googleplus">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <section id="s_modals">
+      <div id="login" class="modal fade " role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="row">
+                <!--lewa kolumna-->
+                <div class="col-md-4 col-md-offset-1">
+                  <div class="title_container">
+                    <span class="modal_title_small">zaloguj się</span>
+                    </br>
+                    <span class="modal_title_big">do serwisu:</span>
+                    </br>
+                    <span class="modal_description">Jeśli posiadasz już konto w naszym serwisie, podaj adres e-mail użyty przy rejestracji i hasło:</span>
+                  </div>
+                  <form role="form">
+                    <div class="login">
+                      <label class="sr-only" for="email">Email:</label>
+                      <input type="email" class="form-control" id="email" placeholder="adres email lub login">
+                    </div>
+                    <div class="password">
+                      <label class="sr-only" for="pwd">Hasło:</label>
+                      <input type="password" class="form-control" id="pwd" placeholder="podaj hasło">
+                    </div>
+                    <button type="submit" class="btn_login">Zaloguj się</button>
+                  </form>
+                  <p><a class="forgot_password" href="#">czy zapomniałeś hasła?</a></p>
+                </div>
+            <!--Prawa kolumna-->
+                <div class="col-md-4 col-md-offset-2">
+                  <div class="title_container">
+                    <span class="modal_title_small">rejestracja</span>
+                    </br>
+                    <span class="modal_title_big">w serwisie:</span>
+                    </br>
+                    <span class="modal_description">Jeśli nie posiadasz jeszcze konta w naszym serwisie, wypełnij poniższe pola w celu utworzenia go:</span>
+                  </div>
+                  <form role="form">
+                    <div class="login">
+                      <label class="sr-only" for="email">Email:</label>
+                      <input type="email" class="form-control" id="email" placeholder="adres email lub login">
+                    </div>
+                    <div class="password">
+                      <label class="sr-only" for="pwd">Hasło:</label>
+                      <input type="password" class="form-control" id="pwd" placeholder="podaj hasło">
+                    </div>
+                    <div class="password">
+                      <label class="sr-only" for="pwd">Powtórz hasło:</label>
+                      <input type="password" class="form-control" id="pwd" placeholder="powtórz hasło">
+                    </div>
+                    <div class="col-md-12 modal_checkbox">
+                      <input type="checkbox" value="" id="c1">
+                      <label for="c1"><span class="col-md-4" ></span><p>Zapoznałem(am) się z regulaminem serwisu <strong>CEIDGBazaFirm</strong>.pl i akceptuję jego postanowienia.</p></label>
+                    </div>
+                    <div class="col-md-12 modal_checkbox">
+                      <input type="checkbox" value="" id="c2">
+                      <label for="c2"><span class="col-md-4" ></span><p>Wyrażam zgodę na przetwarzanie moich danych osobowych w celu obsługi płatności za zamówienie bazy danych i wystawienia faktury VAT za tę usługę.</p></label>
+                    </div>
+                    <div class="col-md-12 modal_checkbox">
+                      <input type="checkbox" value="" id="c3">
+                      <label for="c3"><span class="col-md-4 " ></span><p>Wyrażam zgodę na otrzymywanie na podany adres e-mail informacji handlowej w rozumieniu art. 10 ust. 2 Ustawy z dnia 18 lipca 2002 r. o świadczeniu usług drogą elektroniczną (Dz. U. Nr 144, poz. 1204).</p></label>
+                    </div>
+                    <button type="submit" class="btn_register">Utwórz konto w serwisie</button>
+                  </form>
+                </div>
+              </div>
+              <input type="image" src="./img/close.png" name="close" class="modal_close_btn" id="close_button" data-dismiss="modal"/>
+            </div>
+          </div>
+        </div>
+      </section>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/scrolling-nav.js"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+
+        var data=google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Work',     17],
+          ['Eat',      15],
+          ['Commute',  10],
+          ['Sleep',    58]
+        ]);
+
+        var options={
+          legend: 'none',
+          pieSliceText: 'none',
+          backgroundColor:'#e9e8e8',
+          chartArea:{width:'100%',height:'90%',top:'0px'},
+          slices: {
+            0: { offset: 0.1,color:'#df2837' },
+            1: { offset: 0.1,color:'#fcd55a'},
+            2: { offset: 0.1,color:'#1ba9b0' },
+            3: { offset: 0.1,color:'#f9902c' },
+          }
+        };
+        var chart=new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript">
+        /* rozmazanie po otwarciu modala w jquery*/
+          $('#login').on('show.bs.modal', function () {
+            $('.container_blur').addClass('blur');
+          })
+
+          $('#login').on('hide.bs.modal', function () {
+            $('.container_blur').removeClass('blur');
+          })
+    </script>
+  </body>
+</html>
+
+

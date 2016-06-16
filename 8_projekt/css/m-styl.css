@@ -1,0 +1,127 @@
+@media(max-width:767px){
+  nav {
+    padding:20px 0px;
+  }
+}
+@media(max-width:992px){
+  #n_login_btn {
+    margin-top:2vw;
+    background:#cd4047;
+  }
+  .s_g_d_content>p{
+    font-size:3.5vw;
+    text-align:center;
+  }
+  .s_g_d_tittle {
+    font-size:5.1vw;
+    text-align:center;
+  }
+  .s_g_description {
+    margin-top:3vw;
+  }
+  .s_bG_separator {
+    clear:both;
+    position:relative;
+    height:3vw;
+  }
+  #n_register_btn {
+    background:#eba21e;
+  }
+  .s_lA_element>div:first-child {
+    height:50%;
+  }
+  .s_lA_element>div:last-child {
+    min-height:auto;
+  }
+  .s_lA_element {
+    height:auto;
+  }
+  #n_contact_btn {
+    background:#06b2c7;
+  }
+  #n_facebook {
+    display:none;
+  }
+  footer {
+    text-align:center;
+    margin:0px;
+  }
+  .f_text {
+    text-align:center;
+    width:100%;
+  }
+  .s_r_box {
+    border:0px;
+    padding-left:5vw;
+    padding-right:5vw;
+  }
+  .s_r_btn {
+    font-size:4vw;
+  }
+  .s_bB_box {
+    margin-top:5vw;
+  }
+  .s_lA_e_title>p {
+    line-height:4.5vw;
+  }
+  .s_lA_element>div:last-child {
+    text-align: center;
+  }
+  .s_o_header {
+    text-align:center;
+  }
+  .s_pA_element >p:first-child {
+    text-align:center;
+  }
+  .s_o_c_header {
+    text-align:center;
+  }
+  .s_o_c_description {
+    text-align:justify;
+  }
+  /* DAWID */
+  .btn_login, .btn_forgot_password {
+    font-size: 4vw;
+  }
+  .small_title {
+    text-align: center;
+  }
+  .btn_add_photos{
+    padding: 0;
+  }
+  .btn_delete_photos{
+    padding: 0;
+  }
+  .s_o_container>form>button {
+    width:100%;
+  }
+  .btn_send_message {
+    width:100%;
+    font-size:3vw;
+  }
+  #map {
+    margin-bottom:5vw;
+  }
+  .btn_add_photos > button, .btn_delete_photos > button, .btn_make_order, .btn_pay {
+    font-size: 3.5vw;
+  }
+  .abonament_block_text > p {
+    font-size: 4vw;
+  }
+  .abonament_block_text > p:not(:first-child) {
+    font-size: 3vw;
+  }
+}
+@media(max-width:1180px){
+  .s_o_container>form>div>div:first-child{
+    width:100%;
+    text-align:center;
+  }
+  .s_o_container>form>div>div:last-child{
+    width:100%;
+    text-align:center;
+  }
+}
+@media(max-width:1400px){
+}
+

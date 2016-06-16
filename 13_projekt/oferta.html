@@ -1,0 +1,164 @@
+<html lang="pl">
+  <head>
+    <title>Ertis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="opis">
+    <meta name="keywords" content="słowa,kluczowe">
+    <meta name="author" content="Enixx">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/scrolling-nav.css">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./css/styl.css">
+    <link rel="stylesheet" href="./css/m-styl.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="./js/google-map.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Grupowanie "marki" i przycisku rozwijania mobilnego menu -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+            <span class="sr-only">Rozwiń nawigację</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">
+            <img class ="img-responsive" src="./img/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+          <ul class="navbar-nav navbar-right nav-img">
+            <li>
+              <a href="#">
+                <img class="img-responsive" src="./img/us.jpg" alt="menu icon">
+                <span>English</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img class="img-responsive" src="./img/pl.jpg" alt="menu icon">
+                <span>Polish</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav navbar-right">
+            <li class="active"><a href="#s_slider" class="page-scroll">Studia w USA - dlaczego warto?</a></li>
+            <li><a href="#s_about" class="page-scroll">O nas</a></li>
+            <li><a href="#s_about2" class="page-scroll">FAQ</a></li>
+            <li><a href="#slider2" class="page-scroll">Oferta</a></li>
+            <li><a href="#section_map" class="page-scroll">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="s_header">
+      <div class = "container">
+        <div class = "row">
+          <div class="col-md-6 col-md-offset-3 s_h_content">
+            <img src="./img/compass.png" alt="compass">
+            <p id="s_h_main" class="text_bold">American Gate</p>
+            <p class="text_bold">Wyjedź do Stanów Zjednoczonych</p>
+            <p>Ucz się i trenuj</p>
+            <a href="#">Sprawdź ofertę</a>
+          </div>
+        </div>
+        <a href="#s_oferta" class="page-scroll"><i class="fa fa-angle-down"></i></a>
+      </div>
+    </section>
+    <section id="s_oferta">
+      <div class = "container">
+        <div class = "row text-center">
+          <p class="text_bold s_s_title">Oferta</p>
+          <div class="s_o_separator"></div>
+        </div>
+        <div class = "row text-center">
+          <div class="col-md-6 col-md-offset-3 s_o_text">
+            <p><span class="s_f_hueText">American Gate</span> jest firmą, która oferuje profesjonalną pomoc dla sportowców, którzy chcą otrzymać stypendium sportowe na uczelni w USA.</p>
+            <p>Nasza <span class="s_f_hueText">współpraca</span> trwa od początku procesu, aż do wyjazdu i rozpoczęcia nauki na uczelni.Każdy klient otrzymuje profesjonalne i indywidualne wsparcie, ponieważ sukces procesu rekrutacyjnego jest naszym wspólnym <span class="s_f_hueText">celem</span>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="s_premium">
+      <div class = "container-fluid">
+        <div class = "row text-center">
+          <div id="s_p_carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators s_p_indicators">
+              <li data-target="#s_p_carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#s_p_carousel" data-slide-to="1"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active s_p_item">
+                <div class="col-md-6 col-md-offset-3">
+                  <img src="./img/Star.png" alt="Chania">
+                  <p class="text_bold">Pakiet premium</p>
+                  <p>1. wszystkie opcje pakietu podstawowego</p>
+                  <p>2. tłumaczenie wymaganych dokumentów</p>
+                  <p>3. stworzenie filmu promocyjnego z nadesłanych materiałów</p>
+                </div>
+              </div>
+              <div class="item s_p_item">
+                <div class="col-md-6 col-md-offset-3">
+                  <img src="./img/Star.png" alt="Chania">
+                  <p class="text_bold">Pakiet premium</p>
+                  <p>1. wszystkie opcje pakietu podstawowego</p>
+                  <p>2. tłumaczenie wymaganych dokumentów</p>
+                  <p>3. stworzenie filmu promocyjnego z nadesłanych materiałów</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class = "container">
+        <div class = "row-fluid">
+          <div class="hidden-sm hidden-xs col-md-6 bottom_nav">
+            <a href="#">Dlaczego warto?</a>
+            <a href="#">O nas</a>
+            <a href="#">Faq</a>
+            <a href="#">Oferta</a>
+            <a href="#">Kontakt</a>
+            <a class = "text_bold page-scroll" href="#s_header">Top</a>
+          </div>
+          <div class="col-md-5 col-md-offset-1">
+            <div class = "contact_object">
+              <span>
+                <img class= "hidden-xs hidden-sm" src="./img/mail.png"> AmericanGateOffice@gmail.com
+              </span>
+              <span>
+                <img class= "hidden-xs hidden-sm" src="./img/phone.png"> 795-857-316
+              </span>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class = "row-fluid">
+          <div class="col-md-9">
+            <span>Project by <a href="#">Enixx.pl</a></span>
+          </div>
+          <div class="col-md-3 text-right">
+            All rights reserved 2016.
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/scrolling-nav.js"></script>
+    <script src="./js/header.js"></script>
+  </body>
+</html>

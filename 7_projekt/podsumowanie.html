@@ -1,0 +1,348 @@
+<html lang="pl">
+  <head>
+    <title>Baza CEIDG</title>
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Ogranizacja Ślubu">
+    <meta name="keywords" content="Ślub,Organizacja,Justyna Kaczorowska, Wypożyczalnia, Auto">
+    <meta name="autdor" content="Enixx">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-tdeme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/half-slider.css">
+    <link rel="stylesheet" href="./css/scrolling-nav.css">
+	<link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/styl.css">
+    <link rel="stylesheet" href="./css/m-styl.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="./js/google-map.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  </head>
+  <body>
+  <div class="container-fluid container_blur"> <!--POCZĄTEK KONTENERA ROZMYCIA-->
+    <!--NAWIGACJA-->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class ="container-fluid padding_nav">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                  <span class="sr-only">Rozwiń nawigację</span>
+                   <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                  <img class="img-responsive n_logo" src="./img/logo.png" alt="logo">
+                </a>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <p class="navbar-text">
+                  Liczba firm w bazie: <span id="n_numCompany" class = "text_bold">3 421 810</span><br>
+                  Ostatnia aktualizacja: <span id="n_lastUpdate" class = "text_bold">2015-10-22 18:58</span>
+                </p>
+                <p class="navbar-text pull-right">
+                  Zalogowany jako: <span id="n_numCompany" style = "color:#a1c918;" class = "text_bold">contact@ullidsess.com</span><br>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="s_image" class="s_header_image">
+      <div class="container-fluid">
+        <div class="row">
+          <div class = "col-md-2 col-md-offset-3">
+            <button type="button" class="btn navbar-btn navbar-right btn_add_database" href="#">
+              <img id="n_ico" src="./img/add_database.png" alt="add_database_ico">dodaj bazę
+            </button>
+          </div>
+          <div class = "col-md-2">
+            <button type="button" class="btn navbar-btn navbar-right btn_my_databases" href="#">
+              <img id="n_ico" src="./img/my_database.png" alt="my_databases_ico">moje bazy
+            </button>
+          </div>
+          <div class = "col-md-2">
+            <button type="button" class="btn navbar-btn navbar-right btn_my_account" href="#">
+              <img id="n_ico" src="./img/my_account.png" alt="my_account_ico">moje konto
+            </button>
+          </div>
+          <div class = "col-md-2">
+            <button type="button" class="btn navbar-btn navbar-right btn_logout" href="#">
+              <img id="n_ico" src="./img/logout.png" alt="logout_ico">wyloguj się
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--KONTAKT-->
+    <section id="add_database">
+      <div class="container-fluid">
+        <div class="col-md-3 col-md-offset-1 add_database_title">
+          <p>podgląd</p>
+          <span>zawartości:</span>
+        </div>
+        <!--po tytule-->
+        <div class="row">
+          <div class="col-md-7 col-md-offset-1">
+            <div class="col-md-12 database_name">
+	      <div class="row"><span>szacunkowa wycena</span></div>
+                <div class="row">
+                  <div class = "col-md-8 col-md-offset-2">
+                    <div class = "row class = a_sw_find">Znaleźliśmy <span class = "text_bold">2 107 514</span> zarejestrowanych w <span class = "text_bold">CEIDG firm</span> spełniających podane kryteria.</div>
+                    <div class = "row margin_elements">
+                      <span>
+                        W tabeli poniżej prezentujemy informacje o liczbie rekordów w bazie oraz wycenę dla zamówienia obejmującego wszystkie dostepne rekordy spełniające podane kryteri
+                      </span>
+                      <br><br>
+                      <span class="text_bold">Do podanych niżej cen netto należy doliczyć 23% podatku VAT</span>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>Liczba rekordów</th>
+                            <th>Cena rekordu (netto)</th>
+                            <th>Cena bazy (netto)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>Bez adresu e-mail</td>
+                            <td>1 556 658</td>
+                            <td>0,01 zł</td>
+                            <td>15 566,58 zł</td>
+                          </tr>
+                          <tr>
+                            <th>Z adresem e-mail</td>
+                            <td>1 556 658</td>
+                            <td>0,01 zł</td>
+                            <td>15 566,58 zł</td>
+                          </tr>
+                          <tr>
+                            <th>Wszystkie rekordy</td>
+                            <td>1 556 658</td>
+                            <td>0,01 zł</td>
+                            <td>15 566,58 zł</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <br>
+                      <span class = "a_sw_text">
+                        Jeśli nie chcesz kupować wszystkich rekordów po utworzeniu bazy możesz złożyć zamówienie obejmujące dane firm, które rozpoczeły działalnośći w wybranym okresie.
+                        Na wykresie i w tabeli poniżej znajdziesz informacje o zawartości i wycenie mniejszych fragmentów bazy z danymi firm spełniających podae kryteria, które rozpoczeły działalność w ostatnich 12 miesiącach.
+                      </span>
+                      <div id="dual_y_div" style="width: 100%;height:400px; position:relative;"></div>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Miesiąc</th>
+                              <th>Liczba rekordów</th>
+                              <th>Cena bazy (netto)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td></td>
+                              <td>
+                                <table>
+                                  <tr>
+                                    <td>wszystkie<br>rekordy</td>
+                                    <td>z adresem<br>e-mail</td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td>
+                                <table>
+                                  <tr>
+                                    <td>wszystkie<br>rekordy</td>
+                                    <td>z adresem<br>e-mail</td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Wrzesień 2015</td>
+                              <td>
+                                <table>
+                                  <tr>
+                                    <td>17 380</td>
+                                    <td>7 325</td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td>
+                                <table>
+                                  <tr>
+                                    <td>320,30zł</td>
+                                    <td>219,75zł</td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Wrzesień 2015</td>
+                              <td>
+                                <table>
+                                  <tr>
+                                    <td>17 380</td>
+                                    <td>7 325</td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td>
+                                <table>
+                                  <tr>
+                                    <td>320,30zł</td>
+                                    <td>219,75zł</td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table><br>
+                        <span class = "a_sw_text">Jeśli chciałbyś zamówić dane z tej bazy kliknij przycisk "Utwórz bazę" i zaloguj się albo utwóz konto w naszym serwisie.</span>
+                        <div class = "a_sw_redbox">Utworzenie bazy oraz konta użytkownika do niczego Cię nie zoobowiązuje. Opłaty pobieramy dopiero przy składaniu zamówień dla poszczególnych baz.</div>
+                        <h5 class="text_upper text_bold">jeśli chcesz udostępnić komuś tę stronę, skopiuj poniższy odnośnik:</h5>
+                        <div class="text-center a_sw_copylink">
+                          https://www.ceidg.info/nowa-baza/poglad/6vnpHjfR.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class = "row">
+                  <div class="col-md-12 database_date">
+                    <div class="col-md-12">
+                      <span>parametry bazy</span>
+                    </div>
+                    <div class="col-md-12 a_dd_element">
+                      <span>Twoja nazwa bazy danych</span>
+                      <button type="button" class="btn">Moja baza danych</button>
+                    </div>
+                  </div>
+                  <div class="col-md-12 database_date">
+                    <div class="col-md-12">
+                      <span>Kryteria doboru podmiotów</span>
+                    </div>
+                    <div class="col-md-12 a_dc_element">
+                    <div class = "row">
+                      <div class ="col-md-6">Branża</div>
+                      <div class ="col-md-6">bez ograniczeń</div>
+                    </div>
+                    <div class = "row">
+                      <div class ="col-md-6">Lokalizacja</div>
+                      <div class ="col-md-6">bez ograniczeń</div>
+                    </div>
+                    <div class = "row">
+                      <div class ="col-md-6">Status działalności</div>
+                      <div class ="col-md-6">
+                      <ul>
+                        <li>Aktywny</li>
+                        <li>Działalność jest prowadzona wyłącznie w formie spółki/spółek cywilnych</li>
+                        <li>Nie rozpoczął działalności. Oczekuje na rozpoczęcię działalności</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class = "row row_bottom_buttons">
+          <div class = "col-md-2  col-md-offset-1">
+            <button type="button" class="btn s_ad_redbutton text_upper">Konfiguracja Bazy</button>
+          </div>
+          <div class = "col-md-2  col-md-offset-6">
+            <button type="button" class="btn s_ad_greenbutton text_upper">Utwórz bazę danych</button>
+          </div>
+	</div>
+      </div>
+    </section>
+    <!--STOPKA-->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 col-md-offset-1">
+            <div class ="row">
+              <img widtd="66%" src="./img/enixxlogo.png" alt="Enixx logo">
+            </div>
+            <div class ="row s_i_c_text margin_top_little text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </div>
+          </div>
+          <div class="col-md-2 col-md-offset-1">
+            <div class ="row">
+              <img class="f_ico" src = "./img/contact.png" alt="contact"><span class="text_upper f_c_title">kontakt <span class = "text_bold">z nami</span></span>
+            </div>
+            <div class ="row margin_top_little">
+              <span>ENIXX.PL</span><br>
+              <span>61-475 Poznań, ul Górecka 115</span><br>
+              <span>tel.61 307 08 08, poczta@enixx.pl</span><br><br>
+              <span>biuro czynne w godzinach:  9 - 17</span>
+            </div>
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            <div class ="row">
+              <img class="f_ico" src = "./img/search.png" alt="search"><span class="text_upper f_c_title">znajdź na <span class = "text_bold">stronie</span></span>
+            </div>
+            <div class="row">
+              <form class="form-inline f_margin" role="form">
+                <div class="form-group">
+                  <label class="sr-only" for="exampleInputEmail2">Email</label>
+                  <input type="email" class="form-control f_input" id="exampleInputEmail2" placeholder="wpisz szukaną frazę">
+                </div>
+                <button type="submit" class="btn btn-default f_input_btn">szukaj</button>
+              </form>
+            </div>
+            <div class="row">
+              <img src="./img/facebook.png" alt="facebook">
+              <img src="./img/googleplus.png" alt="googleplus">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/scrolling-nav.js"></script>
+	<script type="text/javascript">
+      google.load("visualization", "1.1", {packages:["bar"]});
+      google.setOnLoadCallback(drawStuff);
+
+      function drawStuff() {
+         var data = google.visualization.arrayToDataTable([
+          ['Year', 'Liczba rekordów bez adresu e-mail', 'Liczba rekordów z adresem e-mail'],
+          ['2014-10', 10000, 5000],
+		  ['2014-11', 10006, 400],
+		  ['2014-12', 10001, 400],
+		  ['2015-01', 10002, 400],
+		  ['2015-02', 10003, 400],
+		  ['2015-03', 10001, 400],
+		  ['2015-04', 1010, 400],
+		  ['2015-05', 1000, 400],
+		  ['2015-06', 1000, 400],
+		  ['2015-07', 10530, 400],
+		  ['2015-08', 1000, 400],
+		  ['2015-09', 2300, 400]
+        ]);
+
+        var options = {
+          width: '100%',
+		  colors: ['#fa902c', '#de2937'],
+		  isStacked: true,
+		  legend: {position: 'none'}
+        };
+
+      var chart = new google.charts.Bar(document.getElementById('dual_y_div'));
+      chart.draw(data, options);
+    };
+    </script>
+</html>

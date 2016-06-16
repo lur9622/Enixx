@@ -1,0 +1,297 @@
+<html lang="pl">
+  <head>
+    <title>Baza CEIDG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Ogranizacja Ślubu">
+    <meta name="keywords" content="Ślub,Organizacja,Justyna Kaczorowska, Wypożyczalnia, Auto">
+    <meta name="author" content="Enixx">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/half-slider.css">
+    <link rel="stylesheet" href="./css/scrolling-nav.css">
+    <link rel="stylesheet" href="./css/styl.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/m-styl.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="./js/google-map.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  </head>
+  <body>
+<div class="container-fluid container_blur"> <!--POCZĄTEK KONTENERA ROZMYCIA-->
+    <!--NAWIGACJA-->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <div class ="container-fluid padding_nav">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                  <span class="sr-only">Rozwiń nawigację</span>
+                   <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                  <img class="img-responsive n_logo" src="./img/logo.png" alt="logo">
+                </a>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <p class="navbar-text">
+                  Liczba firm w bazie: <span id="n_numCompany" class = "text_bold">3 421 810</span><br>
+                  Ostatnia aktualizacja: <span id="n_lastUpdate" class = "text_bold">2015-10-22 18:58</span>
+                </p>
+                <p class="navbar-text pull-right">
+                  Zalogowany jako: <span id="n_numCompany" style = "color:#a1c918;" class = "text_bold">contact@ullidsess.com</span><br>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="s_image" class="s_header_image">
+      <div class="container-fluid">
+        <div class="row">
+          <div class = "col-md-2 col-md-offset-3">
+            <button type="button" class="btn navbar-btn navbar-right btn_add_database" href="#">
+              <img id="n_ico" src="./img/add_database.png" alt="add_database_ico">dodaj bazę
+            </button>
+          </div>
+          <div class = "col-md-2">
+            <button type="button" class="btn navbar-btn navbar-right btn_my_databases" href="#">
+              <img id="n_ico" src="./img/my_database.png" alt="my_databases_ico">moje bazy
+            </button>
+          </div>
+          <div class = "col-md-2">
+            <button type="button" class="btn navbar-btn navbar-right btn_my_account" href="#">
+              <img id="n_ico" src="./img/my_account.png" alt="my_account_ico">moje konto
+            </button>
+          </div>
+          <div class = "col-md-2">
+            <button type="button" class="btn navbar-btn navbar-right btn_logout" href="#">
+              <img id="n_ico" src="./img/logout.png" alt="logout_ico">wyloguj się
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--KONTAKT-->
+    <section id="contact">
+      <div class="container-fluid">
+        <div class="col-md-3 col-md-offset-1 contact_title">
+          <p class="contact_title_small">formularz</p>
+          <p class="contact_title_big">kontaktowy:</p>
+        </div>
+          <div class="col-md-10 col-md-offset-1 border_contact">
+            <form role="form">
+              <div class="contact_position">
+                <div class="col-md-3 col-md-offset-1 input_label">
+                  <span class="input_label">Imię i nazwisko: </span>
+                </div>
+                <div class="col-md-6 contact_input">
+                  <input type="text" class="form-control" id="name">
+                </div>
+              </div>
+              <div class="contact_position">
+                <div class="col-md-3 col-md-offset-1 input_label">
+                  <span class="input_label">Adres e-mail: </span>
+                </div>
+                <div class="col-md-6 contact_input">
+                  <input type="email" class="form-control" id="email">
+                </div>
+              </div>
+              <div class="contact_position">
+                <div class="col-md-3 col-md-offset-1 input_label">
+                  <span class="input_label">Temat: </span>
+                </div>
+                <div class="col-md-6 contact_input">
+                  <input type="text" class="form-control" id="title">
+                </div>
+              </div>
+              <div class="contact_position">
+                <div class="col-md-3 col-md-offset-1 input_label">
+                  <span class="input_label">Treść: </span>  
+                </div>
+                <div class="col-md-6 contact_input">
+                  <textarea rows="12" class="form-control" id="content"></textarea>
+                </div>
+              </div>
+              <div class="col-md-2 col-md-offset-8">
+                <button type="button" class="btn btn_send_message">wyślij wiadomość</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="col-md-3 col-md-offset-1 contact_title">
+            <p class="contact_title_small">admin</p>
+            <p class="contact_title_big">serwisu:</p>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="col-md-2 col-md-offset-1 contact_data">
+            <p class="contact_data_row1">siedziba:</p>
+            <p class="contact_data_row2">enixx polska</p>
+            <p>ul. Czarna Droga 49</p>
+            <p>62-064 Plewiska</p>
+              </br>
+            <p class="contact_data_row3">REGON: 361533509</p>
+            <p class="contact_data_row3">NIP: 7881729198</p>
+          </div>
+          <div class="col-md-2 col-md-offset-2 contact_data">
+            <p class="contact_data_row1">biuro handlowe:</p>
+            <p class="contact_data_row2">enixx polska</p>
+            <p>ul. Górecka 115</p>
+            <p>61-475 Poznań</p>
+              </br>
+            <p>tel. 61 307 08 08</p>
+          </div>
+          <div class="col-md-2 col-md-offset-2 contact_data">
+            <p class="contact_data_row2">kontakt:</p>
+            <p>poczta@enixx.pl</p>
+            <p>info@ceidg.pl</p>
+              </br>
+            <p>pomoc@ceidg.pl</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--STOPKA-->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 col-md-offset-1">
+            <div class ="row">
+              <img width="66%" src="./img/enixxlogo.png" alt="Enixx logo">
+            </div>
+            <div class ="row s_i_c_text margin_top_little text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </div>
+          </div>
+          <div class="col-md-2 col-md-offset-1">
+            <div class ="row">
+              <img class="f_ico" src = "./img/contact.png" alt="contact"><span class="text_upper f_c_title">kontakt <span class = "text_bold">z nami</span></span>
+            </div>
+            <div class ="row margin_top_little">
+              <span>ENIXX.PL</span><br>
+              <span>61-475 Poznań, ul Górecka 115</span><br>
+              <span>tel.61 307 08 08, poczta@enixx.pl</span><br><br>
+              <span>biuro czynne w godzinach:  9 - 17</span>
+            </div>
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            <div class ="row">
+              <img class="f_ico" src = "./img/search.png" alt="search"><span class="text_upper f_c_title">znajdź na <span class = "text_bold">stronie</span></span>
+            </div>
+            <div class="row">
+              <form class="form-inline f_margin" role="form">
+                <div class="form-group">
+                  <label class="sr-only" for="exampleInputEmail2">Email</label>
+                  <input type="email" class="form-control f_input" id="exampleInputEmail2" placeholder="wpisz szukaną frazę">
+                </div>
+                <button type="submit" class="btn btn-default f_input_btn">szukaj</button>
+              </form>
+            </div>
+            <div class="row">
+              <img src="./img/facebook.png" alt="facebook">
+              <img src="./img/googleplus.png" alt="googleplus">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+</div> <!--KONIEC KONTENERA OD ROZMYCIA-->
+    <!--MODAL-->
+    <section id="s_modals">
+      <div id="login" class="modal fade " role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="row">
+                <!--lewa kolumna-->
+                <div class="col-md-4 col-md-offset-1">
+                  <div class="title_container">
+                    <span class="modal_title_small">zaloguj się</span>
+                    </br>
+                    <span class="modal_title_big">do serwisu:</span>
+                    </br>
+                    <span class="modal_description">Jeśli posiadasz już konto w naszym serwisie, podaj adres e-mail użyty przy rejestracji i hasło:</span>
+                  </div>
+                  <form role="form">
+                    <div class="login">
+                      <label class="sr-only" for="email">Email:</label>
+                      <input type="email" class="form-control" id="email" placeholder="adres email lub login">
+                    </div>
+                    <div class="password">
+                      <label class="sr-only" for="pwd">Hasło:</label>
+                      <input type="password" class="form-control" id="pwd" placeholder="podaj hasło">
+                    </div>
+                    <button type="submit" class="btn btn_login">Zaloguj się</button>
+                  </form>
+                  <p><a class="forgot_password" href="#">czy zapomniałeś hasła?</a></p>
+                </div>
+            <!--Prawa kolumna-->
+                <div class="col-md-4 col-md-offset-2">
+                  <div class="title_container">
+                    <span class="modal_title_small">rejestracja</span>
+                    </br>
+                    <span class="modal_title_big">w serwisie:</span>
+                    </br>
+                    <span class="modal_description">Jeśli nie posiadasz jeszcze konta w naszym serwisie, wypełnij poniższe pola w celu utworzenia go:</span>
+                  </div>
+                  <form role="form">
+                    <div class="login">
+                      <label class="sr-only" for="email">Email:</label>
+                      <input type="email" class="form-control" id="email" placeholder="adres email lub login">
+                    </div>
+                    <div class="password">
+                      <label class="sr-only" for="pwd">Hasło:</label>
+                      <input type="password" class="form-control" id="pwd" placeholder="podaj hasło">
+                    </div>
+                    <div class="password">
+                      <label class="sr-only" for="pwd">Powtórz hasło:</label>
+                      <input type="password" class="form-control" id="pwd" placeholder="powtórz hasło">
+                    </div>
+                    <div class="col-md-12 modal_checkbox">
+                      <input type="checkbox" value="" id="c1">
+                      <label for="c1"><span class="col-md-4" ></span><p>Zapoznałem(am) się z regulaminem serwisu <strong>CEIDGBazaFirm</strong>.pl i akceptuję jego postanowienia.</p></label>
+                    </div>
+                    <div class="col-md-12 modal_checkbox">
+                      <input type="checkbox" value="" id="c2">
+                      <label for="c2"><span class="col-md-4" ></span><p>Wyrażam zgodę na przetwarzanie moich danych osobowych w celu obsługi płatności za zamówienie bazy danych i wystawienia faktury VAT za tę usługę.</p></label>
+                    </div>
+                    <div class="col-md-12 modal_checkbox">
+                      <input type="checkbox" value="" id="c3">
+                      <label for="c3"><span class="col-md-4 " ></span><p>Wyrażam zgodę na otrzymywanie na podany adres e-mail informacji handlowej w rozumieniu art. 10 ust. 2 Ustawy z dnia 18 lipca 2002 r. o świadczeniu usług drogą elektroniczną (Dz. U. Nr 144, poz. 1204).</p></label>
+                    </div>
+                    <button type="submit" class="btn btn_register">Utwórz konto w serwisie</button>
+                  </form>
+                </div>
+              </div>
+              <input type="image" src="./img/close.png" name="close" class="btn modal_close_btn" id="close_button" data-dismiss="modal"/>
+            </div>
+          </div>
+        </div>
+      </section>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/scrolling-nav.js"></script>
+    <script type="text/javascript">
+        /* rozmazanie po otwarciu modala w jquery*/
+          $('#login').on('show.bs.modal', function () {
+            $('.container_blur').addClass('blur');
+          })
+          
+          $('#login').on('hide.bs.modal', function () {
+            $('.container_blur').removeClass('blur');
+          })
+    </script>
+  </body>
+</html>
+
+

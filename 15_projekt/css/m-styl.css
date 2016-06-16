@@ -1,0 +1,61 @@
+@media(max-width:767px){
+  .formProfilInwestor >div >button,div > .buttonGrey{
+  margin-bottom:15px;
+  }
+  .formProfilInwestor >div:last-child >button, div:last-child>.buttonGrey{
+  margin-bottom:0px;
+  }
+  .PIcommentContent > p:first-child {text-align:center;}
+  .PIcommentContent > p:first-child:after {width:100%;}
+
+}
+@media(max-width:992px){
+  .form-group>div:nth-child(2){
+    margin-top:15px;
+  }
+  nav.v2 {
+    background:#B7430F !important;
+  }
+
+  .container {
+    width:auto;
+  }
+  .navbar-nav>li {width:100%;display:block;margin-bottom:10px;text-align:center; margin-left:0px;}
+  .navbar-nav>li:last-child{ margin-bottom:0px;}
+  .navbar-nav {width:100%;padding:0px;margin:0px;padding-bottom:15px;}
+  .nav-img>a>span{display:block;}
+  .nav-img>a>img{display:none;}
+  li.imgIco>a>i+span{
+    font-size:20px;
+  }
+  .f_text {
+    display:block;
+    text-align:center;
+  }
+  .f_text.pull-right {
+    float:none !important;
+  }
+  .maximaze {
+    width:100% !important;
+  }
+  .avatarProfilSection.text-center {
+    text-align:left;
+  }
+  .headerProfilSection {
+  padding-bottom:40px;
+  }
+}
+@media(max-width:1200px){
+  .container {
+    width:auto;
+  }
+}
+@media(min-width:992px){
+
+.navbar-collapse {
+  padding-right:0px;
+}
+}
+@media(max-width:1545px){
+}
+

@@ -1,0 +1,191 @@
+<html lang="pl">
+  <head>
+    <title>Gabinet Psychoterapii</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Gabinet Psychoterapii">
+    <meta name="keywords" content="Gabinet, Psychoterapia, Leczenie, Choroba">
+    <meta name="author" content="Enixx">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/half-slider.css">
+    <link rel="stylesheet" href="./css/scrolling-nav.css">
+		<link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/styl.css">
+    <link rel="stylesheet" href="./css/m-styl.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="./js/google-map.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="row">
+          <div class = "col-md-2">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Rozwiń nawigację</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img class="img-responsive" src="./img/logo.png" alt="logo">
+              </a>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+						<a href="index.html" class="btn navbar-btn n_menu_item menu_active">strona główna</a>
+						<a href="leczymy.html" class="btn navbar-btn n_menu_item">leczymy</a>
+						<a href="oferta.html" class="btn navbar-btn n_menu_item">oferta</a>
+						<a href="onas.html" class="btn navbar-btn n_menu_item">o nas</a>
+						<a href="cennik.html" class="btn navbar-btn n_menu_item">cennik</a>
+						<a href="kontakt.html" class="btn navbar-btn n_menu_item">kontakt</a>
+            <a class="hidden-sm hidden-xs" href="#"><img src="./img/envelope.png" alt="poczta"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="s_image">
+      <div class="container">
+        <div class="row">
+          <div class = "s_i_header">
+            <p>specjalistyczna</p>
+            <p>pomoc:</p>
+          </div>
+          <div class = "col-md-4 s_i_content">
+            <div class = "row"><i class="fa fa-check-square-o"></i><span>Psychoterapia indywidualna</span></div>
+            <div class = "row"><i class="fa fa-check-square-o"></i><span>Konsultacje psychologiczne</span></div>
+            <div class = "row"><i class="fa fa-check-square-o"></i><span>Poradnictwo psychologiczne</span></div>
+            <div class = "row"><i class="fa fa-check-square-o"></i><span>Diagnostyka psychologiczna</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="s_about">
+      <div class="container">
+        <div class="row s_a_content">
+          <p class = "col-md-7">Jesteśmy zespołem <span class="text_bold">certyfikowanych psychoterapeutów</span>, specjalizujemy się w psychoterapii indywidualnej. Pracujemy w podejściu psychodynamicznym. Zajmujemy się także pomocą psychologiczną i diagnostyką zaburzeń zdrowia psychicznego.</p>
+					<p class = "col-md-7">Zajmujemy się leczeniem osób, które cierpią z powodu różnych zaburzeń emocjonalnych, takich jak zaburzenia nerwicowe (lękowe), depresja, zaburzenia osobowości, zaburzenia psychosomatyczne, zaburzenia odżywiania, jak również terapią osób bezpośrednio nie odczuwających  dolegliwości, a cierpiących z powodu trudności w relacjach, braku zadowolenia z życia, trudności w utrzymaniu satysfakcjonujących relacji z innymi, niskiego poczucia wartości.</p>
+
+					<a href="kontakt.html" class="przycisk">zapraszamy do kontaktu</a>
+        </div>
+      </div>
+    </div>
+    <div id="s_offer">
+      <div class="container">
+        <div class="row">
+          <div class = "col-md-4">
+            <div class ="row-fluid s_o_element">
+              <div class ="col-md-6 col-md-offset-3">
+                <!-- Nie krzycz to wcale nie jest takie proste !!! -->
+                <div class = "s_o_imgVertical"><div class = "dummy">
+                  <img class="img-responsive" src="./img/certificate.png">
+                </div></div>
+                <p>certyfikaty</p>
+                <button data-toggle="modal" data-target="#certyfikat">czytaj więcej</button>
+              </div>
+            </div>
+          </div>
+          <div class = "col-md-4">
+            <div class ="row-fluid s_o_element">
+              <div class ="col-md-6 col-md-offset-3">
+                <!-- Nie krzycz to wcale nie jest takie proste !!! -->
+                <div class = "s_o_imgVertical"><div class = "dummy">
+                  <img class="img-responsive" src="./img/supervision.png">
+                </div></div>
+                <p>superwizja</p>
+                <button data-toggle="modal" data-target="#superwizja">czytaj więcej</button>
+              </div>
+            </div>
+          </div>
+          <div class = "col-md-4">
+            <div class ="row-fluid s_o_element">
+              <div class ="col-md-6 col-md-offset-3">
+                <!-- Nie krzycz to wcale nie jest takie proste !!! -->
+                <div class = "s_o_imgVertical"><div class = "dummy">
+                  <img class="img-responsive" src="./img/qualifications.png">
+                </div></div>
+								<p id="podnoszenie">stałe podnoszenie</p>
+                <p>kwalifikacji</p>
+                <button data-toggle="modal" data-target="#kwalifikacje">czytaj więcej</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class = "container">
+        <div class = "row f_container">
+          <span class = "f_text">
+            &copy 2015 Gabinet Psychologiczny - Zakaz kopiowania treści materiałów graficznych
+          </span>
+          <span class="f_text pull-right">
+            Projekt i wykonanie: Enixx.pl
+          </span>
+        </div>
+      </div>
+    </footer>
+		<section id="s_modals">
+			<!--CERTYFIKAT-->
+      <div id="certyfikat" class="modal fade " role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="row no_margin">
+								<div id="modal_text_index" class="col-md-8 col-md-offset-2 modal_text">
+									<p>Certyfikat</p>
+									<p>Każda z nas posiada certyfikat psychoterapeuty, który stanowi potwierdzenie kompetencji do samodzielnego prowadzenia psychoterapii. Przyznawany jest on osobom spełniającym szereg warunków dotyczących wykształcenia, odpowiednio długiej praktyki zawodowej oraz doświadczenia klinicznego, przejścia własnej psychoterapii i poddawania swojej pracy superwizji. Procedura uzyskiwania certyfikatu kończy się zdaniem egzaminu przed Komisją Certyfikacyjną.</p>
+								</div>
+              </div>
+            </div>
+            <input type="image" src="./img/modal_close.png" name="close" class="btn modal_close_btn" id="close_button" data-dismiss="modal"/>
+          </div>
+        </div>
+      </div>
+			<!--SUPERWIZJA-->
+      <div id="superwizja" class="modal fade " role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="row no_margin">
+								<div id="modal_text_index" class="col-md-8 col-md-offset-2 modal_text">
+									<p>Superwizja</p>
+									<p>Poddajemy swoją pracę terapeutyczną regularnej superwizji. Superwizja to spotkania psychoterapeuty z innym specjalistą, zajmującym się psychoterapią, który posiada certyfikat superwizora. Podczas tych spotkań psychoterapeuta konsultuje swoją pracę. Jej celem jest zapewnienie wysokiej jakości świadczonych usług.</p>
+								</div>
+              </div>
+            </div>
+            <input type="image" src="./img/modal_close.png" name="close" class="btn modal_close_btn" id="close_button" data-dismiss="modal"/>
+          </div>
+        </div>
+      </div>
+			<!--KWALIFIKACJE-->
+      <div id="kwalifikacje" class="modal fade " role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="row no_margin">
+								<div id="modal_text_index" class="col-md-8 col-md-offset-2 modal_text">
+									<p>Stałe podnoszenie kwalifikacji</p>
+									<p>Bierzemy udział w konferencjach i sympozjach odnośnie najnowszych trendów w leczeniu sfery psychicznej człowieka.</p>
+									<p>Pracujemy zgodnie z zasadami Kodeksu Etycznego Psychoterapeuty.</p>
+								</div>
+              </div>
+            </div>
+            <input type="image" src="./img/modal_close.png" name="close" class="btn modal_close_btn" id="close_button" data-dismiss="modal"/>
+          </div>
+        </div>
+      </div>
+		</section>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/scrolling-nav.js"></script>
+  </body>
+</html>
+
+

@@ -1,0 +1,1038 @@
+<html>
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,400italic,700,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,500,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/styl.css">
+    <link rel="stylesheet" href="./css/m-styl.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script></div>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="./js/google-map.js"></script></div>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+          <span class="sr-only">Rozwiń nawigację</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img class = "img-responsive" src="img/logo.png"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+        <div class = "navbar-facebook"></div>
+        <ul style = "font-family: 'Roboto Condensed', sans-serif;" class="nav navbar-nav navbar-right">
+          <li><a href="#s_about">O gabinecie</a></li>
+          <li><a href="#s_promotion">Promocje</a></li>
+          <li><a href="#s_team">Zespół</a></li>
+          <li><a href="#s_offer">Oferta Gabinetu</a></li>
+          <li><a href="#s_coaching">Coaching terapia</a></li>
+          <li><a href="#s_visit">KUP WIZYTĘ</a></li>
+          <li><a href="#s_contact">Kontakt</a></li>
+          <li class = "nav_client_button">
+            <script type="text/javascript" src="http://rhab.igabinet.pl/api/js/cmg.js" charset="utf-8"></script>
+            <a href="javascript:void(0);">
+              <div class="cmg_button" onclick="cmg_s('http://rhab.igabinet.pl/api/?i=YTo5OntzOjE6ImwiO3M6MzoicG9sIjtzOjI6ImxsIjtpOjA7czoxOiJwIjtOO3M6MjoicGwiO2k6MDtzOjE6ImciO047czoyOiJnbCI7aTowO3M6MToicyI7czowOiIiO3M6Mjoic2wiO2k6MDtzOjE6ImEiO3M6MToiciI7fQ%3D%3D_5f98f3988d00136bfb7d72b8d7a01ffe2dcb061f16b1662d70136514140241bf')">
+                Umów Wizytę
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id = "s_image" class="s_header_image" style = "background: url('./img/header.png') cover fixed;" data-stellar-background-ratio="0.3">
+      <div class = "container-fluid">
+        <div class = "s_i_text">
+          <div class = "row">
+            <div class = "col-md-12 col-sm-12">
+              <div data-depth="0.20" class = "col-md-4 col-md-offset-6 image_text">
+                Zachowaj sprawność
+              </div>
+            </div>
+          </div>
+          <div class = "row">
+            <div class = "col-md-12 col-sm-12">
+              <div class = "col-md-3 col-md-offset-8 image_text">
+                na jesień życia
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style = "background: url('./img/header_promotion.png')" id = "s_promotion" class = "s_p_box">
+      <div class = "container-fluid">
+        <div class = "row">
+          <div class = "col-md-12 col-sm-12">
+            <div class ="col-md-4 col-md-offset-4">
+              <h1 class = "s_title color_w">PROMOCJA</h1>
+            </div>
+          </div>
+        </div>
+        <div class = "row">
+          <div class = "col-md-12 col-sm-12">
+            <div class = "col-md-4 col-md-offset-2">
+              <div class="container-fluid s_mobile_padding">
+                <img class = "s_img" src="./img/promotion_i1.png">
+                <div class= "col-md-8 col-md-offset-2 s_p_i_describe">
+                  <div class = "bold_text">20% rabatu</div>
+                  zabieg kosmetyczny do 20.10.15
+                </div>
+                <div class= "col-md-4 col-md-offset-7 s_p_i_more">
+                  <button class = "s_p_bt_m" data-toggle="modal" data-target="#s_p_modal_1">więcej</button>
+                </div>
+              </div>
+            </div>
+            <div class = "col-md-4">
+              <div class="container-fluid s_mobile_padding">
+                <img class = "s_img" src="./img/promotion_i1.png">
+                <div class= "col-md-8 col-md-offset-2 s_p_i_describe">
+                  <div class = "bold_text">20% rabatu</div>
+                  zabieg kosmetyczny do 20.10.15
+                </div>
+                <div class= "col-md-4 col-md-offset-7 s_p_i_more">
+                  <button class = "s_p_bt_m" data-toggle="modal" data-target="#s_p_modal_2">więcej</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style = "background: #fff;" id = "s_about" class = "s_p_box">
+      <div class = "container-fluid">
+        <div class = "row">
+          <div class = "col-md-12 col-sm-12">
+            <div class ="col-md-4 col-md-offset-4">
+              <h1 class = "s_title color_b">O GABINECIE</h1>
+            </div>
+          </div>
+        </div>
+        <div class = "row">
+          <div class = "col-md-12 col-sm-12">
+            <div class = "col-md-8 col-md-offset-2">
+                <img class = "pull-left s_a_image img-responsive" src="./img/promotion_i1.png">
+                <div class = "font_article">
+                  On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style = "background: url('./img/header_team.png');" id = "s_team" class = "s_p_box">
+      <div class = "container-fluid">
+        <div class = "row">
+          <div class = "col-md-12 col-sm-12">
+            <div class ="col-md-4 col-md-offset-4">
+              <h1 class = "s_title color_w">ZESPÓŁ</h1>
+            </div>
+          </div>
+        </div>
+        <div class = "row">
+          <div class = "col-md-12 col-sm-12">
+            <div class = "col-md-1 col-md-offset-1 vcenter">
+              <a class="left carousel-control" href="#carousel-example-generic2" data-slide="prev">
+                <i class="fa fa-angle-left fa-5x pull-right s_t_button"></i>
+              </a>
+            </div>
+            <div class = "col-md-8 vcenter s_t_box">
+              <div class = "row row-fluid">
+                <div id="carousel-example-generic2" class="carousel slide">
+                <!-- Wskaźniki w postaci kropek -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic2" data-slide-to="2"></li>
+                </ol>
+                <!-- Slajdy -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class = "row row-fluid">
+                      <div class = "col-md-3">
+                        <div class ="col-md-12 t_object">
+                          <div class = "row-fluid">
+                            <img class = "s_img" src ="./img/s_o_image.png">
+                          </div>
+                          <div class = "row-fluid">
+                            <div class = "s_t_name text-center">
+                              PRZEMYSŁAW RACZKOWSKI
+                            </div>
+                          </div>
+                          <div class = "row-fluid">
+                            <div class = "col-md-4  col-md-offset-4 s_t_o_separator"></div>
+                          </div>
+                          <div class = "row-fluid">
+                            <div class = "col-md-12  col_md_nopadding text-center s_t_tittle">Prezes Zarządu</div>
+                          </div>
+                          <div class = "row">
+                            <div class = "col-md-12  s_t_o_separator"></div>
+                          </div>
+                          <div class ="row">
+                            <div class = "col-md-10 col-md-offset-2 col_margin_h_10">
+                              <i class="fa fa-envelope-square fa-2x vcenter s_t_button s_t_ico"></i>
+                              <span class="vcenter s_t_contact">p.raczkowski@edjr.pl</span>
+                            </div>
+                          </div>
+                          <div class ="row">
+                            <div class = "col-md-10 col-md-offset-2 col_margin_h_10">
+                              <i class="fa fa-phone-square fa-2x vcenter s_t_button s_t_ico"></i>
+                              <span class="vcenter s_t_contact">501 227 911</span>
+                            </div>
+                          </div>
+                          <div class ="row">
+                            <div class="col-md-10 col-md-offset-2 s_t_blue-separator"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class = "col-md-3">
+                        <div class ="col-md-12 t_object">
+                          <div class = "row-fluid">
+                            <img class = "s_img" src ="./img/s_o_image.png">
+                          </div>
+                          <div class = "row-fluid">
+                            <div class = "s_t_name text-center">
+                              PRZEMYSŁAW RACZKOWSKI
+                            </div>
+                          </div>
+                          <div class = "row-fluid">
+                            <div class = "col-md-4  col-md-offset-4 s_t_o_separator"></div>
+                          </div>
+                          <div class = "row-fluid">
+                            <div class = "col-md-12  col_md_nopadding text-center s_t_tittle">Prezes Zarządu</div>
+                          </div>
+                          <div class = "row">
+                            <div class = "col-md-12  s_t_o_separator"></div>
+                          </div>
+                          <div class ="row">
+                            <div class = "col-md-10 col-md-offset-2 col_margin_h_10">
+                              <i class="fa fa-envelope-square fa-2x vcenter s_t_button s_t_ico"></i>
+                              <span class="vcenter s_t_contact">p.raczkowski@edjr.pl</span>
+                            </div>
+                          </div>
+                          <div class ="row">
+                            <div class = "col-md-10 col-md-offset-2 col_margin_h_10">
+                              <i class="fa fa-phone-square fa-2x vcenter s_t_button s_t_ico"></i>
+                              <span class="vcenter s_t_contact">501 227 911</span>
+                            </div>
+                          </div>
+                          <div class ="row">
+                            <div class="col-md-10 col-md-offset-2 s_t_blue-separator"></div>
+                          </div>
+                        </div>
+                        </div>
+                        <div class = "col-md-3">
+                          <div class ="col-md-12 t_object">
+                            <div class = "row-fluid">
+                              <img class = "s_img" src ="./img/s_o_image.png">
+                            </div>
+                            <div class = "row-fluid">
+                              <div class = "s_t_name text-center">
+                                PRZEMYSŁAW RACZKOWSKI
+                              </div>
+                            </div>
+                            <div class = "row-fluid">
+                              <div class = "col-md-4  col-md-offset-4 s_t_o_separator"></div>
+                            </div>
+                            <div class = "row-fluid">
+                              <div class = "col-md-12  col_md_nopadding text-center s_t_tittle">Prezes Zarządu</div>
+                            </div>
+                            <div class = "row">
+                              <div class = "col-md-12  s_t_o_separator"></div>
+                            </div>
+                            <div class ="row">
+                              <div class = "col-md-10 col-md-offset-2 col_margin_h_10">
+                                <i class="fa fa-envelope-square fa-2x vcenter s_t_button s_t_ico"></i>
+                                <span class="vcenter s_t_contact">p.raczkowski@edjr.pl</span>
+                              </div>
+                            </div>
+                            <div class ="row">
+                              <div class = "col-md-10 col-md-offset-2 col_margin_h_10">
+                                <i class="fa fa-phone-square fa-2x vcenter s_t_button s_t_ico"></i>
+                                <span class="vcenter s_t_contact">501 227 911</span>
+                              </div>
+                            </div>
+                            <div class ="row">
+                              <div class="col-md-10 col-md-offset-2 s_t_blue-separator"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class = "col-md-3">
+                          <div class ="col-md-12 t_object">
+                            <div class = "row-fluid">
+                              <img class = "s_img" src ="./img/s_o_image.png">
+                            </div>
+                            <div class = "row-fluid">
+                              <div class = "s_t_name text-center">
+                                PRZEMYSŁAW RACZKOWSKI
+                              </div>
+                            </div>
+                            <div class = "row-fluid">
+                              <div class = "col-md-4  col-md-offset-4 s_t_o_separator"></div>
+                            </div>
+                            <div class = "row-fluid">
+                              <div class = "col-md-12  col_md_nopadding text-center s_t_tittle">Prezes Zarządu</div>
+                            </div>
+                            <div class = "row">
+                              <div class = "col-md-12  s_t_o_separator"></div>
+                            </div>
+                            <div class ="row">
+                              <div class = "col-md-10 col-md-offset-2 col_margin_h_10">
+                                <i class="fa fa-envelope-square fa-2x vcenter s_t_button s_t_ico img-responsive"></i>
+                                <span class="vcenter s_t_contact">p.raczkowski@edjr.pl</span>
+                              </div>
+                            </div>
+                            <div class ="row">
+                              <div class = "col-md-10 col-md-offset-2 col_margin_h_10">
+                                <i class="fa fa-phone-square fa-2x vcenter s_t_button s_t_ico"></i>
+                                <span class="vcenter s_t_contact">501 227 911</span>
+                              </div>
+                            </div>
+                            <div class ="row">
+                              <div class="col-md-10 col-md-offset-2 s_t_blue-separator"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                    <div class="row row-fluid">
+                      <div class="col-md-3">
+                        <div class="col-md-12 t_object">
+                          <div class="row-fluid">
+                            <img class="s_img" src="./img/s_o_image.png">
+                          </div>
+                          <div class="row-fluid">
+                            <div class="s_t_name text-center">
+                              PRZEMYSŁAW RACZKOWSKI
+                            </div>
+                          </div>
+                          <div class="row-fluid">
+                            <div class="col-md-4  col-md-offset-4 s_t_o_separator"></div>
+                          </div>
+                          <div class="row-fluid">
+                            <div class="col-md-12  col_md_nopadding text-center s_t_tittle">Prezes Zarządu</div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12  s_t_o_separator"></div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-10 col-md-offset-2 col_margin_h_10">
+                              <i class="fa fa-envelope-square fa-2x vcenter s_t_button s_t_ico"></i>
+                              <span class="vcenter s_t_contact">p.raczkowski@edjr.pl</span>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-10 col-md-offset-2 col_margin_h_10">
+                              <i class="fa fa-phone-square fa-2x vcenter s_t_button s_t_ico"></i>
+                              <span class="vcenter s_t_contact">501 227 911</span>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-10 col-md-offset-2 s_t_blue-separator"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="col-md-12 t_object">
+                          <div class="row-fluid">
+                            <img class="s_img" src="./img/s_o_image.png">
+                          </div>
+                          <div class="row-fluid">
+                            <div class="s_t_name text-center">
+                              PRZEMYSŁAW RACZKOWSKI
+                            </div>
+                          </div>
+                          <div class="row-fluid">
+                            <div class="col-md-4  col-md-offset-4 s_t_o_separator"></div>
+                          </div>
+                          <div class="row-fluid">
+                            <div class="col-md-12  col_md_nopadding text-center s_t_tittle">Prezes Zarządu</div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12  s_t_o_separator"></div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-10 col-md-offset-2 col_margin_h_10">
+                              <i class="fa fa-envelope-square fa-2x vcenter s_t_button s_t_ico"></i>
+                              <span class="vcenter s_t_contact">p.raczkowski@edjr.pl</span>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-10 col-md-offset-2 col_margin_h_10">
+                              <i class="fa fa-phone-square fa-2x vcenter s_t_button s_t_ico"></i>
+                              <span class="vcenter s_t_contact">501 227 911</span>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-10 col-md-offset-2 s_t_blue-separator"></div>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="col-md-12 t_object">
+                            <div class="row-fluid">
+                              <img class="s_img" src="./img/s_o_image.png">
+                            </div>
+                            <div class="row-fluid">
+                              <div class="s_t_name text-center">
+                                PRZEMYSŁAW RACZKOWSKI
+                              </div>
+                            </div>
+                            <div class="row-fluid">
+                              <div class="col-md-4  col-md-offset-4 s_t_o_separator"></div>
+                            </div>
+                            <div class="row-fluid">
+                              <div class="col-md-12  col_md_nopadding text-center s_t_tittle">Prezes Zarządu</div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12  s_t_o_separator"></div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-10 col-md-offset-2 col_margin_h_10">
+                                <i class="fa fa-envelope-square fa-2x vcenter s_t_button s_t_ico"></i>
+                                <span class="vcenter s_t_contact">p.raczkowski@edjr.pl</span>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-10 col-md-offset-2 col_margin_h_10">
+                                <i class="fa fa-phone-square fa-2x vcenter s_t_button s_t_ico"></i>
+                                <span class="vcenter s_t_contact">501 227 911</span>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-10 col-md-offset-2 s_t_blue-separator"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="col-md-12 t_object">
+                            <div class="row-fluid">
+                              <img class="s_img" src="./img/s_o_image.png">
+                            </div>
+                            <div class="row-fluid">
+                              <div class="s_t_name text-center">
+                                PRZEMYSŁAW RACZKOWSKI
+                              </div>
+                            </div>
+                            <div class="row-fluid">
+                              <div class="col-md-4  col-md-offset-4 s_t_o_separator"></div>
+                            </div>
+                            <div class="row-fluid">
+                              <div class="col-md-12  col_md_nopadding text-center s_t_tittle">Prezes Zarządu</div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12  s_t_o_separator"></div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-10 col-md-offset-2 col_margin_h_10">
+                                <i class="fa fa-envelope-square fa-2x vcenter s_t_button s_t_ico img-responsive"></i>
+                                <span class="vcenter s_t_contact">p.raczkowski@edjr.pl</span>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-10 col-md-offset-2 col_margin_h_10">
+                                <i class="fa fa-phone-square fa-2x vcenter s_t_button s_t_ico"></i>
+                                <span class="vcenter s_t_contact">501 227 911</span>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-10 col-md-offset-2 s_t_blue-separator"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                    <div class="row row-fluid">
+                      <div class="col-md-3">
+                        <div class="col-md-12 t_object">
+                          <div class="row-fluid">
+                            <img class="s_img" src="./img/s_o_image.png">
+                          </div>
+                          <div class="row-fluid">
+                            <div class="s_t_name text-center">
+                              PRZEMYSŁAW RACZKOWSKI
+                            </div>
+                          </div>
+                          <div class="row-fluid">
+                            <div class="col-md-4  col-md-offset-4 s_t_o_separator"></div>
+                          </div>
+                          <div class="row-fluid">
+                            <div class="col-md-12  col_md_nopadding text-center s_t_tittle">Prezes Zarządu</div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12  s_t_o_separator"></div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-10 col-md-offset-2 col_margin_h_10">
+                              <i class="fa fa-envelope-square fa-2x vcenter s_t_button s_t_ico"></i>
+                              <span class="vcenter s_t_contact">p.raczkowski@edjr.pl</span>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-10 col-md-offset-2 col_margin_h_10">
+                              <i class="fa fa-phone-square fa-2x vcenter s_t_button s_t_ico"></i>
+                              <span class="vcenter s_t_contact">501 227 911</span>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-10 col-md-offset-2 s_t_blue-separator"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="col-md-12 t_object">
+                          <div class="row-fluid">
+                            <img class="s_img" src="./img/s_o_image.png">
+                          </div>
+                          <div class="row-fluid">
+                            <div class="s_t_name text-center">
+                              PRZEMYSŁAW RACZKOWSKI
+                            </div>
+                          </div>
+                          <div class="row-fluid">
+                            <div class="col-md-4  col-md-offset-4 s_t_o_separator"></div>
+                          </div>
+                          <div class="row-fluid">
+                            <div class="col-md-12  col_md_nopadding text-center s_t_tittle">Prezes Zarządu</div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12  s_t_o_separator"></div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-10 col-md-offset-2 col_margin_h_10">
+                              <i class="fa fa-envelope-square fa-2x vcenter s_t_button s_t_ico"></i>
+                              <span class="vcenter s_t_contact">p.raczkowski@edjr.pl</span>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-10 col-md-offset-2 col_margin_h_10">
+                              <i class="fa fa-phone-square fa-2x vcenter s_t_button s_t_ico"></i>
+                              <span class="vcenter s_t_contact">501 227 911</span>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-10 col-md-offset-2 s_t_blue-separator"></div>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="col-md-12 t_object">
+                            <div class="row-fluid">
+                              <img class="s_img" src="./img/s_o_image.png">
+                            </div>
+                            <div class="row-fluid">
+                              <div class="s_t_name text-center">
+                                PRZEMYSŁAW RACZKOWSKI
+                              </div>
+                            </div>
+                            <div class="row-fluid">
+                              <div class="col-md-4  col-md-offset-4 s_t_o_separator"></div>
+                            </div>
+                            <div class="row-fluid">
+                              <div class="col-md-12  col_md_nopadding text-center s_t_tittle">Prezes Zarządu</div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12  s_t_o_separator"></div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-10 col-md-offset-2 col_margin_h_10">
+                                <i class="fa fa-envelope-square fa-2x vcenter s_t_button s_t_ico"></i>
+                                <span class="vcenter s_t_contact">p.raczkowski@edjr.pl</span>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-10 col-md-offset-2 col_margin_h_10">
+                                <i class="fa fa-phone-square fa-2x vcenter s_t_button s_t_ico"></i>
+                                <span class="vcenter s_t_contact">501 227 911</span>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-10 col-md-offset-2 s_t_blue-separator"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="col-md-12 t_object">
+                            <div class="row-fluid">
+                              <img class="s_img" src="./img/s_o_image.png">
+                            </div>
+                            <div class="row-fluid">
+                              <div class="s_t_name text-center">
+                                PRZEMYSŁAW RACZKOWSKI
+                              </div>
+                            </div>
+                            <div class="row-fluid">
+                              <div class="col-md-4  col-md-offset-4 s_t_o_separator"></div>
+                            </div>
+                            <div class="row-fluid">
+                              <div class="col-md-12  col_md_nopadding text-center s_t_tittle">Prezes Zarządu</div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12  s_t_o_separator"></div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-10 col-md-offset-2 col_margin_h_10">
+                                <i class="fa fa-envelope-square fa-2x vcenter s_t_button s_t_ico img-responsive"></i>
+                                <span class="vcenter s_t_contact">p.raczkowski@edjr.pl</span>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-10 col-md-offset-2 col_margin_h_10">
+                                <i class="fa fa-phone-square fa-2x vcenter s_t_button s_t_ico"></i>
+                                <span class="vcenter s_t_contact">501 227 911</span>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-10 col-md-offset-2 s_t_blue-separator"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class = "col-md-1 vcenter">
+             <a class="right carousel-control" href="#carousel-example-generic2" data-slide="next">
+              <i class="fa fa-angle-right fa-5x pull-left s_t_button"></i>
+             </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style = "background:fff;"id = "s_offer" class = "s_p_box" >
+      <div class = "container-fluid">
+        <div class = "row">
+          <div class = "col-md-12 col-sm-12 text-center">
+            <h1 class = "s_title color_b">OFERTA GABINETU</h1>
+          </div>
+        </div>
+        <div class = "row">
+          <div class = "col-md-6 col-md-offset-3">
+            <div class = "row">
+              <div class = "col-md-4">
+                <button class = "s_f_button" data-toggle="modal" data-target="#s_o_modal_1">fizjoterapia</button>
+              </div>
+              <div class = "col-md-4">
+                <button class = "s_f_button" data-toggle="modal" data-target="#s_o_modal_2">fizjoterapia</button>
+              </div>
+              <div class = "col-md-4">
+                <button class = "s_f_button" data-toggle="modal" data-target="#s_o_modal_3">fizjoterapia</button>
+              </div>
+            </div>
+            <div class = "row margin-h-30">
+              <div class = "col-md-4">
+                <button class = "s_f_button" data-toggle="modal" data-target="#s_o_modal_4">fizjoterapia</button>
+              </div>
+              <div class = "col-md-4">
+                <button class = "s_f_button" data-toggle="modal" data-target="#s_o_modal_5">fizjoterapia</button>
+              </div>
+              <div class = "col-md-4">
+                <button class = "s_f_button" data-toggle="modal" data-target="#s_o_modal_6">fizjoterapia</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style = "background: url('./img/header_coaching.png') cover fixed;" id = "s_coaching">
+      <div class = "container-fluid">
+        <div class = "row">
+          <div class = "col-md-12 col-sm-12">
+            <div class ="col-md-4 col-md-offset-4">
+              <h1 class = "s_title color_w">COACHING I TERAPIA</h1>
+            </div>
+          </div>
+        </div>
+        <div class = "row s_c_text">
+          <div class = "col-md-8 col-md-offset-2">
+            On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
+          </div>
+        </div>
+        <div class = "row">
+          <div class = "col-md-8 col-md-offset-2">
+            <div class = "row">
+              <div class ="col-md-3 color_w">
+                <button class = "s_c_b_modal s_c_button" data-toggle="modal" data-target="#s_c_modal_1">coaching</button>
+              </div>
+              <div class ="col-md-3 color_w">
+                <button class = "s_c_b_modal s_c_button" data-toggle="modal" data-target="#s_c_modal_2">terapia uzależnień</button>
+              </div>
+              <div class ="col-md-3 color_w">
+                <button class = "s_c_b_modal s_c_button" data-toggle="modal" data-target="#s_c_modal_3">terapia uzależnień</button>
+              </div>
+              <div class ="col-md-3 color_w">
+                <button class = "s_c_b_modal s_c_button" data-toggle="modal" data-target="#s_c_modal_4">terapia uzależnień</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style = "background: #fff;"id = "s_visit" class = "s_p_box">
+      <div class = "container-fluid s_visit_rows">
+        <div class = "row">
+          <div class = "col-md-12 col-sm-12 text-center">
+            <h1 class = "s_title color_b">KUP WIZYTĘ</h1>
+          </div>
+        </div>
+        <div class = "row-fluid">
+          <div class = "col-md-8 col-md-offset-2">
+            <div class = "row">
+              <div class="col-md-6">
+                <div class = "col-md-12">
+                  <img class = "s_v_image" src = "./img/visit-image.png">
+                  <div class = "row-fluid s_v_box ">
+                    <span class = "s_v_value s_v_mar_bt"> 100 zł</span>
+                  </div>
+                </div>
+                <div class = "col-md-12 s_v_mar">
+                  <button class ="s_v_button pull-right">Kup i Zapłać</button>
+                  <div class = "clearbottom"></div>
+                </div>
+                <div class = "col-md-12">
+                  <img class = "s_v_image" src = "./img/visit-image.png">
+                  <div class = "row-fluid s_v_box ">
+                    <span class = "s_v_value s_v_mar_bt"> 100 zł</span>
+                  </div>
+                </div>
+                <div class = "col-md-12 s_v_mar">
+                  <button class ="s_v_button pull-right">Kup i Zapłać</button>
+                  <div class = "clearbottom"></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class = "col-md-12">
+                  <img class = "s_v_image" src = "./img/visit-image.png">
+                  <div class = "row-fluid s_v_box ">
+                    <span class = "s_v_value s_v_mar_bt"> 100 zł</span>
+                  </div>
+                </div>
+                <div class = "col-md-12 s_v_mar">
+                  <button class ="s_v_button pull-right">Kup i Zapłać</button>
+                  <div class = "clearbottom"></div>
+                </div>
+                <div class = "col-md-12">
+                  <img class = "s_v_image" src = "./img/visit-image.png">
+                  <div class = "row-fluid s_v_box ">
+                    <span class = "s_v_value s_v_mar_bt"> 100 zł</span>
+                  </div>
+                </div>
+                <div class = "col-md-12 s_v_mar">
+                  <button class ="s_v_button pull-right">Kup i Zapłać</button>
+                  <div class = "clearbottom"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style = "background: #eee;" id = "s_contact" class = "s_p_box no_padding_b">
+      <div class = "container-fluid s_contact_rows">
+        <div class = "row">
+          <div class = "col-md-12 col-sm-12 text-center">
+            <h1 class = "s_title color_b">KONTAKT</h1>
+          </div>
+        </div>
+        <div class = "row">
+          <div class ="col-md-3 col-md-offset-2">
+            <div class = "row s_con_text bold_text">
+              WYPOŻYCZALNIA SPRZĘTU REHABILITACYJNEGO
+            </div>
+            <div class = "row s_con_text">
+              Łukasz Grabarz Brzóza Królewska<br>(okolice Leżajska)<br>tel: 798-847-919
+            </div>
+            <div class = "row s_con_text">
+              <div>pphu.prolon@interia.pl</div>
+              <div>kontakt@lukaszgrabarz.pl</div>
+            </div>
+          </div>
+          <div class = "col-md-4 col-md-offset-1">
+            <form class="form-horizontal" role="form">
+              <div class="form-group">
+                <div class="col-md-12">
+                  <input type="text" class="form-control s_con_input_text" placeholder="Imie i nazwisko">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-12">
+                  <input type="text" class="form-control s_con_input_text" placeholder="Adres">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-12">
+                  <textarea class="form-control s_con_input_text" placeholder = "Wiadomość" rows="6"></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-5 col-md-offset-7">
+                  <button type="submit" class="pull-right s_c_f_button">Wyślij</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id = "s_google"></section>
+    <footer style = "background:#383838;"id = "s_footer" class = "s_p_box">
+      <div class = "container-fluid">
+        <div class = "row">
+          <div class = "col-md-8 col-md-offset-2 text-center">
+            <div class = "row">
+              <div class = "col-md-4 col-md-offset-4">
+                <div class="row">
+                  <img class = "img-responsive logo_footer" src="img/logo.png">
+                </div>
+              </div>
+            </div>
+            <div class = "row">
+              <div class = "col-md-4 color_w">
+                <div class = "row">
+                  <p>
+                    <div class = "bold_text mar_bot_2vw">Kontakt</div>
+                  </p>
+                  <p>Wpisane dane</p>
+                  <p>Wpisane dane</p>
+                  <p>Wpisane dane</p>
+                </div>
+              </div>
+              <div class = "col-md-4 color_w">
+                <p>
+                  <div class = "bold_text mar_bot_2vw">Kontakt</div>
+                </p>
+                <p>Wpisane dane</p>
+                <p>Wpisane dane</p>
+                <p>Wpisane dane</p>
+              </div>
+              <div class = "col-md-4 color_w">
+                <p>
+                  <div class = "bold_text mar_bot_2vw">Kontakt</div>
+                </p>
+                <p>Wpisane dane</p>
+                <p>Wpisane dane</p>
+                <p>Wpisane dane</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <section id="s_modals">
+      <section id ="s_p_modals">
+        <div id="s_p_modal_1" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the modal.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="s_p_modal_2" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the modal.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id ="s_o_modals">
+        <div id="s_o_modal_1" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the modal.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="s_o_modal_2" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the modal.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="s_o_modal_3" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the modal.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="s_o_modal_4" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the modal.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="s_o_modal_5" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the modal.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="s_o_modal_6" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the modal.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id ="s_c_modals">
+        <div id="s_c_modal_1" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the modal.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="s_c_modal_2" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the modal.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="s_c_modal_3" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the modal.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="s_c_modal_4" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the modal.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <script src="./js/stellar.js"></script>
+    <script>
+$.stellar({});
+    </script>
+  </body>
+</html>

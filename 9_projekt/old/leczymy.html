@@ -1,0 +1,344 @@
+<html lang="pl">
+  <head>
+    <title>Gabinet Psychoterapii</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Gabinet Psychoterapii">
+    <meta name="keywords" content="Gabinet, Psychoterapia, Leczenie, Choroba">
+    <meta name="author" content="Enixx">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/half-slider.css">
+    <link rel="stylesheet" href="./css/scrolling-nav.css">
+    <link rel="stylesheet" href="./css/styl.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/m-styl.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="./js/google-map.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="row">
+          <div class = "col-md-2">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Rozwiń nawigację</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img class="img-responsive" src="./img/logo.png" alt="logo">
+              </a>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+            <button type="button" class="btn navbar-btn n_menu_item menu_active">strona główna</button>
+            <button type="button" class="btn navbar-btn n_menu_item">leczymy</button>
+            <button type="button" class="btn navbar-btn n_menu_item">oferta</button>
+            <button type="button" class="btn navbar-btn n_menu_item">o nas</button>
+            <button type="button" class="btn navbar-btn n_menu_item">cennik</button>
+            <button type="button" class="btn navbar-btn n_menu_item">kontakt</button>
+            <a class="hidden-sm hidden-xs" href="#"><img src="./img/envelope.png" alt="poczta"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="header_small">
+      <div class="container">
+        <div class="row"> 
+          <div class="col-md-12">
+              <p>leczymy</p>
+              <p>z zakresu<span>:</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="dieseases">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="col-md-4">
+              <div class="col-md-12">
+                <img class="img-responsive col-md-12" src="./img/depression.png" alt="diesease_img">
+                <div class="col-md-12 dieseases_text">
+                  <p>depresja</p>
+                  <p>Do najczęstszych objawów depresji należą: obniżony nastrój, utrata zainteresowań i zdolności do cieszenia się oraz zmniejszenie aktywności i duża męczliwość, nawet po niewielkim wysiłku.</p>
+                </div>
+                <button class="btn_read_more" data-toggle="modal" data-target="#depresja">czytaj więcej</button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="col-md-12">
+                <img class="img-responsive col-md-12" src="./img/nerwica.png" alt="diesease_img">
+                <div class="col-md-12 dieseases_text">
+                  <p>nerwica</p>
+                  <p>To psychogenne zaburzenie czynnościowe, które przejawia się zaburzeniami czynności narządów, przy zachowaniu ich prawidłowej struktury anatomicznej. W nerwicy wyniki badań somatycznych są prawidłowe, a objawy mimo to istnieją.</p>
+                </div>
+                <button class="btn_read_more" data-toggle="modal" data-target="#nerwica">czytaj więcej</button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="col-md-12">
+                <img class="img-responsive col-md-12" src="./img/ptsd.png" alt="diesease_img">
+                <div class="col-md-12 dieseases_text">
+                  <p>zaburzenia stresowe pourazowe (ptsd)</p>
+                  <p>To psychogenne zaburzenie czynnościowe, które przejawia się zaburzeniami czynności narządów, przy zachowaniu ich prawidłowej struktury anatomicznej. W nerwicy wyniki badań somatycznych są prawidłowe, a objawy mimo to istnieją.</p>
+                </div>
+                <button class="btn_read_more" data-toggle="modal" data-target="#ptsd">czytaj więcej</button>
+              </div>
+            </div>
+						<div class="col-md-4">
+              <div class="col-md-12">
+                <img class="img-responsive col-md-12" src="./img/zaloba.png" alt="diesease_img">
+                <div class="col-md-12 dieseases_text">
+                  <p>żałoba, reakcja na stratę</p>
+                  <p>Skutek straty, proces, który rozpoczyna się np. po śmierci bliskiej osoby. Każdy człowiek przeżywa go w inny sposób.</p>
+                </div>
+                <button class="btn_read_more" data-toggle="modal" data-target="#zaloba">czytaj więcej</button>
+              </div>
+            </div>
+						<div class="col-md-4">
+              <div class="col-md-12">
+                <img class="img-responsive col-md-12" src="./img/osobowosci.png" alt="diesease_img">
+                <div class="col-md-12 dieseases_text">
+                  <p>zaburzenia osobowości</p>
+                  <p>To głęboko zakorzenione i utrwalone wzorce zachowań. Wzorce te są sztywno, mało elastyczne i niedostosowane do sytuacji.</p>
+                </div>
+                <button class="btn_read_more" data-toggle="modal" data-target="#osobowosci">czytaj więcej</button>
+              </div>
+            </div>
+						<div class="col-md-4">
+              <div class="col-md-12">
+                <img class="img-responsive col-md-12" src="./img/zaburzenia.png" alt="diesease_img">
+                <div class="col-md-12 dieseases_text">
+                  <p>zaburzenia psychosomatyczne</p>
+                  <p>To psychogenne zaburzenie czynnościowe, które przejawia się zaburzeniami czynności narządów, przy zachowaniu ich prawidłowej struktury anatomicznej. W nerwicy wyniki badań somatycznych są prawidłowe, a objawy mimo to istnieją.</p>
+                </div>
+                <button class="btn_read_more" data-toggle="modal" data-target="#zaburzenia">czytaj więcej</button>
+              </div>
+            </div>
+						<div class="col-md-4">
+              <div class="col-md-12">
+                <img class="img-responsive col-md-12" src="./img/anoreksja.png" alt="diesease_img">
+                <div class="col-md-12 dieseases_text">
+                  <p>zaburzenia odżywiania</p>
+                  <p>Anoreksja – polega na celowej utracie wagi wywołanej i podtrzymywanej przez osobę chorą. Ponadto występuje zaburzony obraz własnego ciała i lęk przed przytyciem.</p>
+                </div>
+                <button class="btn_read_more" data-toggle="modal" data-target="#odzywiania">czytaj więcej</button>
+              </div>
+            </div>
+						<div class="col-md-4">
+              <div class="col-md-12">
+                <img class="img-responsive col-md-12" src="./img/relacje.png" alt="diesease_img">
+                <div class="col-md-12 dieseases_text">
+                  <p>problemy w relacjach z innymi</p>
+                  <p>Mogą polegać na trudnościach w komunikacji, okazywaniu uczuć i potrzeb. Ponadto na niezdolności do zbudowania trwałego i udanego związku, opartego na zaufaniu, przywiązaniu, bliskości i wymianie.</p>
+                </div>
+                <button class="btn_read_more" data-toggle="modal" data-target="#relacje">czytaj więcej</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class = "container">
+        <div class = "row f_container">
+          <span class = "f_text">
+            &copy 2015 Gabinet Psychologiczny - Zakaz kopiowania treści materiałów graficznych
+          </span>
+          <span class="f_text pull-right">
+            Projekt i wykonanie: Enixx.pl
+          </span>
+        </div>
+      </div>
+    </footer>
+		<section id="s_modals">
+			<!--DEPRESJA-->
+      <div id="depresja" class="modal fade " role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="row no_margin">
+								<div id="modal_image" class="col-md-5">
+								</div>
+								<div class="col-md-7 modal_text">
+									<p>depresja</p>
+									<p>Do najczęstszych objawów depresji należą: obniżony nastrój, utrata zainteresowań i zdolności do cieszenia się oraz zmniejszenie aktywności i duża męczliwość, nawet po niewielkim wysiłku. Ponadto w depresji występuje osłabienie koncentracji i uwagi, obniżona samoocena i mała wiara w siebie. Dominuje pesymizm, widzenie przyszłości w czarnych barwach. W depresji często pojawia się też poczucie winy. Mogą występować  myśli i czyny samobójcze oraz zaburzenia snu i apetytu. Ponadto w przebiegu depresji   nierzadko występuje uczucie lęku. Objawy te często powodują dyskomfort i utrudniają, nawet z w znaczącym stopniu wykonywanie codziennych obowiązków. Ich wahanie nie wiąże się raczej z bieżącymi wydarzeniami. Depresja może być też maskowana przez rozdrażnienie czy  nadużywanie alkoholu.</p>
+								</div>
+              </div>
+            </div>
+            <input type="image" src="./img/modal_close.png" name="close" class="btn modal_close_btn" id="close_button" data-dismiss="modal"/>
+          </div>
+        </div>
+      </div>
+			<!--NERWICA-->
+			<div id="nerwica" class="modal fade " role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="row no_margin">
+								<div id="modal_image" class="col-md-5">
+								</div>
+								<div class="col-md-7 modal_text">
+									<p>nerwica</p>
+									<p>To psychogenne zaburzenie czynnościowe, które przejawia się zaburzeniami czynności narządów, przy zachowaniu ich prawidłowej struktury anatomicznej. W nerwicy wyniki badań somatycznych są prawidłowe, a objawy mimo to istnieją. Objawy nerwicy przejawiają się głównie w sferze psychicznej,ponadto często wyrażają się w postaci różnych zakłóceń czynności fizycznych.
+Objawy nerwicy mogą występować w trzech obszarach :
+- somatycznym - układ pokarmowy: biegunki, zaparcia, wzdęcia, pieczenie, ból brzucha, nudności i wymioty; układ krążenia: przyspieszony oddech, szybkie i nierówne bicie serca, omdlenia; uczucie duszności, mrowienia, drżenie , drętwienie i dolegliwości bólowe  różnych części ciała, częstomocz, zaburzenia erekcji u mężczyzn, zaburzenia miesiączkowania i obniżenie satysfakcji seksualnej u kobiet, 
+- emocjonalnym – lęk, napięcie, niepokój, objawy fobii, obniżenie nastroju, apatia, trudności z koncentracją, drażliwość, problemy z pamięcią, natręctwa myślowe, hipochondria, poczucie obniżonej sprawności intelektualnej 
+- zachowania - czynności natrętne, trudności w kontaktach z ludźmi, głównie wycofanie z relacji, perfekcjonizm, nieśmiałość, wybuchowość, zachowania niedojrzałe, 
+Rodzaje zaburzeń nerwicowych ( lękowych) :
+- zaburzenia lękowe w postaci fobii, w których lęk jest wywoływany wyłącznie przez pewne sytuacje i/lub osoby, przedmioty, zjawiska, obiektywnie bezpieczne.  Osoba cierpiąca na fobię unika tych sytuacji, a gdy je napotyka, odczuwa niepokój, czy nawet przerażenie. Nierzadko  sama myśl o znalezieniu się w takiej sytuacji powoduje pojawienie się lęku, zwanego antycypacyjnym. Często współwystępuje z depresją. 
+-agorafobia - lęk przed wyjściem z domu, podróżowaniem, wejściem do sklepu, byciem w miejscach publicznych, gdzie przebywa dużo ludzi, przed byciem w przekonanie, że w tych sytuacjach może dojść do jakiegoś nieszczęścia. 
+- fobie społeczne - lęk dotyczy kompromitacji i krytycznej oceny, na jakie można się narazić. Lęk, że powie się coś głupiego, zachowana w sposób nieodpowiedni, ujawni słabość i zostanie się źle potraktowanym, zawstydzonym i upokorzonym przez otoczenie. 
+- fobie specyficzne - lęk pojawia się tylko w sytuacjach kontaktu z jakimiś szczególnymi przedmiotami, zwierzętami (np. pająki, węże) czy w konkretnych sytuacjach ( np. lot samolotem). 
+- zaburzenia lękowe z napadami lęku – napady lęku pojawiają się nieoczekiwanie, uczucie lęku szybko narasta do stanu przerażenia. Napady lęku trwają zazwyczaj od kilku minut do kilkunastu godzin. Okres ustępowania może trwać nawet kilka dni, w czasie między napadami osoba zazwyczaj oczekuje wystąpienia kolejnego ataku. Uczucie lęku jest często obezwładniające i łączy się z poczuciem zagrożenia życia, choroby psychicznej, utraty kontroli nad sobą.  Obecne jest przyspieszone bicie serca, dreszcze, ból w klatce piersiowej. 
+tłumie. Obecne jest 
+- zaburzenia lękowe uogólnione- to przewlekłe stany tzw.  wolno płynącego  lęku i niepokoju, poczucia zagrożenia, utrzymującego się uporczywie, cały czas, bez względu na sytuację zewnętrzną. Może trwać kilka dni lub nawet miesięcy, mając zmienne nasilenie.
+- zaburzenia depresyjne i lękowe mieszane- to stan, w którym objawy depresji i lęku są w podobnym stopniu nasilone. Zawsze współwystępują, niekiedy przez pewien czas, objawy autonomiczne np. tachykardia. 
+- nerwica natręctw (zaburzenia obsesyjno-kompulsywne) - polega na nawracających, uporczywych myślach natrętnych, czyli obsesjach i /lub czynnościach przymusowych-kompulsjach. Myśli natrętne to idee, wyobrażenia lub impulsy do działania, pojawiające się w świadomości nawracająco. Niemal zawsze pacjent przeżywa je jako przykre i próbuje bezskutecznie przeciwstawić się im. Są odczuwane jako własne, choć pojawiają się wbrew woli osoby i budzą jej sprzeciw wewnętrzny. Z kolei czynności przymusowe czy rytuały to stereotypowe i wielokrotnie powtarzane zachowania, które mają na celu zapobiegnięcie jakimś mało prawdopodobnym zdarzeniom, które wystąpiłyby, gdyby pacjent nie wykonał tych czynności w określony sposób.  Często dotyczą domniemanych wydarzeń ,związanych z wyrządzeniem krzywdy sobie lub komuś . Pacjent postrzega je często jako pozbawione sensu i próbuje się opierać, ale wówczas nasila się lęk i niepokój, uniemożliwiając zaniechanie tych czynności. 
+</p>
+								</div>
+              </div>
+            </div>
+            <input type="image" src="./img/modal_close.png" name="close" class="btn modal_close_btn" id="close_button" data-dismiss="modal"/>
+          </div>
+        </div>
+      </div>
+			<!--PTSD-->
+			<div id="ptsd" class="modal fade " role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="row no_margin">
+								<div id="modal_image" class="col-md-5">
+								</div>
+								<div class="col-md-7 modal_text">
+									<p>Zaburzenia stresowe pourazowe (PTSD)</p>
+									<p>To opóźniona lub/i przedłużona reakcja na stresujące wydarzenie lub sytuację o charakterze wyjątkowego zagrożenia lub katastrofy , która prawie dla każdego stanowiłaby głęboko przejmujące nieszczęście np. poważny wypadek, wojna, bycie świadkiem czyjejś gwałtownej śmierci, gwałt.  Najbardziej charakterystyczne dla zaburzenia stresowego pourazowego jest powtarzające się przeżywanie urazu na nowo w natrętnie pojawiających się wspomnieniach albo w snach. Obecne jest też uporczywe odrętwienie i otępienie uczuciowe, izolowanie się od ludzi, anhedonia, unikanie sytuacji i działań kojarzących się pacjentowi z urazem.  Czasem mogą wystąpić gwałtowne, ostre wybuchy strachu, paniki lub agresji na wspomnienie sytuacji urazowej. Często obecne jest nadmierne pobudzenie układu autonomicznego, wzmożony stan czuwania, odruch orientacyjny i bezsenność. Ponadto nierzadko współwystępuje depresja i lęk oraz myśli samobójcze.</p>
+								</div>
+              </div>
+            </div>
+            <input type="image" src="./img/modal_close.png" name="close" class="btn modal_close_btn" id="close_button" data-dismiss="modal"/>
+          </div>
+        </div>
+      </div>
+			<!--ZALOBA-->
+			<div id="zaloba" class="modal fade " role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="row no_margin">
+								<div id="modal_image" class="col-md-5">
+								</div>
+								<div class="col-md-7 modal_text">
+									<p>Żałoba, reakcja na stratę</p>
+									<p>Skutek straty, proces, który rozpoczyna się np. po śmierci bliskiej osoby. Każdy człowiek przeżywa go w inny sposób. Jego przebieg zależy od wielu czynników i trwa najczęściej około roku. Przejawia się w różnych obszarach życia. To reakcja na stratę, ale też czas powrotu do równowagi.  W pierwszych miesiącach , a niekiedy podczas pierwszych lat lub dłużej po stracie doświadcza się różnych, przykrych emocji, takich jak uczucie braku, pustki, krzywdy, niesprawiedliwości losu. Ponadto obecny jest smutek , przygnębienie, żal, rozpacz, ale również wściekłość, agresja, złość. Gdy jest prawidłowo przeżyta, przynosi pogodzenie się ze stratą i uczucie ukojenia.</p>
+								</div>
+              </div>
+            </div>
+            <input type="image" src="./img/modal_close.png" name="close" class="btn modal_close_btn" id="close_button" data-dismiss="modal"/>
+          </div>
+        </div>
+      </div>
+			<!--OSOBOWOSCI-->
+			<div id="osobowosci" class="modal fade " role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="row no_margin">
+								<div id="modal_image" class="col-md-5">
+								</div>
+								<div class="col-md-7 modal_text">
+									<p>Zaburzenia osobowości</p>
+									<p>To głęboko zakorzenione i utrwalone wzorce zachowań. Wzorce te są sztywno, mało elastyczne i niedostosowane do sytuacji. W zaburzeniach osobowości reakcje różnią się w istotny sposób od przeciętnych dla danej kultury sposobów spostrzegania, myślenia, odczuwania , a zwłaszcza odnoszenia się do innych. Są trwałe i dotyczą wielu obszarów funkcjonowania pacjenta.  Często odczuwa on cierpienie , dyskomfort z tego powodu .  Zaburzenia osobowości często współwystępują z depresją, nerwicą lub uzależnieniami od substancji psychoaktywnych.</p>
+								</div>
+              </div>
+            </div>
+            <input type="image" src="./img/modal_close.png" name="close" class="btn modal_close_btn" id="close_button" data-dismiss="modal"/>
+          </div>
+        </div>
+      </div>
+			<!--ZABURZENIA-->
+			<div id="zaburzenia" class="modal fade " role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="row no_margin">
+								<div id="modal_image" class="col-md-5">
+								</div>
+								<div class="col-md-7 modal_text">
+									<p>Zaburzenia psychosomatyczne</p>
+									<p>To dolegliwości cielesne (somatyczne) , których przyczyny leżą w czynnikach psychicznych. Są skutkiem połączenia predyspozycji fizjologicznych, czyli słabości narządu, układu oraz stresu psychologicznego. Poszczególne rodzaju stresu mogą powodować określone choroby.</p>
+									<p>Do najczęstszych zaburzeń psychosomatycznych zalicza się:
+										<ul>
+											<li>zespół jelita nadwrażliwego</li>
+											<li>chorobę wrzodową</li>
+											<li>astmę i różnego rodzaju alergie</li>
+											<li>migrenę</li>
+											<li>nadciśnienie tętnicze</li>
+											<li>zapalenie stawów</li>
+											<li>niektóre rodzaje otyłości</li>
+											<li>problemy i zaburzenia związane ze snem</li>
+										</ul>
+									</p>
+								</div>
+              </div>
+            </div>
+            <input type="image" src="./img/modal_close.png" name="close" class="btn modal_close_btn" id="close_button" data-dismiss="modal"/>
+          </div>
+        </div>
+      </div>
+			<!--ODZYWIANIA-->
+			<div id="odzywiania" class="modal fade " role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="row no_margin">
+								<div id="modal_image" class="col-md-5">
+								</div>
+								<div class="col-md-7 modal_text">
+									<p>zaburzenia odżywiania</p>
+									<p><strong>Anoreksja</strong> - polega na celowej utracie wagi wywołanej i podtrzymywanej przez osobę chorą.</p>
+									<p>Ponadto występuje zaburzony obraz własnego ciała i lęk przed przytyciem. Anoreksja powoduje szybkie wyniszczenie ciała, pozostawiając często nieodwracalne zmiany w organizmie.  U dziewcząt/kobiet dochodzi też do zaniku cyklu miesiączkowego.</p>
+									<p><strong>Bulimia</strong> - charakteryzuje się obecnością napadów objadania się, po których następują zachowania kompensacyjne, takie jak prowokowanie wymiotów, przeczyszczanie się , głodzenie czy nadmierne ćwiczenia fizyczne. Obraz siebie w bulimii jest ściśle związany z masą i kształtem ciała.</p>
+								</div>
+              </div>
+            </div>
+            <input type="image" src="./img/modal_close.png" name="close" class="btn modal_close_btn" id="close_button" data-dismiss="modal"/>
+          </div>
+        </div>
+      </div>
+			<!--RELACJE-->
+			<div id="relacje" class="modal fade " role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="row no_margin">
+								<div id="modal_image" class="col-md-5">
+								</div>
+								<div class="col-md-7 modal_text">
+									<p>Problemy w relacjach z innymi</p>
+									<p>Mogą polegać na trudnościach w komunikacji, okazywaniu uczuć i potrzeb. Ponadto na niezdolności do zbudowania trwałego i udanego związku, opartego na zaufaniu, przywiązaniu, bliskości i wymianie.  Problemy w relacjach mogą się też wiązać z trudnościami z bliskością, ale też z lekiem przed samotnością, opuszczeniem czy odrzuceniem.</p>
+								</div>
+              </div>
+            </div>
+            <input type="image" src="./img/modal_close.png" name="close" class="btn modal_close_btn" id="close_button" data-dismiss="modal"/>
+          </div>
+        </div>
+      </div>
+    </section>
+   <script src="./js/jquery.easing.min.js"></script>
+   <script src="./js/scrolling-nav.js"></script>
+  </body>
+</html>
+
+

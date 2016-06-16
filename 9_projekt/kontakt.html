@@ -1,0 +1,129 @@
+<html lang="pl">
+  <head>
+    <title>Gabinet Psychoterapii</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Gabinet Psychoterapii">
+    <meta name="keywords" content="Gabinet, Psychoterapia, Leczenie, Choroba">
+    <meta name="author" content="Enixx">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/half-slider.css">
+    <link rel="stylesheet" href="./css/scrolling-nav.css">
+    <link rel="stylesheet" href="./css/styl.css">
+    <link rel="stylesheet" href="./css/m-styl.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="./js/google-map.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="row">
+          <div class = "col-md-2">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Rozwiń nawigację</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img class="img-responsive" src="./img/logo.png" alt="logo">
+              </a>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+            <a href="index.html" class="btn navbar-btn n_menu_item">strona główna</a>
+            <a href="leczymy.html" class="btn navbar-btn n_menu_item">leczymy</a>
+            <a href="oferta.html" class="btn navbar-btn n_menu_item">oferta</a>
+            <a href="onas.html" class="btn navbar-btn n_menu_item">o nas</a>
+            <a href="cennik.html" class="btn navbar-btn n_menu_item">cennik</a>
+            <a href="kontakt.html" class="btn navbar-btn n_menu_item menu_active">kontakt</a>
+            <a class="hidden-sm hidden-xs" href="#"><img src="./img/envelope.png" alt="poczta"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="s_map">
+      <div class = "container-fluid">
+        <div class="row">
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+    <div id="s_contact">
+      <div class = "container">
+        <div class="row">
+          <div class = "col-md-6">
+            <div class = "row">
+              <p class = "s_c_tittle">Formularz kontaktowy:</p>
+              <form id = "s_c_form" role="form">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="name" placeholder="imie i nazwisko">
+                </div>
+                <div class="form-group">
+                  <input type="tel" class="form-control" id="phone" placeholder="telefon kontaktowy">
+                </div>
+                <div class="form-group">
+                  <select class="form-control">
+                    <option>specjalista Joanna Rodzeń-Krawiec</option>
+                    <option>specjalista Kamila Makara-Czułno</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" rows="8" id="message" placeholder="treść wiadomości"></textarea>
+                </div>
+                <div class = "col-md-4 col-md-offset-8">
+                  <div class = "row">
+                    <button type="submit">wyślij wiadomość</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class = "col-md-5 col-md-offset-1">
+            <div class = "row">
+              <p class = "s_c_tittle">Dane personalne:</p>
+              <div class = "s_c_element">
+                <p class ="s_c_active">Gabinet Psychoterapii</p>
+                <span><img src="./img/marker_ico.png" alt="ico">ul.Zamkowa 2/5b 35-032 Rzeszów</span>
+              </div>
+              <div class = "s_c_element">
+                <p>Kamila Makara-Czułno</p>
+                <span><img src="./img/tel_ico.png" alt="ico">+48 697 363 288</span>
+                <span><img src="./img/mail_ico.png" alt="ico">kamaczulno@gmail.com</span>
+              </div>
+              <div class = "s_c_element">
+                <p>Joanna Rodzeń-Krawiec</p>
+                <span><img src="./img/tel_ico.png" alt="ico">+48 695 413 577</span>
+                <span><img src="./img/mail_ico.png" alt="ico">rodzen.joanna@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class = "container">
+        <div class = "row f_container">
+          <span class = "f_text">
+            &copy 2015 Gabinet Psychologiczny - Zakaz kopiowania treści materiałów graficznych
+          </span>
+          <span class="f_text pull-right">
+            Projekt i wykonanie: Enixx.pl
+          </span>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/scrolling-nav.js"></script>
+  </body>
+</html>
+
+

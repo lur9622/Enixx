@@ -1,0 +1,23 @@
+@media(max-width:767px){
+
+}
+@media(max-width:992px){
+  .s_title {
+    font-size: 4.5vw;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .s_c_box {
+    height:auto;
+  }
+  #s_c_brake {
+    display:none !important;
+  }
+  #s_c_shop {
+    text-align:center;
+    margin-top:2vw;
+  }
+}
+@media(max-width:1400px){
+}
+

@@ -1,0 +1,102 @@
+@media(max-width:767px){
+
+}
+@media(max-width:992px){
+  .navbar {
+    background:#000;
+    padding:0px;
+  }
+  .pad_center {
+    padding:inherit;
+  }
+  .s_a_img {
+    top:0px;
+    left:0px;
+  }
+  .m_btn_circle {
+    display:block !important;
+  }
+  .btn_circle {
+    display:none !important;
+  }
+  .navbar-nav:last-child>li {
+    display:block;
+    float:none;
+  }
+  .s_i_col_margin {
+  margin:0px;
+  position:absolute;
+  bottom:2vw;
+  width:100%;
+  }
+  .text-right {
+    text-align:center !important;
+  }
+  #s_image
+  {
+  min-height:120vw;
+  }
+  #s_i_btn {
+    font-size: 3vw;
+    text-transform: uppercase;
+  }
+  .s_a_btn {
+    font-size: 3vw;
+    text-transform: uppercase;
+  }
+  .s_title {
+    font-size:4vw;
+  }
+  .s_a_label {
+    font-size: 4vw;
+  }
+  .s_t_b_title {
+    position:relative;
+    text-align:center;
+    font-size: 6vw;
+  }
+  .s_t_b_title>div {
+    display:inline-block;
+  }
+  .s_t_box {
+    text-align:center;
+    border:0px;
+  }
+  .s_t_b_imgm > img {
+    display:inline-block;
+    width:50%;
+  }
+  .dash_list {
+    font-size: 4vw;
+    text-align: left;
+  }
+  .s_t_email1 {
+    font-size: 5vw;
+  }
+  .s_t_email2 {
+      font-size: 3.5vw;
+  }
+  .s_c_f_button {
+    font-size:5.2vw;
+  }
+  .s_c_biuro {
+    font-size:6.2vw;
+    margin:2vw 0px;
+  }
+  .s_c_info1 {
+    font-size: 4.7vw;
+  }
+  .s_c_info3 {
+    font-size: 4.5vw;
+  }
+  .s_c_b_info {
+    line-height: 4.2vw;
+  }
+}
+@media(max-width:1400px){
+  .navbar>.col-md-10 {
+    margin:0px;
+    width:100%;
+  }
+}
+

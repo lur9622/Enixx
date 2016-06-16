@@ -1,0 +1,361 @@
+<html lang="pl">
+  <head>
+    <title>Baza CEIDG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Ogranizacja Ślubu">
+    <meta name="keywords" content="Ślub,Organizacja,Justyna Kaczorowska, Wypożyczalnia, Auto">
+    <meta name="author" content="Enixx">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/half-slider.css">
+    <link rel="stylesheet" href="./css/scrolling-nav.css">
+    <link rel="stylesheet" href="./css/styl.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/m-styl.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="./js/google-map.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  </head>
+  <body>
+<div class="container-fluid container_blur"> <!--POCZĄTEK KONTENERA ROZMYCIA-->
+    <!--NAWIGACJA-->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <div class ="container-fluid padding_nav">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                  <span class="sr-only">Rozwiń nawigację</span>
+                   <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                  <img class="img-responsive n_logo" src="./img/logo.png" alt="logo">
+                </a>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <p class="navbar-text">
+                  Liczba firm w bazie: <span id="n_numCompany" class = "text_bold">3 421 810</span><br>
+                  Ostatnia aktualizacja: <span id="n_lastUpdate" class = "text_bold">2015-10-22 18:58</span>
+                </p>
+                <p class="navbar-text pull-right">
+                  Zalogowany jako: <span id="n_numCompany" style = "color:#a1c918;" class = "text_bold">contact@ullidsess.com</span><br>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="s_image" class="s_header_image">
+      <div class="container-fluid">
+        <div class="row">
+          <div class = "col-md-2 col-md-offset-3">
+            <button type="button" class="btn navbar-btn navbar-right btn_add_database" href="#">
+              <img id="n_ico" src="./img/add_database.png" alt="add_database_ico">dodaj bazę
+            </button>
+          </div>
+          <div class = "col-md-2">
+            <button type="button" class="btn navbar-btn navbar-right btn_my_databases" href="#">
+              <img id="n_ico" src="./img/my_database.png" alt="my_databases_ico">moje bazy
+            </button>
+          </div>
+          <div class = "col-md-2">
+            <button type="button" class="btn navbar-btn navbar-right btn_my_account" href="#">
+              <img id="n_ico" src="./img/my_account.png" alt="my_account_ico">moje konto
+            </button>
+          </div>
+          <div class = "col-md-2">
+            <button type="button" class="btn navbar-btn navbar-right btn_logout" href="#">
+              <img id="n_ico" src="./img/logout.png" alt="logout_ico">wyloguj się
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--KONTAKT-->
+    <section id="add_database" style="padding-bottom: 0;">
+      <div class="row-fluid">
+        <div class="col-md-3 col-md-offset-1 add_database_title">
+          <p>dodaj</p>
+          <span>bazę danych:</span>
+        </div>
+        <!--po tytule-->
+        <div class="row">
+          <div class="col-md-7 col-md-offset-1 database_name">
+            <div class="col-md-12">
+              <span>nazwa bazy danych:</span>
+            </div>
+            <div class="col-md-12" style="height: 210px;">
+              <div class="col-md-8 col-md-offset-2">
+                <label for="name">Podaj nazwę bazy danych:</label>
+                <input type="text" id="name">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 database_date">
+            <div class="col-md-12">
+              <span>data rozpoczęcia działalności:</span>
+            </div>
+            <div class="col-md-12">
+              <label for="date">Wybierz zakres dla daty rozpoczęcia działalności przez uwzględniane firmy:</label>
+              <input placeholder="bez ograniczeń" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+            </div>
+          </div>
+        </div>
+        <!--konic 1 rzedu-->
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-7 col-md-offset-1 database_branch">
+            <div class="col-md-12">
+              <span>branża:</span>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-8 col-md-offset-2">
+                <label for="name">Wybierz rodzaje działalności wykonywanej przez firmy uwzględniane w bazie:</label>
+                <input type="text" id="name">
+              </div>
+              <div class="col-md-8 col-md-offset-2" class="select_box">
+                <div id="accordion" class="panel-group">
+                  <div class="panel panel-default panel_box">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">&#xf0d7; Wszystkie branże</a>
+                    <div id="collapseOne" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <select id="select_branch" size="10" class="selection" multiple>
+                          <option>&#xf0da; Rolnictwo, myślistwo, łowiectwo i rybactwo</option>
+                          <option>&#xf0da; Górnictwo i wydobywanie</option>
+                          <option>&#xf0da; Przetwórstwo przemysłowe</option>
+                          <option>&#xf0da; Wytwarzanie i zaopatrywanie w energię elektryczną</option>
+                          <option>&#xf0da; Wytwarzanie i zaopatrywanie w energię elektryczną</option>
+                          <option>&#xf0da; Dostawa wody, gospodarowanie ściekami i odpadami oraz działalność związana z rekultywacją</option>
+                          <option>&#xf0da; Budownictwo</option>
+                          <option>&#xf0da; Handel hurtowy i detaliczny, naprawa pojazdów samochodowych, włączając motocykle</option>
+                          <option>&#xf0da; Transport i gospodarka magazynowa</option>
+                          <option>&#xf0da; Działalność związana z zakwaterowaniem i usługami gastronomicznymi</option>
+                          <option>&#xf0da; Informacja i komunikacja</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8 col-md-offset-2 database_checkbox">
+                <input type="checkbox" value="" id="dbc1">
+                <label for="dbc1"><span class="col-md-4" ></span><p class="center_text_checkbox">Uwzględnij formy dla których wybrane rodzaje działalności stanowią działalność poboczną.</p></label>
+              </div>
+              <div class="col-md-3 col-md-offset-7">
+                <button id="btn_select_branch" class="btn btn_select_branch">wybierz branżę</button>
+              </div>
+              <div class="col-md-8 col-md-offset-2 selected_branch_title">
+                <span>Wybrane branże:</span>
+              </div>
+              <div class="col-md-8 col-md-offset-2 selected_branch">
+                <div>
+                  <span id="selected_branch">Wszystkie branże</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 database_status">
+            <div class="col-md-12">
+              <span>status działalności:</span>
+            </div>
+            <div class="col-md-12">
+              <span>Określ status działalności przedsiębiorstw uwzględnianych w bazie:</span>
+              <div class="col-md-12 status_checkbox">
+                <input type="checkbox" value="" id="sc1">
+                <label for="sc1"><span class="col-md-4" ></span><p class="col-md-8 col-sm-7 center_text_checkbox">Aktywny</p></label>  
+              </div>
+              <div class="col-md-12 status_checkbox">
+                <input type="checkbox" value="" id="sc2">
+                <label for="sc2"><span class="col-md-4" ></span><p class="col-md-8 col-sm-7 center_text_checkbox">Wykreślony</p></label>  
+              </div>
+              <div class="col-md-12 status_checkbox">
+                <input type="checkbox" value="" id="sc3">
+                <label for="sc3"><span class="col-md-4" ></span><p class="col-md-8 col-sm-7 center_text_checkbox">Zawieszony</p></label>  
+              </div>
+              <div class="col-md-12 status_checkbox">
+                <input type="checkbox" value="" id="sc4">
+                <label for="sc4"><span class="col-md-4" ></span><p class="col-md-8 col-sm-7 center_text_checkbox">Działalność jest prowadzona wyłącznie w formie spółki/spółek cywilnych</p></label>  
+              </div>
+              <div class="col-md-12 status_checkbox">
+                <input type="checkbox" value="" id="sc5">
+                <label for="sc5"><span class="col-md-4" ></span><p class="col-md-8 col-sm-7 center_text_checkbox">Nie rozpoczął działalnośći</p></label>  
+              </div>
+              <div class="col-md-12 status_checkbox">
+                <input type="checkbox" value="" id="sc6">
+                <label for="sc6"><span class="col-md-4"></span><p class="col-md-8 col-sm-7 center_text_checkbox">Oczekuje na rozpoczęcie działalności</p></label>  
+              </div>
+            </div>
+          </div> 
+        </div>
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-7 col-md-offset-1 database_location">
+            <div class="col-md-12">
+              <span>lokalizacja:</span>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-8 col-md-offset-2">
+                <span>Domyślnie w bazach danych są uwzględniani są przedsiębiorcy z całej Polski. Korzystając z poniższych opcji możesz ograniczyć wyniki wyszukiwania do wybranych obszarów lub regionów kraju.</span>
+              </div>
+              <div class="col-md-3 col-md-offset-2">
+                <button id="btn_gmap" class="btn btn_map">mapa</button>
+              </div>
+              <div class="col-md-3">
+                <button id="btn_regio" class="btn btn_region">regiony</button>
+              </div>
+              <div class="col-md-8 col-md-offset-2">
+                <div id="map">
+                </div>
+              </div>
+              <div class="regio">
+                <div class="col-md-8 col-md-offset-2">
+                    <span>Wybierz regiony, w których powinny znajdować się siedziby przedsiębiorstw uwzględnianych w bazie:</span>
+                </div>
+                  <div class="col-md-3 col-md-offset-2"> 
+                    <select class="form-control" id="wojewodztwa">
+                      <option default>Wszystkie województwa</option>
+                      <option>Dolnośląskie</option>
+                      <option>Kujawsko-pomorskie</option>
+                      <option>Lubelskie</option>
+                      <option>Lubuskie</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3">
+                    <select class="form-control" id="powiaty">
+                      <option default>Wszystkie powiaty</option>
+                      <option>Poznański</option>
+                      <option>Białostocki</option>
+                      <option>Gostyński</option>
+                      <option>Ostrowski</option>
+                    </select>
+                  </div>
+                  <div class="col-md-2">  
+                    <button id="btn_select_regio" class="btn btn_select_regio">wybierz</button>
+                  </div>
+              </div>
+              <div class="col-md-8 col-md-offset-2" style="margin-top: 30px;">
+                <span class="selected_regio_title">Zaznaczone okręgi:</span>
+              </div>
+              <div class="col-md-8 col-md-offset-2 selected_regio">
+                <div>
+                  <span id="selected_region">cała polska</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 col-md-offset-1">
+            <button class="btn btn_reset_form">wyczyść formularz</button>
+          </div>
+          <div class="col-md-2 col-md-offset-6">
+            <button class="btn btn_preview">podgląd zawartości</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--STOPKA-->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 col-md-offset-1">
+            <div class ="row">
+              <img width="66%" src="./img/enixxlogo.png" alt="Enixx logo">
+            </div>
+            <div class ="row s_i_c_text margin_top_little text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </div>
+          </div>
+          <div class="col-md-2 col-md-offset-1">
+            <div class ="row">
+              <img class="f_ico" src = "./img/contact.png" alt="contact"><span class="text_upper f_c_title">kontakt <span class = "text_bold">z nami</span></span>
+            </div>
+            <div class ="row margin_top_little">
+              <span>ENIXX.PL</span><br>
+              <span>61-475 Poznań, ul Górecka 115</span><br>
+              <span>tel.61 307 08 08, poczta@enixx.pl</span><br><br>
+              <span>biuro czynne w godzinach:  9 - 17</span>
+            </div>
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            <div class ="row">
+              <img class="f_ico" src = "./img/search.png" alt="search"><span class="text_upper f_c_title">znajdź na <span class = "text_bold">stronie</span></span>
+            </div>
+            <div class="row">
+              <form class="form-inline f_margin" role="form">
+                <div class="form-group">
+                  <label class="sr-only" for="exampleInputEmail2">Email</label>
+                  <input type="email" class="form-control f_input" id="exampleInputEmail2" placeholder="wpisz szukaną frazę">
+                </div>
+                <button type="submit" class="btn btn-default f_input_btn">szukaj</button>
+              </form>
+            </div>
+            <div class="row">
+              <img src="./img/facebook.png" alt="facebook">
+              <img src="./img/googleplus.png" alt="googleplus">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+</div> <!--KONIEC KONTENERA OD ROZMYCIA-->
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/scrolling-nav.js"></script>
+    <script type="text/javascript">
+        /* rozmazanie po otwarciu modala w jquery*/
+          $('#login').on('show.bs.modal', function () {
+            $('.container_blur').addClass('blur');
+          })
+          
+          $('#login').on('hide.bs.modal', function () {
+            $('.container_blur').removeClass('blur');
+          })
+    </script>
+    <script type="text/javascript">
+      $(document).ready( 
+        function() {
+          $('#btn_gmap').click(
+            function() {
+              if($('.regio').is(':visible') == true){
+                $('.regio').toggle(0);
+                $('#map').toggle(0);
+                $('#selected_region').text('Cała Polska');
+              }
+            });
+          
+          $('#btn_regio').click(
+            function() {
+              if($('#map').is(':visible') == true){
+                $('#map').toggle(0);
+                $('.regio').toggle(0);
+                $('#selected_region').text('region');
+              }
+            });
+          
+          $('#btn_select_regio').click(
+            function() {
+              var powiaty = $('#powiaty option:selected').text();
+              var wojewodztwa = $('#wojewodztwa option:selected').text();
+              $('#selected_region').text(wojewodztwa + ', ' + powiaty);
+            }
+          );
+          
+          $('#btn_select_branch').click(
+            function() {
+              var branch = $('#select_branch option:selected').text();
+              var branch2 = branch.replace(/\/g, ' ');
+              $('#selected_branch').text(branch2);
+            }
+          );
+          });
+    </script>
+  </body>
+</html>

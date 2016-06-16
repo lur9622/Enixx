@@ -1,0 +1,265 @@
+@font-face {
+  font-family: MyriadPro;
+  src: url(../fonts/MyriadWebPro.ttf);
+}
+@font-face {
+  font-family: MyriadPro;
+  font-weight:300;
+  src: url(../fonts/MyriadPro-Light.otf) format(opentype);
+}
+body {
+  font-family:MyriadPro;
+  font-weight:300;
+  color:#fff;
+}
+.navbar-brand {
+  height:auto;
+}
+.navbar-nav:last-child>li {
+  display:inline-block;
+  float:none;
+}
+.navbar {
+  background:none;
+  position:absolute;
+  width:100%;
+  border:0px;
+  padding:1vw 0px;
+}
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+  font-size:1.2vw;
+}
+.var_center {
+  display:inline-block;
+  float:none !important;
+  vertical-align:middle;
+}
+.pad_center {
+  padding:4% 0px;
+}
+.navbar-fixed-top .navbar-collapse {
+  max-height:inherit;
+}
+.navbar_img>li>a {
+  padding:0px;
+}
+.navbar_img {
+
+}
+#s_image {
+    background: url(../img/header.png);
+    background-size: cover;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    height: auto;
+    min-height: 1010px;
+    color: #fff;
+}
+.color_b {
+  color:#333;
+}
+#s_mon {
+ background: url(../img/header-mon.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    color: #fff;
+}
+section {
+  position:relative;
+}
+#s_team {
+ background: url(../img/header-team.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    color: #fff;
+}
+.bold_text {
+font-weight:bold;
+font-family:MyriadPro;
+}
+.s_i_text {
+  font-size:7.7vw;
+  color:#fff;
+  text-transform:uppercase;
+  line-height:7vw;
+}
+.s_i_col_margin {
+  margin-top:400px;
+}
+.s_btn {
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 0px;
+  padding: 20px 20px;
+  color: #fff;
+  width:100%;
+}
+
+.s_box {
+  padding:3vw 0px;
+}
+#s_about {
+  background:#fff;
+}
+.s_title {
+  margin-bottom:4vw;
+  font-size:3vw;
+  color:#000;
+  text-transform:uppercase;
+}
+.s_c_biuro {
+  margin-bottom:1vw;
+  font-size:2vw;
+  color:#000;
+  text-transform:uppercase;
+  line-height:15px;
+}
+.s_a_img {
+  width:100%;
+  top: 20px;
+  left: 20px;
+  position: relative;
+}
+.s_a_text {
+  color:#777777;
+}
+.s_a_border {
+  border:1px solid #000;
+}
+.color_w {
+  color:#fff;
+}
+.s_a_btn {
+  margin-top:20px;
+}
+.nav>li>.m_btn_circle{
+  display:none;
+}
+.s_a_label {
+  font-size:1.8vw;
+  margin-left:1vw;
+}
+.row_space {
+margin-bottom:20px;
+}
+.s_t_box {
+  padding:32px;
+  border:1px solid #fff;
+  min-height:35vw;
+}
+.s_t_b_title {
+  position:absolute;
+  bottom:0px;
+  right:0px;
+  font-size:26px;
+  text-align:left;
+}
+.img_responsive {
+  width:100%;
+  display:block;
+}
+.box_separator {
+  position:relative;
+  margin : 2vw 0px;
+  background: url("../img/box_separator.png");
+  width:100%;
+  height:2px;
+  background-size:100% 100%;
+}
+.clear_fix{
+ display:block;
+ clear:both;
+ content:" ";
+}
+.row-fluid {
+  position:relative;
+}
+.dash_list>.d_point:before {
+  content:"- ";
+}
+.d_l_message {
+  margin:1vw 0px;
+}
+.s_t_b_require {
+  font-weight:bold;
+  font-size:16px;
+  margin-bottom:1.5vw;
+}
+.dash_list {
+  margin-bottom:2vw;
+  font-size:1vw;
+}
+.s_t_email1 {
+  font-size:1.7vw;
+}
+.s_t_email2 {
+  font-size:12px;
+}
+#s_map {
+  padding:2vw 0px 0px 0px;
+}
+#s_map>img {
+  width:100%;
+}
+.s_con_input_text
+{
+  border:1px solid #000;
+  border-radius:0px;
+  padding:30px;
+  font-size:15px;
+}
+.s_c_f_button {
+  text-align:center;
+  padding:1.8vw 0px;
+  background:#2c2c2c;
+  border:0px;
+  border-radius:0px;
+  font-size:1.2vw;
+  width:100%;
+}
+.s_c_adres {
+  font-size:20px;
+}
+.b_separator {
+  width:100%;
+  background:#000;
+  height:1px;
+  display:block;
+  margin:1.8vw 0px 1vw 0px;
+}
+.s_c_info1 {
+  font-size:2.7vw;
+  text-transform:uppercase;
+}
+.s_c_info2 {
+  font-size:3.5vw;
+}
+.s_c_info3 {
+  font-size:2.5vw;
+}
+.s_c_b_info {
+  line-height:3.2vw;
+}
+footer {
+  background :#2c2c2c;
+  padding:50px 0px;
+}
+.question_mark {
+  text-align: center;
+  font-weight: bold;
+  font-size: 21vw;
+}
+#s_i_btn {
+    margin-top: 2vw;
+    padding: 1.8vw;
+    font-size: 1.1vw;
+}
+#google_map {
+  height:400px;
+  width:100%;
+}

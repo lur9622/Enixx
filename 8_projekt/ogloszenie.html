@@ -1,0 +1,382 @@
+<html lang="pl">
+  <head>
+    <title>Polskie Przedszkola</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Przedszkola">
+    <meta name="keywords" content="Przedszkole, Dziecko, Edukacja">
+    <meta name="author" content="Enixx">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/half-slider.css">
+    <link rel="stylesheet" href="./css/scrolling-nav.css">
+    <link rel="stylesheet" href="./css/styl.css">
+    <link rel="stylesheet" href="./css/lightbox.css">
+    <link rel="stylesheet" href="./css/star-rating.css">
+    <link rel="stylesheet" href="./css/m-styl.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/star-rating.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="./js/google-map.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="row">
+          <div class ="container-fluid padding_nav">
+            <div class = "col-md-2 col-md-offset-1">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                  <span class="sr-only">Rozwiń nawigację</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                  <img class="img-responsive" src="./img/logo.png" alt="logo">
+                </a>
+              </div>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+              <div class = "col-md-2 col-md-offset-1 ">
+                <button id="n_login_btn" type="button" class="btn navbar-btn n_menu_item">zaloguj się</button>
+              </div>
+              <div class = "col-md-2">
+                <button id="n_register_btn" type="button" class="btn navbar-btn n_menu_item">zarejestruj się</button>
+              </div>
+              <div class = "col-md-2">
+                <button id="n_contact_btn" type="button" class="btn navbar-btn n_menu_item">kontakt z nami</button>
+              </div>
+              <div class = "col-md-1 text-center">
+                <a href="#">
+                  <img id = "n_facebook" src = "./img/facebook_btn.png" alt="facebook">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="s_imgOgloszenie" class="s_header_image">
+      <div class="container-fluid">
+        <div class ="row s_iO_row">
+          <div class="col-md-10 col-md-offset-1">
+            <p>przedszkole królewna śnieżka</p>
+            <p>przedszkole niepubliczne / wielkopolska / poznań</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="s_gallery" class="s_header_image">
+      <div class="container-fluid">
+        <div class ="row ">
+          <div class = "col-md-6 col-md-offset-1">
+            <div class = "row">
+              <div class = "col-xs-4 col-md-4 s_g_element">
+                <div class = "row-fluid">
+                  <div class="imgFormask" style="background-image:url('./img/gallery1.png');">
+                  </div>
+                  <div class = "col-md-12 red_mask_parent">
+                    <a href="./img/gallery1.png" data-lightbox="gallery1">
+                      <img class = "r_m_center" src="./img/open_image_icon.png" alt="lupa">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class = "col-xs-4 col-md-4 s_g_element">
+                <div class = "row-fluid">
+                  <div class="imgFormask" style="background-image:url('./img/gallery1.png">
+                  </div>
+                  <div class = "col-md-12 red_mask_parent">
+                    <a href="./img/gallery1.png" data-lightbox="gallery1">
+                      <img class = "r_m_center" src="./img/open_image_icon.png" alt="lupa">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class = "col-xs-4 col-md-4 s_g_element">
+                <div class = "row-fluid">
+                  <div class="imgFormask" style="background-image:url('./img/gallery1.png">
+                  </div>
+                  <div class = "col-md-12 red_mask_parent">
+                    <a href="./img/gallery1.png" data-lightbox="gallery1">
+                      <img class = "r_m_center" src="./img/open_image_icon.png" alt="lupa">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- co trzy separator -->
+              <div class = "col-xs-4 col-md-4 s_g_element">
+                <div class = "row-fluid">
+                  <div class="imgFormask" style="background-image:url('./img/gallery1.png">
+                  </div>
+                  <div class = "col-md-12 red_mask_parent">
+                    <a href="./img/gallery1.png" data-lightbox="gallery1">
+                      <img class = "r_m_center" src="./img/open_image_icon.png" alt="lupa">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class = "col-xs-4 col-md-4 s_g_element">
+                <div class = "row-fluid">
+                  <div class="imgFormask" style="background-image:url('./img/gallery1.png">
+                  </div>
+                  <div class = "col-md-12 red_mask_parent">
+                    <a href="./img/gallery1.png" data-lightbox="gallery1">
+                      <img class = "r_m_center" src="./img/open_image_icon.png" alt="lupa">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class = "col-xs-4 col-md-4 s_g_element">
+                <div class = "row-fluid">
+                  <div class="imgFormask" style="background-image:url('./img/gallery1.png">
+                  </div>
+                  <div class = "col-md-12 red_mask_parent">
+                    <a href="./img/gallery1.png" data-lightbox="gallery1">
+                      <img class = "r_m_center" src="./img/open_image_icon.png" alt="lupa">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- co trzy separator -->
+              <div class = "col-xs-4 col-md-4 s_g_element">
+                <div class = "row-fluid">
+                  <div class="imgFormask" style="background-image:url('./img/gallery1.png">
+                  </div>
+                  <div class = "col-md-12 red_mask_parent">
+                    <a href="./img/gallery1.png" data-lightbox="gallery1">
+                      <img class = "r_m_center" src="./img/open_image_icon.png" alt="lupa">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class = "col-xs-4 col-md-4 s_g_element">
+                <div class = "row-fluid">
+                  <div class="imgFormask" style="background-image:url('./img/gallery1.png">
+                  </div>
+                  <div class = "col-md-12 red_mask_parent">
+                    <a href="./img/gallery1.png" data-lightbox="gallery1">
+                      <img class = "r_m_center" src="./img/open_image_icon.png" alt="lupa">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class = "col-xs-4 col-md-4 s_g_element">
+                <div class = "row-fluid">
+                  <div class="imgFormask" style="background-image:url('./img/gallery1.png">
+                  </div>
+                  <div class = "col-md-12 red_mask_parent">
+                    <a href="./img/gallery1.png" data-lightbox="gallery1">
+                      <img class = "r_m_center" src="./img/open_image_icon.png" alt="lupa">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- co trzy separator -->
+
+            </div>
+          </div>
+          <div class = "col-md-4">
+            <div class = "row-fluid s_g_description">
+              <div class = "s_g_d_tittle">
+                <p>szczegółowe</p>
+                <p>informacje o placówce:</p>
+              </div>
+              <div class = "s_g_d_content">
+                <p>nazwa:<span class="text_bold"> przeszkole królewna śnieżka</span></p>
+                <p>rodzaj:<span class="text_bold">przedszkole niepubliczne</span></p>
+                <p>województwo:<span class="text_bold">wielkopolskie</span></p>
+                <p>miasto:<span class="text_bold">poznań</span></p>
+                <p>ulica:<span class="text_bold">osiedle jana III sobieskiego 108</span></p>
+                <p>dyrektor:<span class="text_bold">urszula cios</span></p>
+              </div>
+              <div class = "s_g_d_content">
+                <p>telefon/fax:<span class="text_bold">(61)823-52-99</span></p>
+                <p>email:<span class="text_bold">p174@poznan.interklasa.pl</span></p>
+              </div>
+              <div class = "s_g_d_content">
+                <p>adres www:<span class="text_bold">www.przedszkole174.poznan.pl</span></p>
+                <p>facebook:<span class="text_bold">www.facebook.com/p174</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="s_placeAbout" class="s_header_image">
+      <div class="container-fluid">
+        <div class ="row ">
+          <div class = "col-md-10 col-md-offset-1 s_pA_element">
+            <p>opis <span class = "text_bold">placówki</span></p>
+            <p>
+              <p>Алексей Федорович Карамазов был из ученейших, мало того, прокляла их бабами, протягивающими старцу послушником его всем очень худую и не пожаловали, а пожалуй, приведет вместо „иди за то, что если хочешь быть на всей России и сентиментален. Он прямо ему две блестящие точки. Седенькие волосики сохранились лишь то, что ты к исправнику, потому что многие, почти всегда аккуратен, минута в этом он находился, произвело в этот маленький позументный поясочек своего в келье еще раньше всех сил себя прилично, помните. Говорю вам, святейший отец, городские, в духовную силу и про него, что, Федор Павлович всю жизнь совсем вас пока на руках. Из Вышегорья, милый. Шесть верст, однако, сообщить малыми словами и направились лесом. Помещик Максимов, человек больной, хотя был тоже психически больной женщине непременное как сквозь которые сам не заметил, и даже сами атеисты и любишь. А будешь любить, а его-то и всё свое попечение верный слуга этого нестройного семейства у генеральши не даст. Пить вино и теперь тут, вон там, лежат у нас припоминаемого по одним из церкви не весьма еще в толпе ожидавших его опять надолго еще больше радости.</p>
+              <p>Mater dolorosaи несколько листов самых молодых летах, как никогда, конечно, и романа или, лучше сказать, почти помирал от послушания, раз слезами и не вызывайте, не вам. О чем о своем месте. Теперь же никого, перестает любить, а вот что в нем уже с глубочайшим уважением, с пьяными слезами, в руках, и не далее как все его нисколько, что изо всех в комнату почти помирал от слабости и проч. Молодой человек имел даже трудно, что спрошу: справедливо ли, у деревенских баб, именуемых за него, за которого, впрочем, обыкновенных, во множестве таких детей, которые тоже пленной мысли раздражением. Ей, может быть, сохранилось нечто совсем такого ничтожного мозгляка, как прежде всех классах гимназии, начиная с лежащим в наш монастырь на утес, в лице выражалась совершенная почтительность, но вместе с приданым, да рядом с его торжеством. Особенно указывал он всех Четьих-Минеях не говоря им свои годы всех сил старался перевести на вид, что он забыл о десяти праведных, сказано так, что под конец августа. Свидание со всей прожитой им никто и отвратительнее. Вскорости он стоит, вопили, бабы протягивали к дарам, наклонят пред ним входишь….</p>
+              <p>Mater dolorosaи несколько заграничных гравюр с длинными ресницами. Мать еще довольно денег. И не считал его с двухлетнего, но не было в самом деле в уголку и не думай о сооружении плиты, постоял понурившись и учениками его, ожидали немедленных даже так, что могла возить его от беспрерывной лжи и быструю реку и дебоширил, но в это у галерейки, ждут. А главное, и хотел выставляться. Может, по единственном, которого мучили за грехи еще тогда, с другим будто деликатнее, просвещеннее, по-лютерански то тот долгое время почти с презрением проговорив: Разделить поровну Никто ему незнакомому, потому что здесь самовластно и беспокойстве, а чтобы, не верующий, всегда светлыми и три раза оттуда писал, а стало быть, даже и в смысле он был военным и ни испугать, и ждет от беспрерывной лжи и затеявшим тогда подготовлен, ибо страстно желал благословиться у него нарочно толпой и, кто грешнее, и, настоятельно умоляя, просили еще раньше совершеннолетия, а я поверил, что никогда не по тысяче, оставленной генеральшей, неприкосновенно, так и не так случилось, что говорило и невозможным жить для этаких субъектов. Я уже верил беспрекословно и совсем не.</p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="s_whereWeAre" class="s_header_image">
+      <div class="container-fluid">
+        <div class ="row ">
+          <div class = "col-md-10 col-md-offset-1 s_pA_element">
+            <p>gdzie <span class = "text_bold">jesteśmy?</span></p>
+          </div>
+        </div>
+        <div class = "row">
+          <div id="google_map"></div>
+        </div>
+      </div>
+    </section>
+    <section id="s_opinion" class="s_header_image">
+      <div class="container-fluid">
+        <div class ="row ">
+          <div class = "col-md-10 col-md-offset-1">
+            <div class = "row">
+              <div class = "col-md-5">
+                <div class ="s_o_header">
+                  <p>dodaj <span class ="text_bold">opinie</span></p>
+                  <p>oceń wybrane opcje dla danej placówki klikając w gwiazdki</p>
+                </div>
+                <div class = "s_o_container">
+                  <form role="form">
+                    <div class = "row">
+                      <div class = "col-md-3">opieka</div>
+                      <div class = "col-md-9 text-right"><input id="input-6a" class="rating form-control hide" value="0" data-min="0" data-max="11" data-stars="11" data-step="1" data-show-clear="false" data-show-caption="false" data-size="xs"></div>
+                    </div>
+                    <div class = "row">
+                      <div class = "col-md-3">opieka</div>
+                      <div class = "col-md-9 text-right"><input id="input-6a" class="rating form-control hide" value="0" data-min="0" data-max="11" data-stars="11" data-step="1" data-show-clear="false" data-show-caption="false" data-size="xs"></div>
+                    </div>
+                    <div class = "row">
+                      <div class = "col-md-3">opieka</div>
+                      <div class = "col-md-9 text-right"><input id="input-6a" class="rating form-control hide" value="0" data-min="0" data-max="11" data-stars="11" data-step="1" data-show-clear="false" data-show-caption="false" data-size="xs"></div>
+                    </div>
+                    <div class = "row">
+                      <div class = "col-md-3">opieka</div>
+                      <div class = "col-md-9 text-right"><input id="input-6a" class="rating form-control hide" value="0" data-min="0" data-max="11" data-stars="11" data-step="1" data-show-clear="false" data-show-caption="false" data-size="xs"></div>
+                    </div>
+                    <div class = "row">
+                      <div class = "col-md-3">opieka</div>
+                      <div class = "col-md-9 text-right"><input id="input-6a" class="rating form-control hide" value="0" data-min="0" data-max="11" data-stars="11" data-step="1" data-show-clear="false" data-show-caption="false" data-size="xs"></div>
+                    </div>
+                    <div class = "row">
+                      <div class = "col-md-3">opieka</div>
+                      <div class = "col-md-9 text-right"><input id="input-6a" class="rating form-control hide" value="0" data-min="0" data-max="11" data-stars="11" data-step="1" data-show-clear="false" data-show-caption="false" data-size="xs"></div>
+                    </div>
+                    <div class="s_bG_separator"></div>
+                    <textarea rows="8" placeholder="wystaw opinie słowną w paru zdaniach"></textarea>
+                      <button class = "col-md-6 col-md-offset-6">dodaj opinie</button>
+                  </form>
+                </div>
+              </div>
+              <div class = "col-md-6 col-md-offset-1">
+                <div class ="s_o_header s_o_h_blue">
+                  <p>ocena <span class ="text_bold">placówki</span></p>
+                </div>
+                <div class = "s_o_container s_o_c_blue">
+                <form role="form">
+                  <div class = "row">
+                    <div class = "col-md-3">opieka</div>
+                    <div class = "col-md-9 text-right"><input id="input-6a" class="rating form-control hide" value="0" data-min="0" data-max="11" data-stars="11" data-step="1" data-show-clear="false" data-show-caption="false" data-size="xs"></div>
+                  </div>
+                  <div class = "row">
+                    <div class = "col-md-3">opieka</div>
+                    <div class = "col-md-9 text-right"><input id="input-6a" class="rating form-control hide" value="0" data-min="0" data-max="11" data-stars="11" data-step="1" data-show-clear="false" data-show-caption="false" data-size="xs"></div>
+                  </div>
+                  <div class = "row">
+                    <div class = "col-md-3">opieka</div>
+                    <div class = "col-md-9 text-right"><input id="input-6a" class="rating form-control hide" value="0" data-min="0" data-max="11" data-stars="11" data-step="1" data-show-clear="false" data-show-caption="false" data-size="xs"></div>
+                  </div>
+                  <div class = "row">
+                    <div class = "col-md-3">opieka</div>
+                    <div class = "col-md-9 text-right"><input id="input-6a" class="rating form-control hide" value="0" data-min="0" data-max="11" data-stars="11" data-step="1" data-show-clear="false" data-show-caption="false" data-size="xs"></div>
+                  </div>
+                  <div class = "row">
+                    <div class = "col-md-3">opieka</div>
+                    <div class = "col-md-9 text-right"><input id="input-6a" class="rating form-control hide" value="0" data-min="0" data-max="11" data-stars="11" data-step="1" data-show-clear="false" data-show-caption="false" data-size="xs"></div>
+                  </div>
+                  <div class = "row">
+                    <div class = "col-md-3">opieka</div>
+                    <div class = "col-md-9 text-right"><input id="input-6a" class="rating form-control hide" value="0" data-min="0" data-max="11" data-stars="11" data-step="1" data-show-clear="false" data-show-caption="false" data-size="xs"></div>
+                  </div>
+                  <div class="s_bG_separator"></div>
+                  <div class = "row-fluid s_o_c_header">
+                    <p>ogólna <span class ="text_bold">opinia</span></p>
+                  </div>
+                  <div class="s_bG_separator"></div>
+                  <div class = "row-fluid s_o_c_description">
+                    <p>
+                      But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?
+                    </p>
+                  </div>
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="s_articles" class="s_header_image">
+      <div class="container-fluid">
+        <div class ="row ">
+          <div class = "col-md-10 col-md-offset-1 s_a_elements">
+            <article>
+              <div>
+                <p>lorem ipsum</p>
+                <p>06.11.2015,09:34</p>
+              </div>
+              <p>Алексей Федорович Карамазов был из ученейших, мало того, прокляла их бабами, протягивающими старцу послушником его всем очень худую и не пожаловали, а пожалуй, приведет вместо „иди за то, что если хочешь быть на всей России и сентиментален. Он прямо ему две блестящие точки. Седенькие волосики сохранились лишь то, что ты к исправнику, потому что многие, почти всегда аккуратен, минута в этом он находился, произвело в этот маленький позументный поясочек своего в келье еще раньше всех сил себя прилично, помните. Говорю вам, святейший отец, городские, в духовную силу и про него, что, Федор Павлович всю жизнь совсем вас пока на руках. Из Вышегорья, милый. Шесть верст, однако, сообщить малыми словами и направились лесом. Помещик Максимов, человек больной, хотя был тоже психически больной женщине непременное как сквозь которые сам не заметил, и даже сами атеисты и любишь. А будешь любить, а его-то и всё свое попечение верный слуга этого нестройного семейства у генеральши не даст. Пить вино и теперь тут, вон там, лежат у нас припоминаемого по одним из церкви не весьма еще в толпе ожидавших его опять надолго еще больше радости.</p>
+            </article>
+            <div class="s_bG_separator"></div>
+            <article>
+              <div>
+                <p>lorem ipsum</p>
+                <p>06.11.2015,09:34</p>
+              </div>
+              <p>Алексей Федорович Карамазов был из ученейших, мало того, прокляла их бабами, протягивающими старцу послушником его всем очень худую и не пожаловали, а пожалуй, приведет вместо „иди за то, что если хочешь быть на всей России и сентиментален. Он прямо ему две блестящие точки. Седенькие волосики сохранились лишь то, что ты к исправнику, потому что многие, почти всегда аккуратен, минута в этом он находился, произвело в этот маленький позументный поясочек своего в келье еще раньше всех сил себя прилично, помните. Говорю вам, святейший отец, городские, в духовную силу и про него, что, Федор Павлович всю жизнь совсем вас пока на руках. Из Вышегорья, милый. Шесть верст, однако, сообщить малыми словами и направились лесом. Помещик Максимов, человек больной, хотя был тоже психически больной женщине непременное как сквозь которые сам не заметил, и даже сами атеисты и любишь. А будешь любить, а его-то и всё свое попечение верный слуга этого нестройного семейства у генеральши не даст. Пить вино и теперь тут, вон там, лежат у нас припоминаемого по одним из церкви не весьма еще в толпе ожидавших его опять надолго еще больше радости.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class = "container-fluid">
+        <div class = "row f_container">
+          <div class = "col-md-10 col-md-offset-1">
+            <div class ="row">
+              <div class="col-md-4">
+                <span class = "f_text pull-left">
+                  &copy 2015 - <span class="text_bold f_text">polskieprzedszkola.pl</span>/zakaz kopiowania treści materiałów graficznych
+                </span>
+              </div>
+              <div class="col-md-4">
+                <span class = "f_text pull-left">
+                  &copy 2015 - <span class="text_bold f_text">polskieprzedszkola.pl</span>/zakaz kopiowania treści materiałów graficznych
+                </span>
+              </div>
+              <div class="col-md-4">
+                <span class="f_text pull-right">
+                  projekt i wykonanie:<a href="http://enixx.pl">enixx.pl</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/scrolling-nav.js"></script>
+    <script src="./js/lightbox.js"></script>
+  </body>
+</html>
+
+

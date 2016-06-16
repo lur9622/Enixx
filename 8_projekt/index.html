@@ -1,0 +1,277 @@
+<html lang="pl">
+  <head>
+    <title>Polskie Przedszkola</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Przedszkola">
+    <meta name="keywords" content="Przedszkole, Dziecko, Edukacja">
+    <meta name="author" content="Enixx">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/half-slider.css">
+    <link rel="stylesheet" href="./css/scrolling-nav.css">
+    <link rel="stylesheet" href="./css/styl.css">
+    <link rel="stylesheet" href="./css/index-placeholder.css">
+    <link rel="stylesheet" href="./css/m-styl.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="./js/google-map.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="row">
+          <div class ="container-fluid padding_nav">
+            <div class="col-md-2 col-md-offset-1">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                  <span class="sr-only">Rozwiń nawigację</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                  <img class="img-responsive" src="./img/logo.png" alt="logo">
+                </a>
+              </div>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+              <div class="col-md-2 col-md-offset-1 ">
+                <a href="login.html">
+                  <button id="n_login_btn" type="button" class=" navbar-btn n_menu_item">zaloguj się</button>
+                </a>
+              </div>
+              <div class="col-md-2">
+                <a href="register.html">
+                  <button id="n_register_btn" type="button" class=" navbar-btn n_menu_item">zarejestruj się</button>
+                </a>
+              </div>
+              <div class="col-md-2">
+                <a href="contact.html">
+                  <button id="n_contact_btn" type="button" class=" navbar-btn n_menu_item">kontakt z nami</button>
+                </a>
+              </div>
+              <div class="col-md-1 text-center">
+                <a href="#">
+                  <img id="n_facebook" src="./img/facebook_btn.png" alt="facebook">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="s_imgSearch" class="s_header_image">
+      <div class="container-fluid">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="s_img_title">
+            <p>znajdź miejsce</p>
+            <p>dla twojego malucha</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+          <div class="s_iS_buttons" >
+            <select class="form-control">
+              <option>przedszkole publiczne</option>
+              <option>Opcja 2</option>
+              <option>Opcja 3</option>
+              <option>Opcja 4</option>
+              <option>Opcja 5</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="s_iS_buttons">
+            <select class="form-control">
+              <option>województwo</option>
+              <option>Opcja 2</option>
+              <option>Opcja 3</option>
+              <option>Opcja 4</option>
+              <option>Opcja 5</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="s_iS_buttons">
+            <input type="text" placeholder="Wpisz miasto">
+          </div>
+        </div>
+        <div class="col-md-8 col-md-offset-1">
+          <div class="s_iS_buttons">
+            <input type="text" placeholder="wpisz nazwę placówki">
+          </div>
+        </div>
+        <div class="col-md-2 s_iS_button">
+          <button type="button" class=" btn-large">szukaj ofert</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="s_bigButtons" class="s_header_image">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 s_bB_box">
+          <div class="col-md-6">
+            <a href="">
+              <button style="background-image:url('./img/przedszkoli_bg.png');" class="col-md-12 s_bB_image">
+                <div class="text_container">
+                  <p>placówki</p>
+                  <p>przedszkoli</p>
+                </div>
+              </button>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="">
+              <button style="background-image:url('./img/zlobkow_bg.png');" class="col-md-12 s_bB_image">
+                <div class="text_container">
+                  <p>placówki</p>
+                  <p>przedszkoli</p>
+                </div>
+              </button>
+            </a>
+          </div>
+          <!-- co dwa separator -->
+          <div class="col-md-6">
+            <a href="">
+              <button style="background-image:url('./img/malucha_bg.png');" class="col-md-12 s_bB_image">
+                <div class="text_container">
+                  <p>placówki</p>
+                  <p>przedszkoli</p>
+                </div>
+              </button>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="">
+              <button style="background-image:url('./img/placowke_bg.png');" class="col-md-12 s_bB_image">
+                <div class="text_container">
+                  <p>placówki</p>
+                  <p>przedszkoli</p>
+                </div>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="s_lastAdded">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="col-md-12 s_lA_title">
+            <p>ostatnio</p>
+            <p>dodane placówki</p>
+          </div>
+          <div class="col-md-12 s_bG_separator"></div>
+          <div class="col-md-12 s_lA_element">
+            <div style="background-image:url('./img/recently_added_img.png');" class="col-md-5"></div>
+            <div style="background-image:url('./img/recently_added_bg.png');" class="col-md-7">
+              <div class="col-md-12 s_lA_e_title">
+                <p>królewna śnieżka</p>
+                <p>przedszkole niepubliczne</p>
+              </div>
+              <div class="col-md-6 s_lA_e_content">
+                <p>
+                  adres:ul.<span>królewny śnieżki 138</span>
+                </p>
+                <p>
+                  adres:ul.<span>królewny śnieżki 138</span>
+                </p>
+                <p>
+                  adres:ul.<span>królewny śnieżki 138</span>
+                </p>
+              </div>
+              <div class="col-md-4">
+                <a href="">
+                  <button class="s_lA_details">zobacz szczegóły</button>
+                </a>
+              </div>
+              <div class="col-md-12 s_lA_e_footer">
+                <p>opis</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 s_bG_separator"></div>
+          <div class="col-md-12 s_lA_element">
+            <div style="background-image:url('./img/recently_added_img.png');" class="col-md-5"></div>
+            <div style="background-image:url('./img/recently_added_bg.png');" class="col-md-7">
+              <div class="col-md-12 s_lA_e_title">
+                <p>królewna śnieżka</p>
+                <p>przedszkole niepubliczne</p>
+              </div>
+              <div class="col-md-6 s_lA_e_content">
+                <p>
+                  adres:ul.<span>królewny śnieżki 138</span>
+                </p>
+                <p>
+                  adres:ul.<span>królewny śnieżki 138</span>
+                </p>
+                <p>
+                  adres:ul.<span>królewny śnieżki 138</span>
+                </p>
+              </div>
+              <div class="col-md-4">
+                <a href="">
+                  <button class="s_lA_details">zobacz szczegóły</button>
+                </a>
+              </div>
+              <div class="col-md-12 s_lA_e_footer">
+                <p>opis</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 s_bG_separator"></div>
+        </div>
+        <div class="col-md-12">
+          <div class="row">
+            <div class ="col-md-2 col-xs-4 col-md-offset-5 col-xs-offset-4">
+              <a href="">
+                <button class="col-md-3 col-xs-3 s_lA_numberOf numberOf_active">1</button>
+              </a>
+              <a href="">
+                <button class="col-md-3 col-xs-3 s_lA_numberOf">1</button>
+              </a>
+              <a href="">
+                <button class="col-md-3 col-xs-3 s_lA_numberOf">1</button>
+              </a>
+              <a href="">
+                <button class="col-md-3 col-xs-3 s_lA_numberOf">1</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container-fluid">
+      <div class="row f_container">
+          <div class="col-md-10 col-md-offset-1">
+          <span class="f_text">
+            &copy 2015 - <span class="text_bold f_text">polskieprzedszkola.pl</span>/zakaz kopiowania treści materiałów graficznych
+          </span>
+          <span class="f_text pull-right">
+            projekt i wykonanie:enixx.pl
+          </span>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/scrolling-nav.js"></script>
+  </body>
+</html>
+
+

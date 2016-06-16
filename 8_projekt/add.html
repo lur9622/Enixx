@@ -1,0 +1,337 @@
+<html lang="pl">
+  <head>
+    <title>Polskie Przedszkola</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Przedszkola">
+    <meta name="keywords" content="Przedszkole, Dziecko, Edukacja">
+    <meta name="author" content="Enixx">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/half-slider.css">
+    <link rel="stylesheet" href="./css/scrolling-nav.css">
+    <link rel="stylesheet" href="./css/styl.css">
+    <link rel="stylesheet" href="./css/m-styl.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="./js/google-map.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="row">
+          <div class ="container-fluid padding_nav">
+            <div class = "col-md-2 col-md-offset-1">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                  <span class="sr-only">Rozwiń nawigację</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                  <img class="img-responsive" src="./img/logo.png" alt="logo">
+                </a>
+              </div>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+              <div class = "col-md-2 col-md-offset-1 ">
+                <button id="n_login_btn" type="button" class="btn navbar-btn n_menu_item">zaloguj się</button>
+              </div>
+              <div class = "col-md-2">
+                <button id="n_register_btn" type="button" class="btn navbar-btn n_menu_item">zarejestruj się</button>
+              </div>
+              <div class = "col-md-2">
+                <button id="n_contact_btn" type="button" class="btn navbar-btn n_menu_item">kontakt z nami</button>
+              </div>
+              <div class = "col-md-1 text-center">
+                <a href="#">
+                  <img id = "n_facebook" src = "./img/facebook_btn.png">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="add_header_background" class="s_header_image">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <p class = "contact_title_big text_bold">dodaj</p>
+            <p class = "contact_title_big text_bold">placówkę</p>
+            <p class = "contact_title_big text_bold">do serwisu</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="add_form">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <!--Lewa kolumna-->
+            <div class="row">
+              <div class="col-md-6">
+                <div class="col-md-12 add_input_label">
+                  <span>wybierz rodzaj placówki:</span>
+                </div>
+                <div class="col-md-12 add_input">
+                  <select>
+                    <option>przedszkole publiczne</option>
+                    <option>test1</option>
+                    <option>test2</option>
+                    <option>test3</option>
+                    <option>test4</option>
+                  </select>
+                </div>
+                <div class="col-md-12 add_input_label">
+                  <span>podaj nazwę placówki:</span>
+                </div>
+                <div class="col-md-12 add_input">
+                  <input type="text" placeholder="twoja nazwa placówki (np. Królewna Śnieżka)" name="nazwa_placowki">
+                </div>
+                <div class="col-md-12 add_input_label">
+                  <span>wpisz nazwę miejscowości:</span>
+                </div>
+                <div class="col-md-12 add_input">
+                  <input type="text" placeholder="nazwa miasta lub miejscowości" name="nazwa_miejscowosci">
+                </div>
+                <div class="col-md-12 add_input_label">
+                  <span>adres strony internetowej:</span>
+                </div>
+                <div class="col-md-12 add_input">
+                  <input type="url" placeholder="http://" name="adres_strony">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="col-md-12 add_input_label">
+                  <span>wybierz województwo:</span>
+                </div>
+                <div class="col-md-12 add_input">
+                  <select>
+                    <option>dowolne</option>
+                    <option>test1</option>
+                    <option>test2</option>
+                    <option>test3</option>
+                    <option>test4</option>
+                  </select>
+                </div>
+                <div class="col-md-12 add_input_label">
+                  <span>podaj adres placówki:</span>
+                </div>
+                <div class="col-md-12 add_input">
+                  <input type="text" placeholder="wpisz nazwę ulicy oraz numer budynku" name="adres_placowki">
+                </div>
+                <div class="col-md-12 add_input_label">
+                  <span>telefon kontaktowy:</span>
+                </div>
+                <div class="col-md-12 add_input">
+                  <input type="tel" placeholder="wpisz numer telefonu" name="telefon">
+                </div>
+                <div class="col-md-12 add_input_label">
+                  <span>adres fanpage:</span>
+                </div>
+                <div class="col-md-12 add_input">
+                  <input type="url" placeholder="http://" name="adres_fanpage">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="col-md-12 add_input_label">
+                  <span>opis placówki:</span>
+                </div>
+                <div class="col-md-12 add_input">
+                  <textarea rows="15" name="opis"></textarea>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="col-md-12 add_input_label">
+                  <span>dodaj zdjęcia <span>(max 10szt. w formacie: jpg, png, bmp):</span></span>
+                </div>
+                <div class="col-md-12 add_photo_buttons" style="margin-bottom: 3%;">
+                  <a href="#">
+                    <div class="add_photo">
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="add_photo">
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="add_photo">
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="add_photo">
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="add_photo">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-12 add_photo_buttons">
+                  <a href="#">
+                    <div class="add_photo">
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="add_photo">
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="add_photo">
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="add_photo">
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="add_photo">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-12" style="margin-top: 15%;">
+                  <div class="col-md-7 btn_add_photos">
+                    <button class="btn">dodaj wybrane zdjęcia</button>
+                  </div>
+                  <div class="col-md-5 btn_delete_photos">
+                    <button class="btn">usuń zdjęcia</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row small_title" style="margin-left: 15px; margin-top: 40px;">
+              <span>podaj dane </span><span class="text_bold color_eba">do faktury:</span>
+              <p>(*nie wymagane)</p>
+            </div>
+            <div class="row">
+            <!-- lewo -->
+              <div class="col-md-6">
+                  <div class="col-md-12 add_input_label">
+                    <span>nazwa firmy:</span>
+                  </div>
+                  <div class="col-md-12 add_input">
+                    <input type="text" name="nazwa_firmy_faktura" placeholder="podaj pełną nazwę firmy">
+                  </div>
+                  <div class="col-md-12 add_input_label" placeholder="podaj NIP firmy">
+                    <span>NIP:</span>
+                  </div>
+                  <div class="col-md-12 add_input">
+                    <input type="number" name="nip_faktura" placeholder="podaj NIP firmy">
+                  </div>
+                </div>
+                <!-- prawo -->
+                <div class="col-md-6">
+                  <div class="col-md-12 add_input_label">
+                    <span>ulica:</span>
+                  </div>
+                  <div class="col-md-12 add_input">
+                    <input type="text" name="ulica_faktura" placeholder="wpisz nazwę ulicy">
+                  </div>
+                  <div class="col-md-12 add_input_label">
+                    <span>miasto:</span>
+                  </div>
+                  <div class="col-md-12 add_input">
+                    <input type="text" name="miasto_faktura" placeholder="podaj nazwę miasta lub miejscowości">
+                  </div>
+                </div>
+            </div>
+            <div class="row small_title" style="margin-left: 15px; margin-top: 40px;">
+              <span>wybierz </span><span class="text_bold color_cd">abonament:</span>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="col-md-6">
+                  <div id="abonament_block_1" class="col-md-6 abonament_block">
+                    <div class="col-md-7 abonament_block_text">
+                      <p>niemowlak</p>
+                      <p>czas trwania: 3mc</p>
+                      <p>cena: 90,00zł</p>
+                    </div>
+                    <div class="col-md-5">
+                      <a href="">
+                        <button id="btn_make_order1" class="btn btn_make_order">zamów pakiet</button>
+                      </a>
+                    </div>
+                  </div>
+                  <div id="abonament_block_3" class="col-md-6 abonament_block">
+                    <div class="col-md-7 abonament_block_text">
+                      <p>przedszkolak</p>
+                      <p>czas trwania: 6mc</p>
+                      <p>cena: 170,00zł</p>
+                    </div>
+                    <div class="col-md-5">
+                      <a href="">
+                        <button id="btn_make_order2" class="btn btn_make_order">zamów pakiet</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div id="abonament_block_2" class="col-md-6 abonament_block">
+                    <div class="col-md-7 abonament_block_text">
+                      <p>średniak</p>
+                      <p>czas trwania: 12mc</p>
+                      <p>cena: 280,00zł</p>
+                    </div>
+                    <div class="col-md-5">
+                      <a href="">
+                        <button id="btn_make_order3" class="btn btn_make_order">zamów pakiet</button>
+                      </a>
+                    </div>
+                  </div>
+                  <div id="abonament_block_4" class="col-md-6 abonament_block">
+                    <div class="col-md-7 abonament_block_text">
+                      <p>student</p>
+                      <p>czas trwania: 18mc</p>
+                      <p>cena: 410,00zł</p>
+                    </div>
+                    <div class="col-md-5">
+                      <a href="">
+                        <button id="btn_make_order4" class="btn btn_make_order">zamów pakiet</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="col-md-12">
+                  <a href= "">
+                    <button class="btn btn_pay">zapłać i dodaj do serwisu ogłoszenie</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class = "container-fluid">
+        <div class = "row f_container">
+            <div class = "col-md-10 col-md-offset-1">
+            <span class = "f_text">
+              &copy 2015 - <span class="text_bold f_text">polskieprzedszkola.pl</span>/zakaz kopiowania treści materiałów graficznych
+            </span>
+            <span class="f_text pull-right">
+              projekt i wykonanie:enixx.pl
+            </span>
+          </div>
+        </div>
+      </footer>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/scrolling-nav.js"></script>
+  </body>
+</html>
+
+

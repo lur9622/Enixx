@@ -1,0 +1,319 @@
+<html lang="pl">
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="opis">
+    <meta name="keywords" content="słowa,kluczowe">
+    <meta name="author" content="Enixx">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/scrolling-nav.css">
+    <link rel="stylesheet" href="./css/styl.css">
+    <link rel="stylesheet" href="./css/m-styl.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  </head>
+  <body>
+    <nav class="navbar" role="navigation">
+      <div class="container">
+        <!-- Grupowanie "marki" i przycisku rozwijania mobilnego menu -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+            <span class="sr-only">Rozwiń nawigację</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="bs-navbar-collapse">
+          <form class="navbar-form navbar-left navbarForm" role="search">
+            <div class="form-group maximaze divButtonIn">
+              <input type="text" class="maximaze" placeholder="Wpisz frazę aby wyszukać">
+              <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+            </div>
+          </form>
+          <ul class="navbar-nav">
+            <li class="active imgIco"><a href="#"><i class="fa fa-user hidden-sm hidden-xs"></i><span class="hidden-lg hidden-md">facebook</span><span class="navNumber">10</span></a></li>
+            <li class="imgIco"><a href="#"><i class="fa fa-envelope-o hidden-sm hidden-xs"></i><span class="hidden-lg hidden-md">twitter</span><span class="navNumber">350</span></a></li>
+            <li class="imgIco"><a href="#"><i class="fa fa-cogs hidden-sm hidden-xs"></i><span class="hidden-lg hidden-md">twitter</span><span class="navNumber">28</span></a></li>
+            <li class="navElement"><a href="#">wyloguj: <span class="text_bold">nazwausera</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="s_header" class="sectionImage">
+      <div class="container">
+        <div class = "row">
+          <div class = "col-md-4 headerProfilSection text-center">
+            <div class="row">
+              <div class="col-xs-6 avatarProfilSection vcenter text-center">
+                <figure style="background-image:url(./img/avatarDefault.png);"></figure>
+              </div>
+              <div class="col-xs-6 vcenter">
+                <a class="profilSection" href="#">Dodaj Zdjęcie profilowe</a>
+                <a class="profilSection" href="#">Usuń Zdjęcie profilowe</a>
+              </div>
+            </div>
+          </div>
+          <div class = "col-md-7 col-md-offset-1">
+            <div class="row">
+              <div class="col-md-4 col-sm-4"><a href="#" class="profilSection">O nas</a></div>
+              <div class="col-md-4 col-sm-4"><a href="#" class="profilSection">Timeline</a></div>
+              <div class="col-md-4 col-sm-4"><a href="#" class="profilSection">Sekcja</a></div>
+              <div class="col-md-4 col-sm-4"><a href="#" class="profilSection">Sekcja</a></div>
+              <div class="col-md-4 col-sm-4"><a href="#" class="profilSection">Sekcja</a></div>
+              <div class="col-md-4 col-sm-4"><a href="#" class="profilSection">Sekcja</a></div>
+              <div class="col-md-4 col-sm-4"><a href="#" class="profilSection">Sekcja</a></div>
+              <div class="col-md-4 col-sm-4"><a href="#" class="profilSection">Sekcja</a></div>
+              <div class="col-md-4 col-sm-4"><a href="#" class="profilSection">Sekcja</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="s_profilInwestor" class="sectionDefault">
+      <div class = "container">
+        <div class = "row-fluid">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row sPIheader">
+                  <span style="color:#ea5a1a;" class="pull-left text_bold">obserwują mnie :</span><span class="pull-right"><a href="#">zobacz wszystkich</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row boxProfilInwestor">
+              <div class="col-sm-3 col-xs-6 imgBoxPI">
+                <div style="background-image:url('./img/defaultImage.png');"></div>
+                <p class="text-center">nazwa usera</p>
+              </div>
+              <div class="col-sm-3 col-xs-6 imgBoxPI">
+                <div style="background-image:url('./img/defaultImage.png');"></div>
+                <p class="text-center">nazwa usera</p>
+              </div>
+              <div class="col-sm-3 col-xs-6 imgBoxPI">
+                <div style="background-image:url('./img/defaultImage.png');"></div>
+                <p class="text-center">nazwa usera</p>
+              </div>
+              <div class="col-sm-3 col-xs-6 imgBoxPI">
+                <div style="background-image:url('./img/defaultImage.png');"></div>
+                <p class="text-center">nazwa usera</p>
+              </div>
+              <div class="col-sm-3 col-xs-6 imgBoxPI">
+                <div style="background-image:url('./img/defaultImage.png');"></div>
+                <p class="text-center">nazwa usera</p>
+              </div>
+              <div class="col-sm-3 col-xs-6 imgBoxPI">
+                <div style="background-image:url('./img/defaultImage.png');"></div>
+                <p class="text-center">nazwa usera</p>
+              </div>
+              <div class="col-sm-3 col-xs-6 imgBoxPI">
+                <div style="background-image:url('./img/defaultImage.png');"></div>
+                <p class="text-center">nazwa usera</p>
+              </div>
+              <div class="col-sm-3 col-xs-6 imgBoxPI">
+                <div style="background-image:url('./img/defaultImage.png');"></div>
+                <p class="text-center">nazwa usera</p>
+              </div>
+            </div>
+            <div class="row sPIheader">
+              <span class="pull-left text_bold">Moja Obserwacja :</span><span class="pull-right"><a href="#">zobacz wszystkich</a></span>
+            </div>
+            <div class="row boxProfilInwestor">
+              <div class="col-sm-3 col-xs-6 imgBoxPI">
+                <div style="background-image:url('./img/defaultImage.png');"></div>
+                <p class="text-center">nazwa usera</p>
+              </div>
+              <div class="col-sm-3 col-xs-6 imgBoxPI">
+                <div style="background-image:url('./img/defaultImage.png');"></div>
+                <p class="text-center">nazwa usera</p>
+              </div>
+              <div class="col-sm-3 col-xs-6 imgBoxPI">
+                <div style="background-image:url('./img/defaultImage.png');"></div>
+                <p class="text-center">nazwa usera</p>
+              </div>
+              <div class="col-sm-3 col-xs-6 imgBoxPI">
+                <div style="background-image:url('./img/defaultImage.png');"></div>
+                <p class="text-center">nazwa usera</p>
+              </div>
+            </div>
+            <div class="row sPIheader">
+              <span class="pull-left text_bold">polubienia :</span><span class="pull-right"><a href="#">zobacz wszystkich</a></span>
+            </div>
+            <div class="row boxProfilInwestor">
+              <div class="col-sm-3 col-xs-6 imgBoxPI">
+                <div style="background-image:url('./img/defaultImage.png');"></div>
+                <p class="text-center">nazwa usera</p>
+              </div>
+              <div class="col-sm-3 col-xs-6 imgBoxPI">
+                <div style="background-image:url('./img/defaultImage.png');"></div>
+                <p class="text-center">nazwa usera</p>
+              </div>
+              <div class="col-sm-3 col-xs-6 imgBoxPI">
+                <div style="background-image:url('./img/defaultImage.png');"></div>
+                <p class="text-center">nazwa usera</p>
+              </div>
+              <div class="col-sm-3 col-xs-6 imgBoxPI">
+                <div style="background-image:url('./img/defaultImage.png');"></div>
+                <p class="text-center">nazwa usera</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-md-offset-1">
+            <div class="row">
+              <form class="form-horizontal" role="form">
+                <div class="form-group formProfilInwestor">
+                  <div class="col-sm-12">
+                    <textarea rows="12"></textarea>
+                  </div>
+                </div>
+                <div class="form-group formProfilInwestor">
+                  <div class="col-sm-4">
+                    <button type="button">Dodaj zdjęcia do postu</button>
+                  </div>
+                  <div class="col-sm-4">
+                    <button  type="button">Dodaj osoby do postu</button>
+                  </div>
+                  <div class="col-sm-4">
+                    <button class="send" type="submit">Opublikuj post</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="row">
+              <div class="PIcomment">
+                <div class="col-md-2 col-sm-4">
+                  <div class="row text-center">
+                    <img class="img-responsive" src="./img/defaultImage.png">
+                  </div>
+                </div>
+                <div class="col-md-10 col-sm-8 PIcommentContent">
+                  <p>Nazwa Użytkownika</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                  <div class="row">
+                    <div class="col-sm-5">
+                      <a class="showComment buttonGrey">Dodaj komentarz do postu</a>
+                    </div>
+                    <div class="col-sm-4">
+                      <a class="buttonGrey" href="#">Obserwuj dany post</a>
+                    </div>
+                    <div class="col-sm-3">
+                      <a class="buttonGrey" href="#"> Polub to</a>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="row new-comment-window">
+                        <div class="col-xs-12">
+                          <input class="comment-content" type="text" placeholder="Wpisz komentarz">
+                          <a class="approve-comment" href="#"><i class="fa fa-commenting-o"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="PIcomment">
+                <div class="col-md-2 col-sm-4">
+                  <div class="row text-center">
+                    <img class="img-responsive" src="./img/defaultImage.png">
+                  </div>
+                </div>
+                <div class="col-md-10 col-sm-8 PIcommentContent">
+                  <p>Nazwa Użytkownika</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                  <div class="row">
+                    <div class="col-sm-5">
+                      <a class="showComment buttonGrey">Dodaj komentarz do postu</a>
+                    </div>
+                    <div class="col-sm-4">
+                      <a class="buttonGrey" href="#">Obserwuj dany post</a>
+                    </div>
+                    <div class="col-sm-3">
+                      <a class="buttonGrey" href="#"> Polub to</a>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="row new-comment-window">
+                        <div class="col-xs-12">
+                          <input class="comment-content" type="text" placeholder="Wpisz komentarz">
+                          <a class="approve-comment" href="#"><i class="fa fa-commenting-o"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="PIcomment">
+                <div class="col-md-2 col-sm-4">
+                  <div class="row text-center">
+                    <img class="img-responsive" src="./img/defaultImage.png">
+                  </div>
+                </div>
+                <div class="col-md-10 col-sm-8 PIcommentContent">
+                  <p>Nazwa Użytkownika</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                  <div class="row">
+                    <div class="col-sm-5">
+                      <a class="showComment buttonGrey">Dodaj komentarz do postu</a>
+                    </div>
+                    <div class="col-sm-4">
+                      <a class="buttonGrey" href="#">Obserwuj dany post</a>
+                    </div>
+                    <div class="col-sm-3">
+                      <a class="buttonGrey" href="#"> Polub to</a>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="row new-comment-window">
+                        <div class="col-xs-12">
+                          <input class="comment-content" type="text" placeholder="Wpisz komentarz">
+                          <a class="approve-comment" href="#"><i class="fa fa-commenting-o"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="s_profilInwestor" class="sectionDefault">
+      <div class = "container">
+        <div class = "row-fluid">
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class = "container">
+        <div class = "row-fluid">
+          <span class = "f_text">
+            &copy 2015 gr8start.pl - Zakaz kopiowania treści oraz materiałów zawartych na stronie
+          </span>
+          <span class="f_text pull-right">
+            Projekt i wykonanie: <a href="http://enixx.eu">ENIXX.EU</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/scrolling-nav.js"></script>
+  </body>
+</html>
+
+

@@ -1,0 +1,194 @@
+@font-face {
+  font-family: MyriadPro;
+  src: url(../fonts/MyriadWebPro.ttf);
+}
+@font-face {
+  font-family: MyriadPro;
+  font-weight:300;
+  src: url(../fonts/MyriadPro-Light.otf) format(opentype);
+}
+@font-face {
+  font-family: SegoeScript;
+  font-weight:300;
+  src: url(../fonts/Segoe-Script.ttf);
+}
+.navbar-nav >li>.btn_square{
+  border:0px !important;
+  color:inherit !important;
+}
+.modal-dialog {
+  width:auto;
+  margin:0px;
+  padding-left:15px;
+  padding-top:25px;
+  color:#333;
+}
+.modal-header:after {
+content:' ';
+display:block;
+clear:both;
+}
+.modal-content {
+  border-radius:0px;
+  box-sizing:border-box;
+  margin:0px 10px;
+  height:90%;
+}
+.navbar-nav >li>.btn_square>img{
+  width:30px;
+}
+body {
+  font-family:MyriadPro;
+  font-weight:300;
+  color:#fff;
+  background:#060606;
+}
+#s_about {
+  background:url("../img/omnie.png");
+  background-size:cover;
+  min-height:650px;
+  margin-top:4vw;
+}
+#s_contact {
+  background:#000 url("../img/contact.png");
+  background-size:cover;
+}
+.navbar-default {
+  border:0px;
+  background:#060606;
+  padding:1vw 0px;
+}
+.clear_fix {
+  content:' ' !important;
+  clear:both !important;
+  display:block !important;
+}
+.s_title {
+  margin-top:4vw;
+  margin-bottom:3vw;
+}
+.s_a_title {
+  font-family:SegoeScript;
+  font-size:40px;
+  color:#fff;
+}
+.navbar-brand {
+  height: auto;
+}
+.padding_nav {
+  margin:0px 8.22vw;
+}
+.navbar-nav {
+  margin-top:25px;
+  display:inline-block;
+  text-align:center;
+  width:30vw;
+  margin-left:8vw;
+}
+.navbar-nav >li {
+  display: inline-block;
+}
+.navbar-right {
+  width:auto;
+}
+.navbar-nav >li>a {
+  color:#6f6f6f;
+  text-transform:uppercase;
+  border:1px solid rgba(0,0,0,0);
+}
+.navbar-nav >li>a:hover {
+  border:1px solid #fff;
+  color:#fff !important;
+}
+.s_i_images {
+  background-size:cover;
+  background-position:center;
+  height:18vw;
+  box-shadow: inset 0px -45px 115px 5px #000;
+}
+.s_i_l_images {
+  background-size:cover;
+  background-position:center;
+  height:38vw;
+  width:100%;
+  box-shadow: inset 0px -45px 115px 5px #000;
+}
+.s_i_separator {
+  width:100%;
+  height:2vw;
+}
+.s_i_button {
+position:absolute;
+font-family:SegoeScript;
+bottom:5px;
+left:20px;
+background:none;
+border:1px solid #fff;
+color:#fff;
+padding:5px 10px;
+font-size:20px;
+}
+.s_c_name {
+  text-transform:uppercase;
+  font-size:3vw;
+  line-height:3vw;
+  color:#666;
+}
+.s_c_content {
+  text-transform:uppercase;
+  font-size:2vw;
+  color:#666;
+  margin-bottom:2vw;
+}
+.text_bold {
+  font-weight:bold;
+}
+.element_top {
+margin-top:4.2vw;
+}
+.s_con_input_text {
+  border-radius:0px;
+  border:1px solid #333;
+  font: 13px MyriadPro;
+  background:#000;
+  max-width:100%;
+}
+a,a:hover,a:visited {
+  text-decoration:none;
+  color:inherit;
+}
+.text_justify {
+  text-align:justify;
+}
+.s_c_f_button {
+background:#333;
+color:#fff;
+border:0px;
+padding:10px 28px;
+width:165px;
+}
+#f_default {
+  background:#121212;
+  width:100%;
+  min-height:115px;
+  color:#494949;
+  font-family:MyriadPro;
+  text-transform:uppercase;
+}
+#s_images{
+margin-top:130px;
+}
+.vcenter {
+  padding:50px 0px;
+}
+
+.navbar-nav {
+  display:block;
+}
+.s_c_form {
+ font-family:MyriadPro !important;
+ font-weight:300 !important;
+}
+.bt_sq_button {
+  width:50px;
+}

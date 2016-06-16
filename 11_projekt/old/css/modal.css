@@ -1,0 +1,109 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+@font-face {
+  font-family: MyriadPro;
+  src: url(../fonts/MyriadWebPro.ttf);
+}
+body {
+  font-family: MyriadPro;
+}
+.modal {
+	text-align: center;
+}
+.modal-dialog {
+  width: 80%;
+  position: absolute;
+  display: inline-block;
+  margin-left: -40%;
+}
+.modal-content {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+.modal-body {
+  padding-top: 71px;
+  padding-bottom: 38px;
+}
+.modal_close_btn {
+  position: absolute;
+  padding: 0;
+  top: 23px;
+  right: 23px;
+}
+span {
+  color: #333333;
+}
+#modal_image {
+	background-image: url(../img/depresja_modal.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 300px 0;
+}
+#modal_image2 {
+	background-image: url(../img/modal_nerwica.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 300px 0;
+}
+#modal_image3 {
+	background-image: url(../img/modal_ptsd.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 300px 0;
+}
+#modal_image4 {
+	background-image: url(../img/modal_zaloba.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 300px 0;
+}
+#modal_image5 {
+	background-image: url(../img/modal_osobowosci.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 300px 0;
+}
+#modal_image6 {
+	background-image: url(../img/modal_zaburzenia.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 300px 0;
+}
+#modal_image7 {
+	background-image: url(../img/modal_anoreksja.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 300px 0;
+}
+#modal_image8 {
+	background-image: url(../img/modal_relacje.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 300px 0;
+}
+
+.modal-body {
+	padding: 0;
+}
+.modal_text {
+	margin-top: 90px;
+	padding: 25px;
+}
+.modal_text p {
+	text-align: justify;
+	font-size: 15px;
+}
+.modal_text p:first-child {
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 55px;
+	color: #29e0fe;
+	font-weight: bold;
+}
+.modal_text li {
+	text-align: left;
+}
+.no_margin {
+	margin-left: 0;
+	margin-right: 0;
+}
